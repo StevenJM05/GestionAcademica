@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace GestionAcademica
 {
-    public partial class FormAdministrador : Form
+    public partial class Login : Form
     {
-        public FormAdministrador()
+        public Login()
         {
             InitializeComponent();
         }
