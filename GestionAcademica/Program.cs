@@ -16,7 +16,7 @@ namespace GestionAcademica
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new FormAdministrador());
+            Application.Run(new Login());
         }
     }
 }
