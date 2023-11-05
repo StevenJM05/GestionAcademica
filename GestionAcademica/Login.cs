@@ -17,13 +17,6 @@ namespace GestionAcademica
             InitializeComponent();
         }
 
-        private void pictureBox3_MouseClick(object sender, MouseEventArgs e)
-        {
-            this.Close();
-           
-          
-        }
-
         private void xToolStripMenuItem_Click(object sender, EventArgs e)
         {
             this.Close();
