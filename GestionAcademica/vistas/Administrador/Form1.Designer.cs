@@ -29,59 +29,70 @@
         private void InitializeComponent()
         {
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
+            this.iNGRESIONDECARRERASTECNICASToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.iNFORMACIONPROFESORESToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.sOLICITUDESDEMATRICULAToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.aSIGNARMODULOSADOCENTEToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.iNGRESIONDECARRERASTECNICASToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.matrículaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // menuStrip1
             // 
+            this.menuStrip1.GripMargin = new System.Windows.Forms.Padding(2, 2, 0, 2);
+            this.menuStrip1.ImageScalingSize = new System.Drawing.Size(24, 24);
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.iNGRESIONDECARRERASTECNICASToolStripMenuItem,
             this.iNFORMACIONPROFESORESToolStripMenuItem,
             this.sOLICITUDESDEMATRICULAToolStripMenuItem,
-            this.aSIGNARMODULOSADOCENTEToolStripMenuItem});
+            this.aSIGNARMODULOSADOCENTEToolStripMenuItem,
+            this.matrículaToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(896, 24);
+            this.menuStrip1.Size = new System.Drawing.Size(1344, 35);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
+            // 
+            // iNGRESIONDECARRERASTECNICASToolStripMenuItem
+            // 
+            this.iNGRESIONDECARRERASTECNICASToolStripMenuItem.Name = "iNGRESIONDECARRERASTECNICASToolStripMenuItem";
+            this.iNGRESIONDECARRERASTECNICASToolStripMenuItem.Size = new System.Drawing.Size(313, 29);
+            this.iNGRESIONDECARRERASTECNICASToolStripMenuItem.Text = "REGISTRO DE CARRERAS TECNICAS";
+            this.iNGRESIONDECARRERASTECNICASToolStripMenuItem.Click += new System.EventHandler(this.iNGRESIONDECARRERASTECNICASToolStripMenuItem_Click);
             // 
             // iNFORMACIONPROFESORESToolStripMenuItem
             // 
             this.iNFORMACIONPROFESORESToolStripMenuItem.Name = "iNFORMACIONPROFESORESToolStripMenuItem";
-            this.iNFORMACIONPROFESORESToolStripMenuItem.Size = new System.Drawing.Size(173, 20);
+            this.iNFORMACIONPROFESORESToolStripMenuItem.Size = new System.Drawing.Size(263, 29);
             this.iNFORMACIONPROFESORESToolStripMenuItem.Text = "INFORMACION PROFESORES";
             // 
             // sOLICITUDESDEMATRICULAToolStripMenuItem
             // 
             this.sOLICITUDESDEMATRICULAToolStripMenuItem.Name = "sOLICITUDESDEMATRICULAToolStripMenuItem";
-            this.sOLICITUDESDEMATRICULAToolStripMenuItem.Size = new System.Drawing.Size(172, 20);
+            this.sOLICITUDESDEMATRICULAToolStripMenuItem.Size = new System.Drawing.Size(262, 29);
             this.sOLICITUDESDEMATRICULAToolStripMenuItem.Text = "SOLICITUDES DE MATRICULA";
             // 
             // aSIGNARMODULOSADOCENTEToolStripMenuItem
             // 
             this.aSIGNARMODULOSADOCENTEToolStripMenuItem.Name = "aSIGNARMODULOSADOCENTEToolStripMenuItem";
-            this.aSIGNARMODULOSADOCENTEToolStripMenuItem.Size = new System.Drawing.Size(194, 20);
+            this.aSIGNARMODULOSADOCENTEToolStripMenuItem.Size = new System.Drawing.Size(294, 29);
             this.aSIGNARMODULOSADOCENTEToolStripMenuItem.Text = "ASIGNAR MODULOS A DOCENTE";
             // 
-            // iNGRESIONDECARRERASTECNICASToolStripMenuItem
+            // matrículaToolStripMenuItem
             // 
-            this.iNGRESIONDECARRERASTECNICASToolStripMenuItem.Name = "iNGRESIONDECARRERASTECNICASToolStripMenuItem";
-            this.iNGRESIONDECARRERASTECNICASToolStripMenuItem.Size = new System.Drawing.Size(205, 20);
-            this.iNGRESIONDECARRERASTECNICASToolStripMenuItem.Text = "REGISTRO DE CARRERAS TECNICAS";
+            this.matrículaToolStripMenuItem.Name = "matrículaToolStripMenuItem";
+            this.matrículaToolStripMenuItem.Size = new System.Drawing.Size(100, 29);
+            this.matrículaToolStripMenuItem.Text = "Matrícula";
+            this.matrículaToolStripMenuItem.Click += new System.EventHandler(this.matrículaToolStripMenuItem_Click);
             // 
             // FormAdministrador
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(896, 373);
+            this.ClientSize = new System.Drawing.Size(1344, 574);
             this.Controls.Add(this.menuStrip1);
             this.IsMdiContainer = true;
             this.MainMenuStrip = this.menuStrip1;
-            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "FormAdministrador";
             this.Text = "FormAdministrador ";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
@@ -99,6 +110,7 @@
         private System.Windows.Forms.ToolStripMenuItem sOLICITUDESDEMATRICULAToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem aSIGNARMODULOSADOCENTEToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem iNGRESIONDECARRERASTECNICASToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem matrículaToolStripMenuItem;
     }
 }
 

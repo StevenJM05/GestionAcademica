@@ -1,4 +1,5 @@
-﻿using System;
+﻿using GestionAcademica.vistas.Administrador;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -15,6 +16,17 @@ namespace GestionAcademica
         public FormAdministrador()
         {
             InitializeComponent();
+        }
+
+        private void iNGRESIONDECARRERASTECNICASToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void matrículaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Matricula matricula = new Matricula();
+            matricula.Show();
         }
     }
 }

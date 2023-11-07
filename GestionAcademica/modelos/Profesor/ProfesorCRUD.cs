@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace GestionAcademica.modelos.Profesor
 {
-    internal class ProfesorCRUD : ICRUD
+    internal class ProfesorCRUD : Clases.ConexionBD, ICRUD
     {
         public void actualizar(object modelo, int id)
         {
@@ -49,10 +49,10 @@ namespace GestionAcademica.modelos.Profesor
 
         public object obtener()
         {
-            ConexionBD conexion = new ConexionBD();
+          
             string sql = "SELECT * FROM profesor";
-            DataTable dataTable = conexion.consultas(sql);
-            return dataTable;
+           return consultas(sql);
+            
         }
     }
 }

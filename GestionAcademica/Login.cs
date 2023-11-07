@@ -1,4 +1,5 @@
-﻿using System;
+﻿using GestionAcademica.modelos.Usuario;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -25,32 +26,21 @@ namespace GestionAcademica
 
         private void button1_Click(object sender, EventArgs e)
         {
+            UsuarioCRUD usuarioCRUD = new UsuarioCRUD();
             string login = this.textBox1.Text;
             string clave = this.textBox2.Text;
-            string sql = "select * from usuarios where login = '" + login + "' and clave='" + clave + "'";
-            DataTable dataTable = BaseDatos.consultas(sql);
-            if(dataTable.Rows.Count > 0 )
-            {
-                string tipo = null;
-                foreach(DataRow row in dataTable.Rows )
-                {
-                    tipo = row["tipo"].ToString();
-                }
 
-                if( tipo == "1" ) {
+            Usuario usuario = usuarioCRUD.obtenerUsuario(login, clave);
+
+            if (usuario != null) {
+                if(usuario.Tipo == "1" ) {
                     FormAdministrador formAdministrador = new FormAdministrador();
                     formAdministrador.Show();
-                }
-
-                if( tipo == "2")
-                {
+                } else if(usuario.Tipo == "2") {
                     //LLamar al formulario de profesor
                 }
                   
-            }
-
-            else
-            {
+            } else {
                 MessageBox.Show("Usuario no encontrado");
             }
         }

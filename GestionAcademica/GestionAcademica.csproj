@@ -46,17 +46,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Alumnos\Registra.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Alumnos\Registra.Designer.cs">
-      <DependentUpon>Registra.cs</DependentUpon>
-    </Compile>
     <Compile Include="Clases\ConexionBD.cs" />
-    <Compile Include="Form1.cs">
+    <Compile Include="vistas\Administrador\Form1.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
+    <Compile Include="vistas\Administrador\Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
     <Compile Include="Interfaces\ICRUD.cs" />
@@ -70,16 +64,28 @@
     <Compile Include="modelos\Profesor\ProfesorCRUD.cs" />
     <Compile Include="modelos\Usuario\Usuario.cs" />
     <Compile Include="modelos\Usuario\UsuarioCRUD.cs" />
+    <Compile Include="presentacion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="presentacion.Designer.cs">
+      <DependentUpon>presentacion.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Alumnos\Registra.resx">
-      <DependentUpon>Registra.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Form1.resx">
+    <Compile Include="vistas\Administrador\Matricula.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="vistas\Administrador\Matricula.Designer.cs">
+      <DependentUpon>Matricula.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="vistas\Administrador\Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="presentacion.resx">
+      <DependentUpon>presentacion.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -90,6 +96,9 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="vistas\Administrador\Matricula.resx">
+      <DependentUpon>Matricula.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -105,7 +114,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="controladores\" />
-    <Folder Include="vistas\" />
+    <Folder Include="vistas\Profesor\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
