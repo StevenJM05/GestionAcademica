@@ -1,5 +1,4 @@
-﻿using GestionAcademica.vistas.Administrador;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -9,30 +8,37 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace GestionAcademica
+namespace GestionAcademica.vistas.COORDINADOR
 {
-    public partial class FormAdministrador : Form
+    public partial class MenuCoordinador : Form
     {
-        public FormAdministrador()
+        public MenuCoordinador()
         {
             InitializeComponent();
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
-            Matricula matricula = new Matricula();
-            matricula.Show();
+            carreras carreras = new carreras();
+            carreras.Show();
         }
 
         private void button3_Click(object sender, EventArgs e)
         {
-            MenúAlumno menúAlumno = new MenúAlumno();
-            menúAlumno.Show();
+            Materias materias = new Materias(); 
+            materias.Show();
         }
 
         private void button4_Click(object sender, EventArgs e)
         {
+            Grado grado = new Grado();
+            grado.Show();
+        }
 
+        private void button5_Click(object sender, EventArgs e)
+        {
+            seccion seccion = new seccion();
+            seccion.Show();
         }
     }
 }

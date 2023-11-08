@@ -1,4 +1,5 @@
 ﻿using GestionAcademica.modelos.Usuario;
+using GestionAcademica.vistas.COORDINADOR;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -37,7 +38,8 @@ namespace GestionAcademica
                     FormAdministrador formAdministrador = new FormAdministrador();
                     formAdministrador.Show();
                 } else if(usuario.Tipo == "2") {
-                    //LLamar al formulario de profesor
+                    MenuCoordinador menuCoordinador = new MenuCoordinador();
+                    menuCoordinador.Show();
                 }
                   
             } else {
