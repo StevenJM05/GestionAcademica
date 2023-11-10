@@ -18,7 +18,7 @@ namespace GestionAcademica.modelos.Usuario
         {
            Usuario usuario = (Usuario)modelo;
             string sql = "UPDATE usuarios SET nombre ='"+usuario.Nombre+ "', apellido = '"+usuario.Apellido+ "', direccion ='"+usuario.Direccion+ "', email = '"+usuario.Email+ "', login ='"+usuario.Login+ "', clave ='"+usuario.Clave+ "', tipo ='"+usuario.Tipo+ "' where id_usuario = " + id + "";
-            
+            conexionBD.ejecutarComando(sql);
         }
 
         public void crear(object modelo)
@@ -26,11 +26,14 @@ namespace GestionAcademica.modelos.Usuario
             Usuario usuario = (Usuario)modelo;
             string sql = "INSERT INTO usuarios(nombre,apellido,direccion,email,login,clave,tipo) " +
                 "VALUES('"+usuario.Nombre+"','"+usuario.Apellido+"','"+usuario.Direccion+"','"+usuario.Email+"','"+usuario.Login+"','"+usuario.Clave+"','"+usuario.Tipo+"')";
+            conexionBD.ejecutarComando(sql);
         }
 
         public void eliminar(int id)
         {
             string sql = "DELETE FROM usuarios WHERE id_usuario = " + id + "";
+            conexionBD.ejecutarComando(sql);
+
         }
 
         public object obtener()

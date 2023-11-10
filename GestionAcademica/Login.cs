@@ -37,6 +37,7 @@ namespace GestionAcademica
                 if(usuario.Tipo == "1" ) {
                     FormAdministrador formAdministrador = new FormAdministrador();
                     formAdministrador.Show();
+                   
                 } else if(usuario.Tipo == "2") {
                     MenuCoordinador menuCoordinador = new MenuCoordinador();
                     menuCoordinador.Show();

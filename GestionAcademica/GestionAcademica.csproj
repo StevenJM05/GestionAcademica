@@ -47,6 +47,13 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Clases\ConexionBD.cs" />
+    <Compile Include="modelos\Alumno\Alumno.cs" />
+    <Compile Include="modelos\Alumno\AlumnoCRUD.cs" />
+    <Compile Include="modelos\Alumno\DatosContactoAlumno.cs" />
+    <Compile Include="modelos\Alumno\DatosContactoAlumnoCRUD.cs" />
+    <Compile Include="modelos\Alumno\DatosPersonalesAlumno.cs" />
+    <Compile Include="modelos\Alumno\DatosPersonalesAlumnoCRUD.cs" />
+    <Compile Include="modelos\Alumno\OtrosDatosAlumno.cs" />
     <Compile Include="vistas\Administrador\Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -60,8 +67,6 @@
     <Compile Include="Login.Designer.cs">
       <DependentUpon>Login.cs</DependentUpon>
     </Compile>
-    <Compile Include="modelos\Profesor\Profesor.cs" />
-    <Compile Include="modelos\Profesor\ProfesorCRUD.cs" />
     <Compile Include="modelos\Usuario\Usuario.cs" />
     <Compile Include="modelos\Usuario\UsuarioCRUD.cs" />
     <Compile Include="presentacion.cs">
