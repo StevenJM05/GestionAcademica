@@ -54,6 +54,7 @@
     <Compile Include="modelos\Alumno\DatosPersonalesAlumno.cs" />
     <Compile Include="modelos\Alumno\DatosPersonalesAlumnoCRUD.cs" />
     <Compile Include="modelos\Alumno\OtrosDatosAlumno.cs" />
+    <Compile Include="modelos\Bitacora\Bitacora.cs" />
     <Compile Include="modelos\Carrera\Carrera.cs" />
     <Compile Include="modelos\Responsable\DatosContactosResponsable.cs" />
     <Compile Include="modelos\Responsable\DatosPersonalesResponsable.cs" />
