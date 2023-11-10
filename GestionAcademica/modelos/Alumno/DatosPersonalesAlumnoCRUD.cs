@@ -32,6 +32,7 @@ namespace GestionAcademica.modelos.Alumno
             $"Sexo = '{datosPersonalesAlumno.Sexo}', " +
             $"Estado_Civil = '{datosPersonalesAlumno.EstadoCivil}' " +
             $"WHERE Id_Personal = {id}";
+            conexionBD.ejecutarComando(sql);
 
         }
 
@@ -53,6 +54,7 @@ namespace GestionAcademica.modelos.Alumno
                 $"{datosPersonalesAlumno.DepartamentoMunicipioNacimiento}, " +
                 $"{datosPersonalesAlumno.Sexo}, " +
                 $"{datosPersonalesAlumno.EstadoCivil});";
+            conexionBD.ejecutarComando(sql);
         }
 
         public void eliminar(int id)

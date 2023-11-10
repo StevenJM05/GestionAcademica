@@ -11,7 +11,6 @@ namespace GestionAcademica.modelos.Usuario
     {
 
         private int id_usuario;
-        private string nombre;
         private string apellido;
         private string direccion;
         private string email;
@@ -25,7 +24,6 @@ namespace GestionAcademica.modelos.Usuario
         }
 
         public int Id_usuario { get => id_usuario; set => id_usuario = value; }
-        public string Nombre { get => nombre; set => nombre = value; }
         public string Apellido { get => apellido; set => apellido = value; }
         public string Direccion { get => direccion; set => direccion = value; }
         public string Email { get => email; set => email = value; }

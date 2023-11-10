@@ -54,6 +54,8 @@
     <Compile Include="modelos\Alumno\DatosPersonalesAlumno.cs" />
     <Compile Include="modelos\Alumno\DatosPersonalesAlumnoCRUD.cs" />
     <Compile Include="modelos\Alumno\OtrosDatosAlumno.cs" />
+    <Compile Include="modelos\Carrera\Carrera.cs" />
+    <Compile Include="modelos\Responsable\Responsable.cs" />
     <Compile Include="vistas\Administrador\Form1.cs">
       <SubType>Form</SubType>
     </Compile>
