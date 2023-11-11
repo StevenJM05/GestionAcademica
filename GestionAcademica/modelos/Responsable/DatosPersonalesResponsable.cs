@@ -30,7 +30,7 @@ namespace GestionAcademica.modelos.Responsable
         public string PrimerApellido { get => primerApellido; set => primerApellido = value; }
         public string SegundoApellido { get => segundoApellido; set => segundoApellido = value; }
         public string TercerApellido { get => tercerApellido; set => tercerApellido = value; }
-        public DateTime? FechaNacimiento { get => fechaNacimiento; set => fechaNacimiento = value; }
+        public DateTime FechaNacimiento { get => fechaNacimiento; set => fechaNacimiento = value; }
         public string Residencia { get => residencia; set => residencia = value; }
         public string Direccion { get => direccion; set => direccion = value; }
         public string Nacionalidad { get => nacionalidad; set => nacionalidad = value; }
