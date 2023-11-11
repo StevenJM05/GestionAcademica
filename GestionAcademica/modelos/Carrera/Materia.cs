@@ -6,16 +6,18 @@ using System.Threading.Tasks;
 
 namespace GestionAcademica.modelos.Carrera
 {
-    internal class Carrera
+    internal class Materia
     {
-        private int IdCarrera;
+        private int IdMAterias;
         private string Nombre;
         private string Descripcion;
-        private string DuracionYear;
+        private int IdYear;
+        private int IdCarrera;
 
-        public int IdCarrera1 { get => IdCarrera; set => IdCarrera = value; }
+        public int IdMAterias1 { get => IdMAterias; set => IdMAterias = value; }
         public string Nombre1 { get => Nombre; set => Nombre = value; }
         public string Descripcion1 { get => Descripcion; set => Descripcion = value; }
-        public string DuracionYear1 { get => DuracionYear; set => DuracionYear = value; }
+        public int IdYear1 { get => IdYear; set => IdYear = value; }
+        public int IdCarrera1 { get => IdCarrera; set => IdCarrera = value; }
     }
 }
