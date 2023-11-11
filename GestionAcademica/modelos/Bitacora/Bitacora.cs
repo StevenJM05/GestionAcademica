@@ -17,8 +17,9 @@ namespace GestionAcademica.modelos.Bitacora
         private int Año_Electivo;
         private string Institucion;
         private string Nivel;
-        private string Year_proceso;
-        private string Seccion;
+        private string IdYear;
+        private int IdSeccion;
+
 
         public int Numero_Registro1 { get => Numero_Registro; set => Numero_Registro = value; }
         public int Id_Alumno1 { get => Id_Alumno; set => Id_Alumno = value; }
@@ -26,7 +27,7 @@ namespace GestionAcademica.modelos.Bitacora
         public int Año_Electivo1 { get => Año_Electivo; set => Año_Electivo = value; }
         public string Institucion1 { get => Institucion; set => Institucion = value; }
         public string Nivel1 { get => Nivel; set => Nivel = value; }
-        public string Year_proceso1 { get => Year_proceso; set => Year_proceso = value; }
-        public string Seccion1 { get => Seccion; set => Seccion = value; }
+        public string IdYear1 { get => IdYear; set => IdYear = value; }
+        public int IdSeccion1 { get => IdSeccion; set => IdSeccion = value; }
     }
 }

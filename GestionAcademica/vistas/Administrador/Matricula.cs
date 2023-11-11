@@ -1,4 +1,5 @@
 ﻿using GestionAcademica.modelos.Alumno;
+using GestionAcademica.modelos.Bitacora;
 using GestionAcademica.modelos.Responsable;
 using System;
 using System.Collections.Generic;
@@ -26,13 +27,16 @@ namespace GestionAcademica.vistas.Administrador
 
         //Clases de Responsable 
         Responsable Responsable = new Responsable();
-
+        CRUDResponsable cRUDResponsable = new CRUDResponsable();
         DatosPersonalesResponsable datosPersonalesResponsable = new DatosPersonalesResponsable();
         DatosPersonalesResponsableCRUD datosPersonalesResponsableCRUD = new DatosPersonalesResponsableCRUD();
         DatosContactoResponsable datosContactoResponsable = new DatosContactoResponsable();
         DatosContactoResponsableCRUD datosContactoResponsableCRUD = new DatosContactoResponsableCRUD();
         DatosOtrosResponsable datosOtrosResponsable = new DatosOtrosResponsable();
         DatosOtrosResponsableCRUD datosOtrosResponsableCRUD = new DatosOtrosResponsableCRUD();
+
+        //Bitacora 
+        Bitacora bitacora = new Bitacora();
 
         public Matricula()
         {
@@ -41,6 +45,12 @@ namespace GestionAcademica.vistas.Administrador
 
         private void button3_Click(object sender, EventArgs e)
         {
+            alumno.Carnet = (int)numericUpDown1.Value;
+            alumno.Numero_partida = numericUpDown2.ToString();
+            alumno.Folio_partida1 = numericUpDown3.ToString();
+            alumno.DUI_Carnet_Propio1 = maskedTextBox1.Text;
+            alumno.
+
         }
     }
 }

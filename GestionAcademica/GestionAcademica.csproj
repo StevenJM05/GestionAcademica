@@ -56,6 +56,7 @@
     <Compile Include="modelos\Alumno\OtrosDadosAlumnoCRUD.cs" />
     <Compile Include="modelos\Alumno\OtrosDatosAlumno.cs" />
     <Compile Include="modelos\Bitacora\Bitacora.cs" />
+    <Compile Include="modelos\Bitacora\CRUDBitacora.cs" />
     <Compile Include="modelos\Carrera\Carrera.cs" />
     <Compile Include="modelos\Carrera\CarreraCRUD.cs" />
     <Compile Include="modelos\Carrera\Materia.cs" />
