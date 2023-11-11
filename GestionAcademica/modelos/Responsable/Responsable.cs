@@ -8,12 +8,14 @@ namespace GestionAcademica.modelos.Responsable
 {
     internal class Responsable
     {
-        private int Dui;
-        private string Parentezco;
-        private int Id_Alumno;
+        private int idResponsable;
+        private int dui;
+        private string parentezco;
+        private int idAlumno;
 
-        public int Dui1 { get => Dui; set => Dui = value; }
-        public string Parentezco1 { get => Parentezco; set => Parentezco = value; }
-        public int Id_Alumno1 { get => Id_Alumno; set => Id_Alumno = value; }
+        public int IdResponsable { get => idResponsable; set => idResponsable = value; }
+        public int Dui { get => dui; set => dui = value; }
+        public string Parentezco { get => parentezco; set => parentezco = value; }
+        public int IdAlumno { get => idAlumno; set => idAlumno = value; }
     }
 }
