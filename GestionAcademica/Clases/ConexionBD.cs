@@ -13,7 +13,7 @@ namespace GestionAcademica.Clases
         SqlConnection con = new SqlConnection();
         SqlCommand cmd = new SqlCommand();
         SqlDataAdapter adapter = new SqlDataAdapter();
-        string cadena = "Data Source = .; initial catalog = BD_FINAL_DAE2; integrated security = true;";
+        string cadena = "Data Source = .; initial catalog = DAE_BD2; integrated security = true;";
 
         public ConexionBD()
         {

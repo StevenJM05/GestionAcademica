@@ -41,5 +41,10 @@ namespace GestionAcademica.vistas.Administrador
         {
 
         }
+
+        private void Matricula_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
