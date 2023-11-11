@@ -102,53 +102,53 @@
             this.button1 = new System.Windows.Forms.Button();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.button3 = new System.Windows.Forms.Button();
             this.tabPage2 = new System.Windows.Forms.TabPage();
-            this.groupBox11 = new System.Windows.Forms.GroupBox();
-            this.label27 = new System.Windows.Forms.Label();
-            this.label28 = new System.Windows.Forms.Label();
-            this.textBox14 = new System.Windows.Forms.TextBox();
-            this.maskedTextBox6 = new System.Windows.Forms.MaskedTextBox();
-            this.textBox15 = new System.Windows.Forms.TextBox();
-            this.label30 = new System.Windows.Forms.Label();
-            this.groupBox12 = new System.Windows.Forms.GroupBox();
-            this.textBox16 = new System.Windows.Forms.TextBox();
-            this.label29 = new System.Windows.Forms.Label();
-            this.textBox17 = new System.Windows.Forms.TextBox();
-            this.label31 = new System.Windows.Forms.Label();
-            this.textBox18 = new System.Windows.Forms.TextBox();
-            this.label32 = new System.Windows.Forms.Label();
-            this.textBox19 = new System.Windows.Forms.TextBox();
-            this.label33 = new System.Windows.Forms.Label();
-            this.textBox20 = new System.Windows.Forms.TextBox();
-            this.label34 = new System.Windows.Forms.Label();
-            this.groupBox13 = new System.Windows.Forms.GroupBox();
-            this.dateTimePicker2 = new System.Windows.Forms.DateTimePicker();
-            this.label35 = new System.Windows.Forms.Label();
-            this.textBox21 = new System.Windows.Forms.TextBox();
-            this.label36 = new System.Windows.Forms.Label();
-            this.textBox22 = new System.Windows.Forms.TextBox();
-            this.label37 = new System.Windows.Forms.Label();
-            this.textBox23 = new System.Windows.Forms.TextBox();
-            this.label38 = new System.Windows.Forms.Label();
-            this.label39 = new System.Windows.Forms.Label();
-            this.comboBox5 = new System.Windows.Forms.ComboBox();
-            this.groupBox14 = new System.Windows.Forms.GroupBox();
-            this.maskedTextBox7 = new System.Windows.Forms.MaskedTextBox();
-            this.maskedTextBox8 = new System.Windows.Forms.MaskedTextBox();
-            this.maskedTextBox9 = new System.Windows.Forms.MaskedTextBox();
-            this.label40 = new System.Windows.Forms.Label();
-            this.label41 = new System.Windows.Forms.Label();
-            this.label42 = new System.Windows.Forms.Label();
-            this.label43 = new System.Windows.Forms.Label();
-            this.maskedTextBox10 = new System.Windows.Forms.MaskedTextBox();
             this.groupBox15 = new System.Windows.Forms.GroupBox();
-            this.comboBox6 = new System.Windows.Forms.ComboBox();
-            this.label44 = new System.Windows.Forms.Label();
-            this.textBox24 = new System.Windows.Forms.TextBox();
-            this.label45 = new System.Windows.Forms.Label();
             this.textBox25 = new System.Windows.Forms.TextBox();
             this.label46 = new System.Windows.Forms.Label();
-            this.button3 = new System.Windows.Forms.Button();
+            this.textBox24 = new System.Windows.Forms.TextBox();
+            this.label45 = new System.Windows.Forms.Label();
+            this.comboBox6 = new System.Windows.Forms.ComboBox();
+            this.label44 = new System.Windows.Forms.Label();
+            this.groupBox14 = new System.Windows.Forms.GroupBox();
+            this.label43 = new System.Windows.Forms.Label();
+            this.maskedTextBox10 = new System.Windows.Forms.MaskedTextBox();
+            this.label42 = new System.Windows.Forms.Label();
+            this.label41 = new System.Windows.Forms.Label();
+            this.label40 = new System.Windows.Forms.Label();
+            this.maskedTextBox9 = new System.Windows.Forms.MaskedTextBox();
+            this.maskedTextBox8 = new System.Windows.Forms.MaskedTextBox();
+            this.maskedTextBox7 = new System.Windows.Forms.MaskedTextBox();
+            this.groupBox13 = new System.Windows.Forms.GroupBox();
+            this.comboBox5 = new System.Windows.Forms.ComboBox();
+            this.label39 = new System.Windows.Forms.Label();
+            this.textBox23 = new System.Windows.Forms.TextBox();
+            this.label38 = new System.Windows.Forms.Label();
+            this.textBox22 = new System.Windows.Forms.TextBox();
+            this.label37 = new System.Windows.Forms.Label();
+            this.textBox21 = new System.Windows.Forms.TextBox();
+            this.label36 = new System.Windows.Forms.Label();
+            this.groupBox12 = new System.Windows.Forms.GroupBox();
+            this.textBox20 = new System.Windows.Forms.TextBox();
+            this.label34 = new System.Windows.Forms.Label();
+            this.textBox19 = new System.Windows.Forms.TextBox();
+            this.label33 = new System.Windows.Forms.Label();
+            this.textBox18 = new System.Windows.Forms.TextBox();
+            this.label32 = new System.Windows.Forms.Label();
+            this.textBox17 = new System.Windows.Forms.TextBox();
+            this.label31 = new System.Windows.Forms.Label();
+            this.textBox16 = new System.Windows.Forms.TextBox();
+            this.label29 = new System.Windows.Forms.Label();
+            this.textBox15 = new System.Windows.Forms.TextBox();
+            this.label30 = new System.Windows.Forms.Label();
+            this.groupBox11 = new System.Windows.Forms.GroupBox();
+            this.maskedTextBox6 = new System.Windows.Forms.MaskedTextBox();
+            this.textBox14 = new System.Windows.Forms.TextBox();
+            this.label28 = new System.Windows.Forms.Label();
+            this.label27 = new System.Windows.Forms.Label();
+            this.dateTimePicker2 = new System.Windows.Forms.DateTimePicker();
+            this.label35 = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown2)).BeginInit();
@@ -165,11 +165,11 @@
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.tabPage2.SuspendLayout();
-            this.groupBox11.SuspendLayout();
-            this.groupBox12.SuspendLayout();
-            this.groupBox13.SuspendLayout();
-            this.groupBox14.SuspendLayout();
             this.groupBox15.SuspendLayout();
+            this.groupBox14.SuspendLayout();
+            this.groupBox13.SuspendLayout();
+            this.groupBox12.SuspendLayout();
+            this.groupBox11.SuspendLayout();
             this.SuspendLayout();
             // 
             // groupBox1
@@ -354,7 +354,6 @@
             this.groupBox2.TabIndex = 1;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Datos Personales";
-            this.groupBox2.Enter += new System.EventHandler(this.groupBox2_Enter);
             // 
             // comboBox3
             // 
@@ -574,7 +573,6 @@
             this.checkBox2.TabIndex = 1;
             this.checkBox2.Text = "Femenino";
             this.checkBox2.UseVisualStyleBackColor = true;
-            this.checkBox2.CheckedChanged += new System.EventHandler(this.checkBox2_CheckedChanged);
             // 
             // checkBox1
             // 
@@ -914,6 +912,18 @@
             this.tabPage1.Text = "REGISTRAR DATOS DEL USUARIO";
             this.tabPage1.UseVisualStyleBackColor = true;
             // 
+            // button3
+            // 
+            this.button3.BackColor = System.Drawing.Color.Beige;
+            this.button3.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button3.Location = new System.Drawing.Point(1037, 571);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(247, 110);
+            this.button3.TabIndex = 34;
+            this.button3.Text = "MATRICULAR DATOS DEL USUARIO";
+            this.button3.UseVisualStyleBackColor = false;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
+            // 
             // tabPage2
             // 
             this.tabPage2.Controls.Add(this.groupBox15);
@@ -929,71 +939,245 @@
             this.tabPage2.Text = "REGISTRAR DATOS DEL RESPONSABLE DEL USUARIO";
             this.tabPage2.UseVisualStyleBackColor = true;
             // 
-            // groupBox11
+            // groupBox15
             // 
-            this.groupBox11.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.groupBox11.Controls.Add(this.maskedTextBox6);
-            this.groupBox11.Controls.Add(this.textBox14);
-            this.groupBox11.Controls.Add(this.label28);
-            this.groupBox11.Controls.Add(this.label27);
-            this.groupBox11.Controls.Add(this.dateTimePicker2);
-            this.groupBox11.Controls.Add(this.label35);
-            this.groupBox11.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox11.Location = new System.Drawing.Point(6, 21);
-            this.groupBox11.Name = "groupBox11";
-            this.groupBox11.Size = new System.Drawing.Size(310, 260);
-            this.groupBox11.TabIndex = 0;
-            this.groupBox11.TabStop = false;
-            this.groupBox11.Text = "Datos Principales";
+            this.groupBox15.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.groupBox15.Controls.Add(this.textBox25);
+            this.groupBox15.Controls.Add(this.label46);
+            this.groupBox15.Controls.Add(this.textBox24);
+            this.groupBox15.Controls.Add(this.label45);
+            this.groupBox15.Controls.Add(this.comboBox6);
+            this.groupBox15.Controls.Add(this.label44);
+            this.groupBox15.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox15.Location = new System.Drawing.Point(648, 273);
+            this.groupBox15.Name = "groupBox15";
+            this.groupBox15.Size = new System.Drawing.Size(705, 414);
+            this.groupBox15.TabIndex = 4;
+            this.groupBox15.TabStop = false;
+            this.groupBox15.Text = "Otros Datos ";
             // 
-            // label27
+            // textBox25
             // 
-            this.label27.AutoSize = true;
-            this.label27.Location = new System.Drawing.Point(2, 46);
-            this.label27.Name = "label27";
-            this.label27.Size = new System.Drawing.Size(77, 19);
-            this.label27.TabIndex = 0;
-            this.label27.Text = "Parentezco";
+            this.textBox25.Location = new System.Drawing.Point(36, 282);
+            this.textBox25.Multiline = true;
+            this.textBox25.Name = "textBox25";
+            this.textBox25.Size = new System.Drawing.Size(421, 81);
+            this.textBox25.TabIndex = 31;
             // 
-            // label28
+            // label46
             // 
-            this.label28.AutoSize = true;
-            this.label28.Location = new System.Drawing.Point(2, 112);
-            this.label28.Name = "label28";
-            this.label28.Size = new System.Drawing.Size(33, 19);
-            this.label28.TabIndex = 1;
-            this.label28.Text = "DUI";
+            this.label46.AutoSize = true;
+            this.label46.Location = new System.Drawing.Point(32, 247);
+            this.label46.Name = "label46";
+            this.label46.Size = new System.Drawing.Size(203, 19);
+            this.label46.TabIndex = 30;
+            this.label46.Text = "Breve descripcion de su Trabajo";
             // 
-            // textBox14
+            // textBox24
             // 
-            this.textBox14.Location = new System.Drawing.Point(6, 68);
-            this.textBox14.Name = "textBox14";
-            this.textBox14.Size = new System.Drawing.Size(288, 24);
-            this.textBox14.TabIndex = 2;
+            this.textBox24.Location = new System.Drawing.Point(38, 181);
+            this.textBox24.Name = "textBox24";
+            this.textBox24.Size = new System.Drawing.Size(419, 24);
+            this.textBox24.TabIndex = 29;
             // 
-            // maskedTextBox6
+            // label45
             // 
-            this.maskedTextBox6.Location = new System.Drawing.Point(6, 134);
-            this.maskedTextBox6.Mask = "00000000-0";
-            this.maskedTextBox6.Name = "maskedTextBox6";
-            this.maskedTextBox6.Size = new System.Drawing.Size(73, 24);
-            this.maskedTextBox6.TabIndex = 3;
+            this.label45.AutoSize = true;
+            this.label45.Location = new System.Drawing.Point(34, 146);
+            this.label45.Name = "label45";
+            this.label45.Size = new System.Drawing.Size(123, 19);
+            this.label45.TabIndex = 28;
+            this.label45.Text = "Correo Electronico";
             // 
-            // textBox15
+            // comboBox6
             // 
-            this.textBox15.Location = new System.Drawing.Point(26, 63);
-            this.textBox15.Name = "textBox15";
-            this.textBox15.Size = new System.Drawing.Size(284, 24);
-            this.textBox15.TabIndex = 6;
+            this.comboBox6.FormattingEnabled = true;
+            this.comboBox6.Location = new System.Drawing.Point(36, 90);
+            this.comboBox6.Name = "comboBox6";
+            this.comboBox6.Size = new System.Drawing.Size(419, 27);
+            this.comboBox6.TabIndex = 27;
             // 
-            // label30
+            // label44
             // 
-            this.label30.AutoSize = true;
-            this.label30.Location = new System.Drawing.Point(22, 41);
-            this.label30.Name = "label30";
-            this.label30.Size = new System.Drawing.Size(104, 19);
-            this.label30.TabIndex = 4;
-            this.label30.Text = "Primer Nombre";
+            this.label44.AutoSize = true;
+            this.label44.Location = new System.Drawing.Point(32, 59);
+            this.label44.Name = "label44";
+            this.label44.Size = new System.Drawing.Size(79, 19);
+            this.label44.TabIndex = 26;
+            this.label44.Text = "Estado Civil";
+            // 
+            // groupBox14
+            // 
+            this.groupBox14.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.groupBox14.Controls.Add(this.label43);
+            this.groupBox14.Controls.Add(this.maskedTextBox10);
+            this.groupBox14.Controls.Add(this.label42);
+            this.groupBox14.Controls.Add(this.label41);
+            this.groupBox14.Controls.Add(this.label40);
+            this.groupBox14.Controls.Add(this.maskedTextBox9);
+            this.groupBox14.Controls.Add(this.maskedTextBox8);
+            this.groupBox14.Controls.Add(this.maskedTextBox7);
+            this.groupBox14.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox14.Location = new System.Drawing.Point(323, 273);
+            this.groupBox14.Name = "groupBox14";
+            this.groupBox14.Size = new System.Drawing.Size(310, 414);
+            this.groupBox14.TabIndex = 3;
+            this.groupBox14.TabStop = false;
+            this.groupBox14.Text = "Datos de Contacto";
+            // 
+            // label43
+            // 
+            this.label43.AutoSize = true;
+            this.label43.Location = new System.Drawing.Point(22, 330);
+            this.label43.Name = "label43";
+            this.label43.Size = new System.Drawing.Size(95, 19);
+            this.label43.TabIndex = 21;
+            this.label43.Text = "Otro Telefono";
+            // 
+            // maskedTextBox10
+            // 
+            this.maskedTextBox10.Location = new System.Drawing.Point(26, 363);
+            this.maskedTextBox10.Mask = "0000-0000";
+            this.maskedTextBox10.Name = "maskedTextBox10";
+            this.maskedTextBox10.Size = new System.Drawing.Size(67, 24);
+            this.maskedTextBox10.TabIndex = 20;
+            // 
+            // label42
+            // 
+            this.label42.AutoSize = true;
+            this.label42.Location = new System.Drawing.Point(22, 249);
+            this.label42.Name = "label42";
+            this.label42.Size = new System.Drawing.Size(130, 19);
+            this.label42.TabIndex = 19;
+            this.label42.Text = "Telefono de Trabajo";
+            // 
+            // label41
+            // 
+            this.label41.AutoSize = true;
+            this.label41.Location = new System.Drawing.Point(22, 159);
+            this.label41.Name = "label41";
+            this.label41.Size = new System.Drawing.Size(87, 19);
+            this.label41.TabIndex = 18;
+            this.label41.Text = "Telefono Fijo";
+            // 
+            // label40
+            // 
+            this.label40.AutoSize = true;
+            this.label40.Location = new System.Drawing.Point(22, 59);
+            this.label40.Name = "label40";
+            this.label40.Size = new System.Drawing.Size(106, 19);
+            this.label40.TabIndex = 17;
+            this.label40.Text = "Telefono Propio";
+            // 
+            // maskedTextBox9
+            // 
+            this.maskedTextBox9.Location = new System.Drawing.Point(26, 282);
+            this.maskedTextBox9.Mask = "0000-0000";
+            this.maskedTextBox9.Name = "maskedTextBox9";
+            this.maskedTextBox9.Size = new System.Drawing.Size(67, 24);
+            this.maskedTextBox9.TabIndex = 2;
+            // 
+            // maskedTextBox8
+            // 
+            this.maskedTextBox8.Location = new System.Drawing.Point(26, 194);
+            this.maskedTextBox8.Mask = "0000-0000";
+            this.maskedTextBox8.Name = "maskedTextBox8";
+            this.maskedTextBox8.Size = new System.Drawing.Size(67, 24);
+            this.maskedTextBox8.TabIndex = 1;
+            // 
+            // maskedTextBox7
+            // 
+            this.maskedTextBox7.Location = new System.Drawing.Point(26, 90);
+            this.maskedTextBox7.Mask = "0000-0000";
+            this.maskedTextBox7.Name = "maskedTextBox7";
+            this.maskedTextBox7.Size = new System.Drawing.Size(67, 24);
+            this.maskedTextBox7.TabIndex = 0;
+            // 
+            // groupBox13
+            // 
+            this.groupBox13.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.groupBox13.Controls.Add(this.comboBox5);
+            this.groupBox13.Controls.Add(this.label39);
+            this.groupBox13.Controls.Add(this.textBox23);
+            this.groupBox13.Controls.Add(this.label38);
+            this.groupBox13.Controls.Add(this.textBox22);
+            this.groupBox13.Controls.Add(this.label37);
+            this.groupBox13.Controls.Add(this.textBox21);
+            this.groupBox13.Controls.Add(this.label36);
+            this.groupBox13.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox13.Location = new System.Drawing.Point(6, 287);
+            this.groupBox13.Name = "groupBox13";
+            this.groupBox13.Size = new System.Drawing.Size(310, 400);
+            this.groupBox13.TabIndex = 2;
+            this.groupBox13.TabStop = false;
+            this.groupBox13.Text = "Comunidad";
+            // 
+            // comboBox5
+            // 
+            this.comboBox5.FormattingEnabled = true;
+            this.comboBox5.Location = new System.Drawing.Point(24, 55);
+            this.comboBox5.Name = "comboBox5";
+            this.comboBox5.Size = new System.Drawing.Size(268, 27);
+            this.comboBox5.TabIndex = 25;
+            // 
+            // label39
+            // 
+            this.label39.AutoSize = true;
+            this.label39.Location = new System.Drawing.Point(19, 287);
+            this.label39.Name = "label39";
+            this.label39.Size = new System.Drawing.Size(174, 19);
+            this.label39.TabIndex = 23;
+            this.label39.Text = "Departamento y Municipio";
+            // 
+            // textBox23
+            // 
+            this.textBox23.Location = new System.Drawing.Point(22, 230);
+            this.textBox23.Name = "textBox23";
+            this.textBox23.Size = new System.Drawing.Size(269, 24);
+            this.textBox23.TabIndex = 22;
+            // 
+            // label38
+            // 
+            this.label38.AutoSize = true;
+            this.label38.Location = new System.Drawing.Point(20, 208);
+            this.label38.Name = "label38";
+            this.label38.Size = new System.Drawing.Size(89, 19);
+            this.label38.TabIndex = 21;
+            this.label38.Text = "Nacionalidad";
+            // 
+            // textBox22
+            // 
+            this.textBox22.Location = new System.Drawing.Point(23, 130);
+            this.textBox22.Multiline = true;
+            this.textBox22.Name = "textBox22";
+            this.textBox22.Size = new System.Drawing.Size(269, 61);
+            this.textBox22.TabIndex = 20;
+            // 
+            // label37
+            // 
+            this.label37.AutoSize = true;
+            this.label37.Location = new System.Drawing.Point(19, 108);
+            this.label37.Name = "label37";
+            this.label37.Size = new System.Drawing.Size(67, 19);
+            this.label37.TabIndex = 19;
+            this.label37.Text = "Direccion";
+            // 
+            // textBox21
+            // 
+            this.textBox21.Location = new System.Drawing.Point(23, 309);
+            this.textBox21.Multiline = true;
+            this.textBox21.Name = "textBox21";
+            this.textBox21.Size = new System.Drawing.Size(268, 61);
+            this.textBox21.TabIndex = 18;
+            // 
+            // label36
+            // 
+            this.label36.AutoSize = true;
+            this.label36.Location = new System.Drawing.Point(19, 33);
+            this.label36.Name = "label36";
+            this.label36.Size = new System.Drawing.Size(145, 19);
+            this.label36.TabIndex = 17;
+            this.label36.Text = "Residencia Urbanitaria";
             // 
             // groupBox12
             // 
@@ -1018,55 +1202,21 @@
             this.groupBox12.TabStop = false;
             this.groupBox12.Text = "Datos Personales";
             // 
-            // textBox16
+            // textBox20
             // 
-            this.textBox16.Location = new System.Drawing.Point(345, 63);
-            this.textBox16.Name = "textBox16";
-            this.textBox16.Size = new System.Drawing.Size(317, 24);
-            this.textBox16.TabIndex = 8;
-            this.textBox16.TextChanged += new System.EventHandler(this.textBox16_TextChanged);
+            this.textBox20.Location = new System.Drawing.Point(684, 154);
+            this.textBox20.Name = "textBox20";
+            this.textBox20.Size = new System.Drawing.Size(317, 24);
+            this.textBox20.TabIndex = 16;
             // 
-            // label29
+            // label34
             // 
-            this.label29.AutoSize = true;
-            this.label29.Location = new System.Drawing.Point(341, 41);
-            this.label29.Name = "label29";
-            this.label29.Size = new System.Drawing.Size(119, 19);
-            this.label29.TabIndex = 7;
-            this.label29.Text = "Segundo Nombre";
-            // 
-            // textBox17
-            // 
-            this.textBox17.Location = new System.Drawing.Point(684, 63);
-            this.textBox17.Name = "textBox17";
-            this.textBox17.Size = new System.Drawing.Size(333, 24);
-            this.textBox17.TabIndex = 10;
-            // 
-            // label31
-            // 
-            this.label31.AutoSize = true;
-            this.label31.Location = new System.Drawing.Point(22, 134);
-            this.label31.Name = "label31";
-            this.label31.Size = new System.Drawing.Size(102, 19);
-            this.label31.TabIndex = 9;
-            this.label31.Text = "Primer Apellido";
-            // 
-            // textBox18
-            // 
-            this.textBox18.Location = new System.Drawing.Point(26, 156);
-            this.textBox18.Name = "textBox18";
-            this.textBox18.Size = new System.Drawing.Size(288, 24);
-            this.textBox18.TabIndex = 12;
-            // 
-            // label32
-            // 
-            this.label32.AutoSize = true;
-            this.label32.Location = new System.Drawing.Point(680, 41);
-            this.label32.Name = "label32";
-            this.label32.Size = new System.Drawing.Size(102, 19);
-            this.label32.TabIndex = 11;
-            this.label32.Text = "Tercer Nombre";
-            this.label32.Click += new System.EventHandler(this.label32_Click);
+            this.label34.AutoSize = true;
+            this.label34.Location = new System.Drawing.Point(680, 132);
+            this.label34.Name = "label34";
+            this.label34.Size = new System.Drawing.Size(100, 19);
+            this.label34.TabIndex = 15;
+            this.label34.Text = "Tercer Apellido";
             // 
             // textBox19
             // 
@@ -1084,40 +1234,119 @@
             this.label33.TabIndex = 13;
             this.label33.Text = "Segundo Apellido";
             // 
-            // textBox20
+            // textBox18
             // 
-            this.textBox20.Location = new System.Drawing.Point(684, 154);
-            this.textBox20.Name = "textBox20";
-            this.textBox20.Size = new System.Drawing.Size(317, 24);
-            this.textBox20.TabIndex = 16;
+            this.textBox18.Location = new System.Drawing.Point(26, 156);
+            this.textBox18.Name = "textBox18";
+            this.textBox18.Size = new System.Drawing.Size(288, 24);
+            this.textBox18.TabIndex = 12;
             // 
-            // label34
+            // label32
             // 
-            this.label34.AutoSize = true;
-            this.label34.Location = new System.Drawing.Point(680, 132);
-            this.label34.Name = "label34";
-            this.label34.Size = new System.Drawing.Size(100, 19);
-            this.label34.TabIndex = 15;
-            this.label34.Text = "Tercer Apellido";
+            this.label32.AutoSize = true;
+            this.label32.Location = new System.Drawing.Point(680, 41);
+            this.label32.Name = "label32";
+            this.label32.Size = new System.Drawing.Size(102, 19);
+            this.label32.TabIndex = 11;
+            this.label32.Text = "Tercer Nombre";
             // 
-            // groupBox13
+            // textBox17
             // 
-            this.groupBox13.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.groupBox13.Controls.Add(this.comboBox5);
-            this.groupBox13.Controls.Add(this.label39);
-            this.groupBox13.Controls.Add(this.textBox23);
-            this.groupBox13.Controls.Add(this.label38);
-            this.groupBox13.Controls.Add(this.textBox22);
-            this.groupBox13.Controls.Add(this.label37);
-            this.groupBox13.Controls.Add(this.textBox21);
-            this.groupBox13.Controls.Add(this.label36);
-            this.groupBox13.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox13.Location = new System.Drawing.Point(6, 287);
-            this.groupBox13.Name = "groupBox13";
-            this.groupBox13.Size = new System.Drawing.Size(310, 400);
-            this.groupBox13.TabIndex = 2;
-            this.groupBox13.TabStop = false;
-            this.groupBox13.Text = "Comunidad";
+            this.textBox17.Location = new System.Drawing.Point(684, 63);
+            this.textBox17.Name = "textBox17";
+            this.textBox17.Size = new System.Drawing.Size(333, 24);
+            this.textBox17.TabIndex = 10;
+            // 
+            // label31
+            // 
+            this.label31.AutoSize = true;
+            this.label31.Location = new System.Drawing.Point(22, 134);
+            this.label31.Name = "label31";
+            this.label31.Size = new System.Drawing.Size(102, 19);
+            this.label31.TabIndex = 9;
+            this.label31.Text = "Primer Apellido";
+            // 
+            // textBox16
+            // 
+            this.textBox16.Location = new System.Drawing.Point(345, 63);
+            this.textBox16.Name = "textBox16";
+            this.textBox16.Size = new System.Drawing.Size(317, 24);
+            this.textBox16.TabIndex = 8;
+            // 
+            // label29
+            // 
+            this.label29.AutoSize = true;
+            this.label29.Location = new System.Drawing.Point(341, 41);
+            this.label29.Name = "label29";
+            this.label29.Size = new System.Drawing.Size(119, 19);
+            this.label29.TabIndex = 7;
+            this.label29.Text = "Segundo Nombre";
+            // 
+            // textBox15
+            // 
+            this.textBox15.Location = new System.Drawing.Point(26, 63);
+            this.textBox15.Name = "textBox15";
+            this.textBox15.Size = new System.Drawing.Size(284, 24);
+            this.textBox15.TabIndex = 6;
+            // 
+            // label30
+            // 
+            this.label30.AutoSize = true;
+            this.label30.Location = new System.Drawing.Point(22, 41);
+            this.label30.Name = "label30";
+            this.label30.Size = new System.Drawing.Size(104, 19);
+            this.label30.TabIndex = 4;
+            this.label30.Text = "Primer Nombre";
+            // 
+            // groupBox11
+            // 
+            this.groupBox11.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.groupBox11.Controls.Add(this.maskedTextBox6);
+            this.groupBox11.Controls.Add(this.textBox14);
+            this.groupBox11.Controls.Add(this.label28);
+            this.groupBox11.Controls.Add(this.label27);
+            this.groupBox11.Controls.Add(this.dateTimePicker2);
+            this.groupBox11.Controls.Add(this.label35);
+            this.groupBox11.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox11.Location = new System.Drawing.Point(6, 21);
+            this.groupBox11.Name = "groupBox11";
+            this.groupBox11.Size = new System.Drawing.Size(310, 260);
+            this.groupBox11.TabIndex = 0;
+            this.groupBox11.TabStop = false;
+            this.groupBox11.Text = "Datos Principales";
+            // 
+            // maskedTextBox6
+            // 
+            this.maskedTextBox6.Location = new System.Drawing.Point(6, 134);
+            this.maskedTextBox6.Mask = "00000000-0";
+            this.maskedTextBox6.Name = "maskedTextBox6";
+            this.maskedTextBox6.Size = new System.Drawing.Size(73, 24);
+            this.maskedTextBox6.TabIndex = 3;
+            // 
+            // textBox14
+            // 
+            this.textBox14.Location = new System.Drawing.Point(6, 68);
+            this.textBox14.Name = "textBox14";
+            this.textBox14.Size = new System.Drawing.Size(288, 24);
+            this.textBox14.TabIndex = 2;
+            // 
+            // label28
+            // 
+            this.label28.AutoSize = true;
+            this.label28.Location = new System.Drawing.Point(2, 112);
+            this.label28.Name = "label28";
+            this.label28.Size = new System.Drawing.Size(33, 19);
+            this.label28.TabIndex = 1;
+            this.label28.Text = "DUI";
+            // 
+            // label27
+            // 
+            this.label27.AutoSize = true;
+            this.label27.Location = new System.Drawing.Point(2, 46);
+            this.label27.Name = "label27";
+            this.label27.Size = new System.Drawing.Size(77, 19);
+            this.label27.TabIndex = 0;
+            this.label27.Text = "Parentezco";
             // 
             // dateTimePicker2
             // 
@@ -1134,238 +1363,6 @@
             this.label35.Size = new System.Drawing.Size(139, 19);
             this.label35.TabIndex = 17;
             this.label35.Text = "Fecha de Nacimiento";
-            // 
-            // textBox21
-            // 
-            this.textBox21.Location = new System.Drawing.Point(23, 309);
-            this.textBox21.Multiline = true;
-            this.textBox21.Name = "textBox21";
-            this.textBox21.Size = new System.Drawing.Size(268, 61);
-            this.textBox21.TabIndex = 18;
-            // 
-            // label36
-            // 
-            this.label36.AutoSize = true;
-            this.label36.Location = new System.Drawing.Point(19, 33);
-            this.label36.Name = "label36";
-            this.label36.Size = new System.Drawing.Size(145, 19);
-            this.label36.TabIndex = 17;
-            this.label36.Text = "Residencia Urbanitaria";
-            // 
-            // textBox22
-            // 
-            this.textBox22.Location = new System.Drawing.Point(23, 130);
-            this.textBox22.Multiline = true;
-            this.textBox22.Name = "textBox22";
-            this.textBox22.Size = new System.Drawing.Size(269, 61);
-            this.textBox22.TabIndex = 20;
-            // 
-            // label37
-            // 
-            this.label37.AutoSize = true;
-            this.label37.Location = new System.Drawing.Point(19, 108);
-            this.label37.Name = "label37";
-            this.label37.Size = new System.Drawing.Size(67, 19);
-            this.label37.TabIndex = 19;
-            this.label37.Text = "Direccion";
-            // 
-            // textBox23
-            // 
-            this.textBox23.Location = new System.Drawing.Point(22, 230);
-            this.textBox23.Name = "textBox23";
-            this.textBox23.Size = new System.Drawing.Size(269, 24);
-            this.textBox23.TabIndex = 22;
-            // 
-            // label38
-            // 
-            this.label38.AutoSize = true;
-            this.label38.Location = new System.Drawing.Point(20, 208);
-            this.label38.Name = "label38";
-            this.label38.Size = new System.Drawing.Size(89, 19);
-            this.label38.TabIndex = 21;
-            this.label38.Text = "Nacionalidad";
-            // 
-            // label39
-            // 
-            this.label39.AutoSize = true;
-            this.label39.Location = new System.Drawing.Point(19, 287);
-            this.label39.Name = "label39";
-            this.label39.Size = new System.Drawing.Size(174, 19);
-            this.label39.TabIndex = 23;
-            this.label39.Text = "Departamento y Municipio";
-            // 
-            // comboBox5
-            // 
-            this.comboBox5.FormattingEnabled = true;
-            this.comboBox5.Location = new System.Drawing.Point(24, 55);
-            this.comboBox5.Name = "comboBox5";
-            this.comboBox5.Size = new System.Drawing.Size(268, 27);
-            this.comboBox5.TabIndex = 25;
-            // 
-            // groupBox14
-            // 
-            this.groupBox14.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.groupBox14.Controls.Add(this.label43);
-            this.groupBox14.Controls.Add(this.maskedTextBox10);
-            this.groupBox14.Controls.Add(this.label42);
-            this.groupBox14.Controls.Add(this.label41);
-            this.groupBox14.Controls.Add(this.label40);
-            this.groupBox14.Controls.Add(this.maskedTextBox9);
-            this.groupBox14.Controls.Add(this.maskedTextBox8);
-            this.groupBox14.Controls.Add(this.maskedTextBox7);
-            this.groupBox14.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox14.Location = new System.Drawing.Point(323, 273);
-            this.groupBox14.Name = "groupBox14";
-            this.groupBox14.Size = new System.Drawing.Size(310, 414);
-            this.groupBox14.TabIndex = 3;
-            this.groupBox14.TabStop = false;
-            this.groupBox14.Text = "Datos de Contacto";
-            // 
-            // maskedTextBox7
-            // 
-            this.maskedTextBox7.Location = new System.Drawing.Point(26, 90);
-            this.maskedTextBox7.Mask = "0000-0000";
-            this.maskedTextBox7.Name = "maskedTextBox7";
-            this.maskedTextBox7.Size = new System.Drawing.Size(67, 24);
-            this.maskedTextBox7.TabIndex = 0;
-            // 
-            // maskedTextBox8
-            // 
-            this.maskedTextBox8.Location = new System.Drawing.Point(26, 194);
-            this.maskedTextBox8.Mask = "0000-0000";
-            this.maskedTextBox8.Name = "maskedTextBox8";
-            this.maskedTextBox8.Size = new System.Drawing.Size(67, 24);
-            this.maskedTextBox8.TabIndex = 1;
-            // 
-            // maskedTextBox9
-            // 
-            this.maskedTextBox9.Location = new System.Drawing.Point(26, 282);
-            this.maskedTextBox9.Mask = "0000-0000";
-            this.maskedTextBox9.Name = "maskedTextBox9";
-            this.maskedTextBox9.Size = new System.Drawing.Size(67, 24);
-            this.maskedTextBox9.TabIndex = 2;
-            // 
-            // label40
-            // 
-            this.label40.AutoSize = true;
-            this.label40.Location = new System.Drawing.Point(22, 59);
-            this.label40.Name = "label40";
-            this.label40.Size = new System.Drawing.Size(106, 19);
-            this.label40.TabIndex = 17;
-            this.label40.Text = "Telefono Propio";
-            // 
-            // label41
-            // 
-            this.label41.AutoSize = true;
-            this.label41.Location = new System.Drawing.Point(22, 159);
-            this.label41.Name = "label41";
-            this.label41.Size = new System.Drawing.Size(87, 19);
-            this.label41.TabIndex = 18;
-            this.label41.Text = "Telefono Fijo";
-            // 
-            // label42
-            // 
-            this.label42.AutoSize = true;
-            this.label42.Location = new System.Drawing.Point(22, 249);
-            this.label42.Name = "label42";
-            this.label42.Size = new System.Drawing.Size(130, 19);
-            this.label42.TabIndex = 19;
-            this.label42.Text = "Telefono de Trabajo";
-            // 
-            // label43
-            // 
-            this.label43.AutoSize = true;
-            this.label43.Location = new System.Drawing.Point(22, 330);
-            this.label43.Name = "label43";
-            this.label43.Size = new System.Drawing.Size(95, 19);
-            this.label43.TabIndex = 21;
-            this.label43.Text = "Otro Telefono";
-            // 
-            // maskedTextBox10
-            // 
-            this.maskedTextBox10.Location = new System.Drawing.Point(26, 363);
-            this.maskedTextBox10.Mask = "0000-0000";
-            this.maskedTextBox10.Name = "maskedTextBox10";
-            this.maskedTextBox10.Size = new System.Drawing.Size(67, 24);
-            this.maskedTextBox10.TabIndex = 20;
-            // 
-            // groupBox15
-            // 
-            this.groupBox15.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.groupBox15.Controls.Add(this.textBox25);
-            this.groupBox15.Controls.Add(this.label46);
-            this.groupBox15.Controls.Add(this.textBox24);
-            this.groupBox15.Controls.Add(this.label45);
-            this.groupBox15.Controls.Add(this.comboBox6);
-            this.groupBox15.Controls.Add(this.label44);
-            this.groupBox15.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox15.Location = new System.Drawing.Point(648, 273);
-            this.groupBox15.Name = "groupBox15";
-            this.groupBox15.Size = new System.Drawing.Size(705, 414);
-            this.groupBox15.TabIndex = 4;
-            this.groupBox15.TabStop = false;
-            this.groupBox15.Text = "Otros Datos ";
-            // 
-            // comboBox6
-            // 
-            this.comboBox6.FormattingEnabled = true;
-            this.comboBox6.Location = new System.Drawing.Point(36, 90);
-            this.comboBox6.Name = "comboBox6";
-            this.comboBox6.Size = new System.Drawing.Size(419, 27);
-            this.comboBox6.TabIndex = 27;
-            // 
-            // label44
-            // 
-            this.label44.AutoSize = true;
-            this.label44.Location = new System.Drawing.Point(32, 59);
-            this.label44.Name = "label44";
-            this.label44.Size = new System.Drawing.Size(79, 19);
-            this.label44.TabIndex = 26;
-            this.label44.Text = "Estado Civil";
-            // 
-            // textBox24
-            // 
-            this.textBox24.Location = new System.Drawing.Point(38, 181);
-            this.textBox24.Name = "textBox24";
-            this.textBox24.Size = new System.Drawing.Size(419, 24);
-            this.textBox24.TabIndex = 29;
-            // 
-            // label45
-            // 
-            this.label45.AutoSize = true;
-            this.label45.Location = new System.Drawing.Point(34, 146);
-            this.label45.Name = "label45";
-            this.label45.Size = new System.Drawing.Size(123, 19);
-            this.label45.TabIndex = 28;
-            this.label45.Text = "Correo Electronico";
-            // 
-            // textBox25
-            // 
-            this.textBox25.Location = new System.Drawing.Point(36, 282);
-            this.textBox25.Multiline = true;
-            this.textBox25.Name = "textBox25";
-            this.textBox25.Size = new System.Drawing.Size(421, 81);
-            this.textBox25.TabIndex = 31;
-            // 
-            // label46
-            // 
-            this.label46.AutoSize = true;
-            this.label46.Location = new System.Drawing.Point(32, 247);
-            this.label46.Name = "label46";
-            this.label46.Size = new System.Drawing.Size(203, 19);
-            this.label46.TabIndex = 30;
-            this.label46.Text = "Breve descripcion de su Trabajo";
-            // 
-            // button3
-            // 
-            this.button3.BackColor = System.Drawing.Color.Beige;
-            this.button3.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.Location = new System.Drawing.Point(1037, 571);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(247, 110);
-            this.button3.TabIndex = 34;
-            this.button3.Text = "MATRICULAR DATOS DEL USUARIO";
-            this.button3.UseVisualStyleBackColor = false;
             // 
             // Matricula
             // 
@@ -1403,16 +1400,16 @@
             this.tabControl1.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
             this.tabPage2.ResumeLayout(false);
-            this.groupBox11.ResumeLayout(false);
-            this.groupBox11.PerformLayout();
-            this.groupBox12.ResumeLayout(false);
-            this.groupBox12.PerformLayout();
-            this.groupBox13.ResumeLayout(false);
-            this.groupBox13.PerformLayout();
-            this.groupBox14.ResumeLayout(false);
-            this.groupBox14.PerformLayout();
             this.groupBox15.ResumeLayout(false);
             this.groupBox15.PerformLayout();
+            this.groupBox14.ResumeLayout(false);
+            this.groupBox14.PerformLayout();
+            this.groupBox13.ResumeLayout(false);
+            this.groupBox13.PerformLayout();
+            this.groupBox12.ResumeLayout(false);
+            this.groupBox12.PerformLayout();
+            this.groupBox11.ResumeLayout(false);
+            this.groupBox11.PerformLayout();
             this.ResumeLayout(false);
 
         }

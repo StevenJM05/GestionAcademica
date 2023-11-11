@@ -16,7 +16,7 @@ namespace GestionAcademica.modelos.Responsable
         private string primerApellido;
         private string segundoApellido;
         private string tercerApellido;
-        private DateTime? fechaNacimiento;
+        private DateTime fechaNacimiento;
         private string residencia;
         private string direccion;
         private string nacionalidad;
