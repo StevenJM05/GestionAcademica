@@ -70,7 +70,6 @@
     <Compile Include="modelos\Responsable\DatosPersonalesResponsable.cs" />
     <Compile Include="modelos\Responsable\DatosPersonalesResponsableCRUD.cs" />
     <Compile Include="modelos\Responsable\Responsable.cs" />
-    <Compile Include="modelos\Responsable\ResponsableCRUD.cs" />
     <Compile Include="vistas\Administrador\Form1.cs">
       <SubType>Form</SubType>
     </Compile>
