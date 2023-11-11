@@ -94,12 +94,6 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="vistas\Administrador\Matricula.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="vistas\Administrador\Matricula.Designer.cs">
-      <DependentUpon>Matricula.cs</DependentUpon>
-    </Compile>
     <Compile Include="vistas\Administrador\MenúAlumno.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -154,9 +148,6 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="vistas\Administrador\Matricula.resx">
-      <DependentUpon>Matricula.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="vistas\Administrador\MenúAlumno.resx">
       <DependentUpon>MenúAlumno.cs</DependentUpon>
     </EmbeddedResource>
