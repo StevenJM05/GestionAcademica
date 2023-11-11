@@ -94,11 +94,23 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="vistas\COORDINADOR\MateriaActualizar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="vistas\COORDINADOR\MateriaActualizar.Designer.cs">
+      <DependentUpon>MateriaActualizar.cs</DependentUpon>
+    </Compile>
     <Compile Include="vistas\Administrador\MenúAlumno.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="vistas\Administrador\MenúAlumno.Designer.cs">
       <DependentUpon>MenúAlumno.cs</DependentUpon>
+    </Compile>
+    <Compile Include="vistas\COORDINADOR\CarreraActualizar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="vistas\COORDINADOR\CarreraActualizar.Designer.cs">
+      <DependentUpon>CarreraActualizar.cs</DependentUpon>
     </Compile>
     <Compile Include="vistas\COORDINADOR\carreras.cs">
       <SubType>Form</SubType>
@@ -111,6 +123,12 @@
     </Compile>
     <Compile Include="vistas\COORDINADOR\Grado.Designer.cs">
       <DependentUpon>Grado.cs</DependentUpon>
+    </Compile>
+    <Compile Include="vistas\COORDINADOR\GradoActualizar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="vistas\COORDINADOR\GradoActualizar.Designer.cs">
+      <DependentUpon>GradoActualizar.cs</DependentUpon>
     </Compile>
     <Compile Include="vistas\COORDINADOR\Materias.cs">
       <SubType>Form</SubType>
@@ -151,11 +169,20 @@
     <EmbeddedResource Include="vistas\Administrador\MenúAlumno.resx">
       <DependentUpon>MenúAlumno.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="vistas\COORDINADOR\CarreraActualizar.resx">
+      <DependentUpon>CarreraActualizar.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="vistas\COORDINADOR\carreras.resx">
       <DependentUpon>carreras.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="vistas\COORDINADOR\Grado.resx">
       <DependentUpon>Grado.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="vistas\COORDINADOR\GradoActualizar.resx">
+      <DependentUpon>GradoActualizar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="vistas\COORDINADOR\Materias.resx">
+      <DependentUpon>Materias.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="vistas\COORDINADOR\MenuCoordinador.resx">
       <DependentUpon>MenuCoordinador.cs</DependentUpon>

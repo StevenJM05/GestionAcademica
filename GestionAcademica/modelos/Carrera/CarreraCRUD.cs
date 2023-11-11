@@ -10,7 +10,7 @@ using System.Threading.Tasks;
 
 namespace GestionAcademica.modelos.Carrera
 {
-    internal class CarreraCRUD : ICRUD
+    internal class carreraCRUD : ICRUD
     {
         ConexionBD ConexionBD = new ConexionBD();
         public void actualizar(object modelo, int id)
@@ -20,7 +20,7 @@ namespace GestionAcademica.modelos.Carrera
             $"Nombre = '{carrera.Nombre1}', " +
             $"Descripcion = '{carrera.Descripcion1}', " +
             $"Duracion_anios = {carrera.DuracionYear1} " +
-            $"WHERE Id_Carrera = {carrera.IdCarrera1};";
+            $"WHERE Id_Carrera = {id};";
             ConexionBD.ejecutarComando(sql);
 
         }
@@ -41,9 +41,19 @@ namespace GestionAcademica.modelos.Carrera
 
         public object obtener()
         {
-            string sql = "SELECT * FROM Carrera;";
+            string sql = "SELECT *,'Eliminar' as Eliminar FROM Carrera;";
             DataTable dataTable = ConexionBD.consultas(sql);
             return dataTable;
         }
+
+        public object filtro(string buscar)
+        {
+            string sql = "SELECT Id_Carrera, Nombre, Descripcion, Duracion_anios FROM Carrera WHERE Nombre LIKE '" + buscar + "%'";
+            DataTable dataTable = ConexionBD.consultas(sql); 
+            return dataTable;
+        }
+        
+           
+        
     }
 }

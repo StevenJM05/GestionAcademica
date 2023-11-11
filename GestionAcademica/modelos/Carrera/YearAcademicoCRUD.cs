@@ -26,7 +26,7 @@ namespace GestionAcademica.modelos.Carrera
         public void crear(object modelo)
         {
             YearAcademico yearAcademico = (YearAcademico)modelo;
-            string sql = $"INSERT INTO Anio_Academico (Anio_Establecido, IdCarrera) " +
+            string sql = $"INSERT INTO Anio_Academico (Anio_Establecido, Id_Carrera) " +
             $"VALUES ('{yearAcademico.Yearacademico1}', {yearAcademico.IdCarrera1});";
             ConexionBD.ejecutarComando(sql);
         }
@@ -39,10 +39,19 @@ namespace GestionAcademica.modelos.Carrera
 
         public object obtener()
         {
-            string sql = "SELECT * FROM Anio_Academico;";
+            string sql = "SELECT A.Id_Anio,A.Anio_Establecido,C.Id_Carrera, C.Nombre FROM Anio_Academico A " +
+                "INNER JOIN Carrera C ON C.Id_Carrera = A.Id_Carrera;";
             DataTable dataTable = ConexionBD.consultas(sql);
             return dataTable;
 
+        }
+
+        public object filtro(string buscar)
+        {
+            string sql = "SELECT A.Id_Anio,A.Anio_Establecido,C.Id_Carrera, C.Nombre FROM Anio_Academico A " +
+                "INNER JOIN Carrera C ON C.Id_Carrera = A.Id_Carrera WHERE C.Nombre LIKE '" + buscar + "%'";
+            DataTable dataTable = ConexionBD.consultas(sql);
+            return dataTable;
         }
     }
 }
