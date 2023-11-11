@@ -11,11 +11,11 @@ namespace GestionAcademica.modelos.Carrera
         private int IdCarrera;
         private string Nombre;
         private string Descripcion;
-        private string DuracionYear;
+        private int DuracionYear;
 
         public int IdCarrera1 { get => IdCarrera; set => IdCarrera = value; }
         public string Nombre1 { get => Nombre; set => Nombre = value; }
         public string Descripcion1 { get => Descripcion; set => Descripcion = value; }
-        public string DuracionYear1 { get => DuracionYear; set => DuracionYear = value; }
+        public int DuracionYear1 { get => DuracionYear; set => DuracionYear = value; }
     }
 }

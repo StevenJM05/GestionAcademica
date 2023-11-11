@@ -16,7 +16,7 @@ namespace GestionAcademica.modelos.Responsable
         public void actualizar(object modelo, int id)
         {
             DatosOtrosResponsable datosOtrosResponsable = (DatosOtrosResponsable)modelo;
-            string sqlUpdateOtrosResponsable = $"UPDATE Otros_Datos_Alumnos SET " +
+            string sql = $"UPDATE Otros_Datos_Alumnos SET " +
             $"Id_Alumno = {datosOtrosResponsable.IdAlumno}, " +
             $"Tipo_Sangre = '{datosOtrosResponsable.TipoSangre}', " +
             $"Trabaja_EN_QUE = '{datosOtrosResponsable.TrabajaEnQue}', " +

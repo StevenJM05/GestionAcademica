@@ -160,6 +160,12 @@
     <EmbeddedResource Include="vistas\Administrador\MenúAlumno.resx">
       <DependentUpon>MenúAlumno.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="vistas\COORDINADOR\carreras.resx">
+      <DependentUpon>carreras.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="vistas\COORDINADOR\Grado.resx">
+      <DependentUpon>Grado.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="vistas\COORDINADOR\MenuCoordinador.resx">
       <DependentUpon>MenuCoordinador.cs</DependentUpon>
     </EmbeddedResource>
