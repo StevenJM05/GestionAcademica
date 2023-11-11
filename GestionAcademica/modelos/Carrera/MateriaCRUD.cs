@@ -46,5 +46,7 @@ namespace GestionAcademica.modelos.Carrera
             DataTable datatable = conexionBD.consultas(sql);
             return datatable;
         }
+
+
     }
 }
