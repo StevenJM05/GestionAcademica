@@ -73,17 +73,35 @@
     <Compile Include="modelos\Responsable\DatosPersonalesResponsable.cs" />
     <Compile Include="modelos\Responsable\DatosPersonalesResponsableCRUD.cs" />
     <Compile Include="modelos\Responsable\Responsable.cs" />
+    <Compile Include="vistas\Administrador\Alumno.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="vistas\Administrador\Alumno.Designer.cs">
+      <DependentUpon>Alumno.cs</DependentUpon>
+    </Compile>
     <Compile Include="vistas\Administrador\Bitacora.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="vistas\Administrador\Bitacora.Designer.cs">
       <DependentUpon>Bitacora.cs</DependentUpon>
     </Compile>
+    <Compile Include="vistas\Administrador\DatosContactoAlumno.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="vistas\Administrador\DatosContactoAlumno.Designer.cs">
+      <DependentUpon>DatosContactoAlumno.cs</DependentUpon>
+    </Compile>
     <Compile Include="vistas\Administrador\DatosContactoResponsable.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="vistas\Administrador\DatosContactoResponsable.Designer.cs">
       <DependentUpon>DatosContactoResponsable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="vistas\Administrador\DatosPersonalesAlumno.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="vistas\Administrador\DatosPersonalesAlumno.Designer.cs">
+      <DependentUpon>DatosPersonalesAlumno.cs</DependentUpon>
     </Compile>
     <Compile Include="vistas\Administrador\DatosPersonalesResponsable.cs">
       <SubType>Form</SubType>
@@ -204,11 +222,20 @@
     <Compile Include="vistas\USUARIO\Registrar Usuarios.Designer.cs">
       <DependentUpon>Registrar Usuarios.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="vistas\Administrador\Alumno.resx">
+      <DependentUpon>Alumno.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="vistas\Administrador\Bitacora.resx">
       <DependentUpon>Bitacora.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="vistas\Administrador\DatosContactoAlumno.resx">
+      <DependentUpon>DatosContactoAlumno.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="vistas\Administrador\DatosContactoResponsable.resx">
       <DependentUpon>DatosContactoResponsable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="vistas\Administrador\DatosPersonalesAlumno.resx">
+      <DependentUpon>DatosPersonalesAlumno.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="vistas\Administrador\DatosPersonalesResponsable.resx">
       <DependentUpon>DatosPersonalesResponsable.cs</DependentUpon>
