@@ -26,5 +26,15 @@ namespace GestionAcademica.vistas.Administrador
         {
 
         }
+
+        private void textBox16_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label32_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
