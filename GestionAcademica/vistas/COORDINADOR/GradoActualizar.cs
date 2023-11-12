@@ -29,6 +29,7 @@ namespace GestionAcademica.vistas.COORDINADOR
         {
             numericUpDown1.Value = Convert.ToInt32(datos[1].Value);
             textBox1.Text = datos[2].Value.ToString();
+
             
         }
         

@@ -42,7 +42,7 @@ namespace GestionAcademica.modelos.Carrera
 
         public object obtener()
         {
-            string sql = "SELECT * FROM Materias;";
+            string sql = "SELECT M.Nombre, M.Descripcion, C.Nombre, A.Anio_Establecido M.Id_Carrera, M_Id_Anio FROM Materias M INNER JOIN Anio_Academico A ON M.Id_Anio = A.Id_Anio INNER JOIN Carrera C ON M.Id_Carrera = C.Id_Carrera;";
             DataTable datatable = conexionBD.consultas(sql);
             return datatable;
         }

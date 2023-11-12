@@ -1,4 +1,5 @@
-﻿using System;
+﻿using GestionAcademica.modelos.Carrera;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -12,9 +13,34 @@ namespace GestionAcademica.vistas.Administrador
 {
     public partial class MateriaActualizar : Form
     {
-        public MateriaActualizar()
+        Materia Materia = new Materia();
+        MateriaCRUD materiaCRUD = new MateriaCRUD();
+        Action onUpdate = null;
+
+        public Action OnUpdate { get => onUpdate; set => onUpdate = value; }
+        public MateriaActualizar(DataGridViewCellCollection datos)
         {
             InitializeComponent();
+            establecerDatos(datos);
+        }
+
+        private void MateriaActualizar_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        public void establecerDatos(DataGridViewCellCollection datos)
+        {
+            numericUpDown1.Value = Convert.ToInt32(datos[0].Value);
+            textBox1.Text = datos[1].Value.ToString();
+            textBox2.Text = datos[2].Value.ToString();
+            comboBox1.SelectedValue = datos[3].Value;
+            comboBox2.SelectedValue = datos[4].Value;
+        }
+
+        private void comboBox2_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            
         }
     }
 }

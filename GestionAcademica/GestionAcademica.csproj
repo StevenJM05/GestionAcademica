@@ -190,6 +190,9 @@
     <EmbeddedResource Include="vistas\COORDINADOR\GradoActualizar.resx">
       <DependentUpon>GradoActualizar.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="vistas\COORDINADOR\MateriaActualizar.resx">
+      <DependentUpon>MateriaActualizar.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="vistas\COORDINADOR\Materias.resx">
       <DependentUpon>Materias.cs</DependentUpon>
     </EmbeddedResource>
