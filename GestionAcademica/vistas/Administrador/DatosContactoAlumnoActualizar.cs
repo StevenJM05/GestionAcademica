@@ -31,7 +31,7 @@ namespace GestionAcademica.vistas.Administrador
             DatosContactoAlumnoC.TelefonoPropio1 = textBox3.Text;
             DatosContactoAlumnoC.TelefonoFijo1 = textBox4.Text;
             DatosContactoAlumnoC.TelefonoEmergencia1 = textBox5.Text;
-            DatosContactoAlumnoCRUD.actualizar(DatosContactoAlumnoC, id);
+            DatosContactoAlumnoCRUD.actualizar(DatosContactoAlumnoC);
         }
         public void establecerDatos(DataGridViewCellCollection datos)
         {
