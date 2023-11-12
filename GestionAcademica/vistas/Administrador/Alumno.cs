@@ -16,8 +16,9 @@ namespace GestionAcademica.vistas.Administrador
 {
     public partial class Alumno : Form
     {
-        modelos.Alumno.Alumno alumno = new modelos.Alumno.Alumno();
+        modelos.Alumno.AlumnoC alumno = new modelos.Alumno.AlumnoC();
         AlumnoCRUD alumnoCRUD = new AlumnoCRUD();
+        Action onUpdate = null;
 
         public Alumno()
         {
@@ -29,12 +30,31 @@ namespace GestionAcademica.vistas.Administrador
             dataGridView1.DataSource = alumnoCRUD.obtener();
             dataGridView1.Refresh();
         }
+        private bool VerificarExistencarnet(string carnet)
+        {
+
+            DataTable dt = (DataTable)alumnoCRUD.obtener();
+            foreach (DataRow row in dt.Rows)
+            {
+                string CarnetE = ((string)row["Carnet"]);
+                if (CarnetE == carnet)
+                {
+                    return true;
+                }
+            }
+            return false;
+        }
 
         private void button1_Click(object sender, EventArgs e)
         {
+            string carnet = numericUpDown1.Value.ToString();
             if (numericUpDown1.Value == 0 || numericUpDown2.Value == 0 || numericUpDown3.Value == 0 || textBox2.Text == "" || textBox3.Text == "")
             {
                 MessageBox.Show("Complete todos los Campos");
+            }
+            if (VerificarExistencarnet(carnet))
+            {
+                MessageBox.Show("El nombre de usuario ya existe");
             }
             else
             {
@@ -54,6 +74,32 @@ namespace GestionAcademica.vistas.Administrador
         private void Alumno_Load(object sender, EventArgs e)
         {
             refrescar();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            if (numericUpDown1.Value == 0 || numericUpDown2.Value == 0 || numericUpDown3.Value == 0 || textBox2.Text == "" || textBox3.Text == "")
+            {
+                MessageBox.Show("Complete todos los Campos antes de pasar al siguiente formulario");
+            }
+            else {
+                int id = (int)dataGridView1.CurrentRow.Cells[0].Value;
+                DatosPersonalesAlumno personalesAlumno = new DatosPersonalesAlumno();
+                personalesAlumno.numericUpDown1.Value = Convert.ToDecimal(id);
+                personalesAlumno.ShowDialog();
+                this.Close();
+            }
+
+           
+
+        }
+        private void dataGridView1_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
+        {
+            DataGridViewCellCollection datos = dataGridView1.CurrentRow.Cells;
+            AlumnoMatriculaActualizar alumno = new AlumnoMatriculaActualizar(datos);
+            alumno.OnUpdate = refrescar;
+            alumno.ShowDialog();
+
         }
     }
 }

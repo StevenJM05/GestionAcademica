@@ -47,11 +47,11 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Clases\ConexionBD.cs" />
-    <Compile Include="modelos\Alumno\Alumno.cs" />
+    <Compile Include="modelos\Alumno\AlumnoC.cs" />
     <Compile Include="modelos\Alumno\AlumnoCRUD.cs" />
-    <Compile Include="modelos\Alumno\DatosContactoAlumno.cs" />
+    <Compile Include="modelos\Alumno\DatosContactoAlumnoC.cs" />
     <Compile Include="modelos\Alumno\DatosContactoAlumnoCRUD.cs" />
-    <Compile Include="modelos\Alumno\DatosPersonalesAlumno.cs" />
+    <Compile Include="modelos\Alumno\DatosPersonalesAlumnoC.cs" />
     <Compile Include="modelos\Alumno\DatosPersonalesAlumnoCRUD.cs" />
     <Compile Include="modelos\Alumno\OtrosDadosAlumnoCRUD.cs" />
     <Compile Include="modelos\Alumno\OtrosDatosAlumno.cs" />
@@ -79,6 +79,12 @@
     <Compile Include="vistas\Administrador\Alumno.Designer.cs">
       <DependentUpon>Alumno.cs</DependentUpon>
     </Compile>
+    <Compile Include="vistas\Administrador\AlumnoMatriculaActualizar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="vistas\Administrador\AlumnoMatriculaActualizar.Designer.cs">
+      <DependentUpon>AlumnoMatriculaActualizar.cs</DependentUpon>
+    </Compile>
     <Compile Include="vistas\Administrador\Bitacora.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -90,6 +96,12 @@
     </Compile>
     <Compile Include="vistas\Administrador\DatosContactoAlumno.Designer.cs">
       <DependentUpon>DatosContactoAlumno.cs</DependentUpon>
+    </Compile>
+    <Compile Include="vistas\Administrador\DatosContactoAlumnoActualizar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="vistas\Administrador\DatosContactoAlumnoActualizar.Designer.cs">
+      <DependentUpon>DatosContactoAlumnoActualizar.cs</DependentUpon>
     </Compile>
     <Compile Include="vistas\Administrador\DatosContactoResponsable.cs">
       <SubType>Form</SubType>
@@ -225,11 +237,17 @@
     <EmbeddedResource Include="vistas\Administrador\Alumno.resx">
       <DependentUpon>Alumno.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="vistas\Administrador\AlumnoMatriculaActualizar.resx">
+      <DependentUpon>AlumnoMatriculaActualizar.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="vistas\Administrador\Bitacora.resx">
       <DependentUpon>Bitacora.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="vistas\Administrador\DatosContactoAlumno.resx">
       <DependentUpon>DatosContactoAlumno.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="vistas\Administrador\DatosContactoAlumnoActualizar.resx">
+      <DependentUpon>DatosContactoAlumnoActualizar.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="vistas\Administrador\DatosContactoResponsable.resx">
       <DependentUpon>DatosContactoResponsable.cs</DependentUpon>

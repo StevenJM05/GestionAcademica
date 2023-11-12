@@ -53,7 +53,7 @@ namespace GestionAcademica.modelos.Alumno
 
         public object obtener()
         {
-            string sql = "SELECT FROM Otros_Datos_Alumnos";
+            string sql = "SELECT * FROM Otros_Datos_Alumnos";
             DataTable dataTable = ConexionBD.consultas(sql);
             return dataTable;
         }

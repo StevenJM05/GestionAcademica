@@ -13,8 +13,8 @@ namespace GestionAcademica.vistas.Administrador
 {
     public partial class DatosContactoAlumno : Form
     {
-        modelos.Alumno.DatosContactoAlumno datoscontactoalumno = new modelos.Alumno.DatosContactoAlumno();
-        OtrosDadosAlumnoCRUD otrosdatosalumnocrud = new OtrosDadosAlumnoCRUD();
+        modelos.Alumno.DatosContactoAlumnoC datoscontactoalumno = new DatosContactoAlumnoC();
+        DatosContactoAlumnoCRUD DatosContactoAlumnoCRUD = new DatosContactoAlumnoCRUD();
         public DatosContactoAlumno()
         {
             InitializeComponent();
@@ -22,7 +22,7 @@ namespace GestionAcademica.vistas.Administrador
 
         private void refrescar()
         {
-            dataGridView1.DataSource = otrosdatosalumnocrud.obtener();
+            dataGridView1.DataSource = DatosContactoAlumnoCRUD.obtener();
             dataGridView1.Refresh();
         }
 
@@ -36,22 +36,13 @@ namespace GestionAcademica.vistas.Administrador
             }
             else
             {
-                
-               
-                
-         
                 datoscontactoalumno.Correo1 = textBox2.Text;
                 datoscontactoalumno.TelefonoFijo1= textBox4.Text;
                 datoscontactoalumno.TelefonoEmergencia1 = textBox5.Text;
                 datoscontactoalumno.TelefonoPropio1 = textBox3.Text;
-                otrosdatosalumnocrud.crear(datoscontactoalumno);
+                DatosContactoAlumnoCRUD.crear(datoscontactoalumno);
                 refrescar();
                 button1.Visible = false;
-                
-
-
-
-
             }
 
         }
@@ -66,16 +57,18 @@ namespace GestionAcademica.vistas.Administrador
             refrescar();
         }
 
-        private void dataGridView1_CellMouseDoubleClick(object sender, DataGridViewCellMouseEventArgs e)
+        private void dataGridView1_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
         {
+            DataGridViewCellCollection datos = dataGridView1.CurrentRow.Cells;
+            DatosContactoAlumnoActualizar alumno = new DatosContactoAlumnoActualizar(datos);
+            alumno.OnUpdate = refrescar;
+            alumno.ShowDialog();
 
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
-
             int id = (int)dataGridView1.CurrentRow.Cells[0].Value;
-
             OtrosDatosAlumno otrosDatosAlumno = new OtrosDatosAlumno();
             otrosDatosAlumno.numericUpDown2.Value.ToString();
             otrosDatosAlumno.ShowDialog();
