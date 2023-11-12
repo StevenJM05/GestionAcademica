@@ -64,6 +64,7 @@
     <Compile Include="modelos\Carrera\SeccionCRUD.cs" />
     <Compile Include="modelos\Carrera\YearAcademico.cs" />
     <Compile Include="modelos\Carrera\YearAcademicoCRUD.cs" />
+    <Compile Include="modelos\Responsable\CRUDResponsable.cs" />
     <Compile Include="modelos\Responsable\DatosContactoResponsable.cs" />
     <Compile Include="modelos\Responsable\DatosContactoResponsableCRUD.cs" />
     <Compile Include="modelos\Responsable\DatosOtrosResponsable.cs" />
