@@ -156,6 +156,12 @@
     <Compile Include="vistas\COORDINADOR\seccion.Designer.cs">
       <DependentUpon>seccion.cs</DependentUpon>
     </Compile>
+    <Compile Include="vistas\USUARIO\Registrar Usuarios.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="vistas\USUARIO\Registrar Usuarios.Designer.cs">
+      <DependentUpon>Registrar Usuarios.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="vistas\Administrador\Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
@@ -201,6 +207,9 @@
     <EmbeddedResource Include="vistas\COORDINADOR\MenuCoordinador.resx">
       <DependentUpon>MenuCoordinador.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="vistas\USUARIO\Registrar Usuarios.resx">
+      <DependentUpon>Registrar Usuarios.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -214,8 +223,6 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="vistas\USUARIO\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

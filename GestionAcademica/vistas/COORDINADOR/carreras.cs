@@ -29,7 +29,8 @@ namespace GestionAcademica.vistas.COORDINADOR
             {
                 MessageBox.Show("Rellene todos los campos");
 
-            }else {
+            }
+            else {
                 carrera.Nombre1 = textBox1.Text;
                 carrera.Descripcion1 = textBox2.Text;
                 carrera.DuracionYear1 = Convert.ToInt32(numericUpDown1.Value);

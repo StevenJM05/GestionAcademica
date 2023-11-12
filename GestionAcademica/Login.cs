@@ -1,5 +1,6 @@
 ﻿using GestionAcademica.modelos.Usuario;
 using GestionAcademica.vistas.COORDINADOR;
+using GestionAcademica.vistas.USUARIO;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -33,19 +34,32 @@ namespace GestionAcademica
 
             Usuario usuario = usuarioCRUD.obtenerUsuario(login, clave);
 
-            if (usuario != null) {
-                if(usuario.Tipo == "1" ) {
+            if (usuario != null)
+            {
+                if (usuario.Tipo == "1")
+                {
                     FormAdministrador formAdministrador = new FormAdministrador();
                     formAdministrador.Show();
-                   
-                } else if(usuario.Tipo == "2") {
+
+                }
+                else if (usuario.Tipo == "2")
+                {
                     MenuCoordinador menuCoordinador = new MenuCoordinador();
                     menuCoordinador.Show();
                 }
-                  
-            } else {
-                MessageBox.Show("Usuario no encontrado");
+
+                else if (usuario.Tipo == "3")
+                {
+                    Registrar_Usuarios registrar_Usuarios = new Registrar_Usuarios();
+                    registrar_Usuarios.Show();
+                }
+
             }
+                else
+            {
+                MessageBox.Show("Usuario no Registrado");
+            }
+        
         }
     }
 }

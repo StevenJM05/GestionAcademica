@@ -17,15 +17,15 @@ namespace GestionAcademica.modelos.Usuario
         public void actualizar(object modelo, int id)
         {
            Usuario usuario = (Usuario)modelo;
-            string sql = "UPDATE Usuario SET apellido = '"+usuario.Apellido+ "', direccion ='"+usuario.Direccion+ "', email = '"+usuario.Email+ "', login ='"+usuario.Login+ "', clave ='"+usuario.Clave+ "', tipo ='"+usuario.Tipo+ "' where id_usuario = " + id + "";
+            string sql = "UPDATE Usuario SET Apellido = '" + usuario.Apellido+ "', direccion ='"+usuario.Direccion+ "', email = '"+usuario.Email+ "', login ='"+usuario.Login+ "', clave ='"+usuario.Clave+ "', tipo ='"+usuario.Tipo+ "' where Id_Usuario = " + id + "";
             conexionBD.ejecutarComando(sql);
         }
 
         public void crear(object modelo)
         {
             Usuario usuario = (Usuario)modelo;
-            string sql = "INSERT INTO Usuario(apellido,direccion,email,login,clave,tipo) " +
-                "VALUES('"+usuario.Apellido+"','"+usuario.Direccion+"','"+usuario.Email+"','"+usuario.Login+"','"+usuario.Clave+"','"+usuario.Tipo+"')";
+            string sql = $"INSERT INTO Usuario(Apellido,direccion,email,login,clave,tipo) " +
+                $"values ('{usuario.Apellido}', {usuario.Direccion}, '{usuario.Email}', '{usuario.Login}', '{usuario.Clave}', '{usuario.Tipo}')";
             conexionBD.ejecutarComando(sql);
         }
 
