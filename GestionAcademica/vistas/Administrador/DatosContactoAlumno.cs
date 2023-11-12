@@ -26,6 +26,8 @@ namespace GestionAcademica.vistas.Administrador
             dataGridView1.Refresh();
         }
 
+       
+
         private void button1_Click(object sender, EventArgs e)
         {
             if (numericUpDown1.Value == 0 || textBox2.Text == "" || textBox3.Text == "" || textBox4.Text == "" || textBox5.Text == "")
@@ -34,10 +36,10 @@ namespace GestionAcademica.vistas.Administrador
             }
             else
             {
-
+                
                
-
-             
+                
+         
                 datoscontactoalumno.Correo1 = textBox2.Text;
                 datoscontactoalumno.TelefonoFijo1= textBox4.Text;
                 datoscontactoalumno.TelefonoEmergencia1 = textBox5.Text;
@@ -45,8 +47,10 @@ namespace GestionAcademica.vistas.Administrador
                 otrosdatosalumnocrud.crear(datoscontactoalumno);
                 refrescar();
                 button1.Visible = false;
+                
 
-              
+
+
 
             }
 
@@ -60,6 +64,23 @@ namespace GestionAcademica.vistas.Administrador
         private void DatosContactoAlumno_Load(object sender, EventArgs e)
         {
             refrescar();
+        }
+
+        private void dataGridView1_CellMouseDoubleClick(object sender, DataGridViewCellMouseEventArgs e)
+        {
+
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+
+            int id = (int)dataGridView1.CurrentRow.Cells[0].Value;
+
+            OtrosDatosAlumno otrosDatosAlumno = new OtrosDatosAlumno();
+            otrosDatosAlumno.numericUpDown2.Value.ToString();
+            otrosDatosAlumno.ShowDialog();
+
+            this.Close();
         }
     }
 }
