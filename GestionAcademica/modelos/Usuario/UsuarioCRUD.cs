@@ -25,7 +25,7 @@ namespace GestionAcademica.modelos.Usuario
         {
             Usuario usuario = (Usuario)modelo;
             string sql = $"INSERT INTO Usuario(Apellido,direccion,email,login,clave,tipo) " +
-                $"values ('{usuario.Apellido}', {usuario.Direccion}, '{usuario.Email}', '{usuario.Login}', '{usuario.Clave}', '{usuario.Tipo}')";
+                $"values ('{usuario.Apellido}', '{usuario.Direccion}', '{usuario.Email}', '{usuario.Login}', '{usuario.Clave}', '{usuario.Tipo}')";
             conexionBD.ejecutarComando(sql);
         }
 

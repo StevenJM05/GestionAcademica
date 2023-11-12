@@ -1,5 +1,6 @@
 ﻿using GestionAcademica.Clases;
 using GestionAcademica.modelos.Usuario;
+using GestionAcademica.vistas.COORDINADOR;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -80,6 +81,14 @@ namespace GestionAcademica.vistas.USUARIO
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void dataGridView1_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
+        {
+            DataGridViewCellCollection datos = dataGridView1.CurrentRow.Cells;
+            ActualizarUsuario usuario = new ActualizarUsuario(datos);
+            usuario.OnUpdate1 = refrescar;
+            usuario.ShowDialog();
         }
     }
 }

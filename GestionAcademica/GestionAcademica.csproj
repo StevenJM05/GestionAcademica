@@ -156,6 +156,12 @@
     <Compile Include="vistas\COORDINADOR\seccion.Designer.cs">
       <DependentUpon>seccion.cs</DependentUpon>
     </Compile>
+    <Compile Include="vistas\USUARIO\ActualizarUsuario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="vistas\USUARIO\ActualizarUsuario.Designer.cs">
+      <DependentUpon>ActualizarUsuario.cs</DependentUpon>
+    </Compile>
     <Compile Include="vistas\USUARIO\Registrar Usuarios.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -206,6 +212,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="vistas\COORDINADOR\MenuCoordinador.resx">
       <DependentUpon>MenuCoordinador.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="vistas\USUARIO\ActualizarUsuario.resx">
+      <DependentUpon>ActualizarUsuario.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="vistas\USUARIO\Registrar Usuarios.resx">
       <DependentUpon>Registrar Usuarios.cs</DependentUpon>
