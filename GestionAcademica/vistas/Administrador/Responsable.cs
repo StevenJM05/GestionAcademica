@@ -22,6 +22,21 @@ namespace GestionAcademica.vistas.Administrador
             InitializeComponent();
         }
 
+        private bool VerificarExistendui(string dui)
+        {
+
+            DataTable dt = (DataTable)crudresponsable.obtener();
+            foreach (DataRow row in dt.Rows)
+            {
+                string duie = ((string)row["Dui"]);
+                if (duie == dui)
+                {
+                    return true;
+                }
+            }
+            return false;
+        }
+
         private void refrescar()
         {
             dataGridView1.DataSource = crudresponsable.obtener();
@@ -30,9 +45,14 @@ namespace GestionAcademica.vistas.Administrador
 
         private void button1_Click(object sender, EventArgs e)
         {
+            string dui = textBox1.Text;
             if (textBox1.Text == "" || textBox2.Text == "" || textBox3.Text == "")
             {
                 MessageBox.Show("Complete todos los Campos");
+            }
+            if (VerificarExistendui(dui))
+            {
+                MessageBox.Show("El DUI de usuario ya existe");
             }
             else
             {
@@ -40,6 +60,7 @@ namespace GestionAcademica.vistas.Administrador
                 responsable.Dui = textBox1.Text;
                 responsable.Parentezco = textBox2.Text;
                 crudresponsable.crear(responsable);
+             
                 refrescar();
                 button1.Visible = false;
 
@@ -57,13 +78,23 @@ namespace GestionAcademica.vistas.Administrador
         private void button2_Click(object sender, EventArgs e)
         {
 
-            int id = (int)dataGridView1.CurrentRow.Cells[0].Value;
+            if (textBox1.Text == "" || textBox2.Text == "" || textBox3.Text == "" )
+            {
+                MessageBox.Show("Complete todos los Campos antes de pasar al siguiente formulario");
+            }
+            else
+            {
+                int id = (int)dataGridView1.CurrentRow.Cells[0].Value;
+                DatosPersonalesResponsable datosPersonalesResponsable = new DatosPersonalesResponsable();
+                datosPersonalesResponsable.numericUpDown1.Value = Convert.ToDecimal(id);
+                datosPersonalesResponsable.ShowDialog();
+                this.Close();
+            }
+        }
 
-            //CRUDResponsable crudresponsable = new CRUDResponsable();
-           // crudresponsable.numericUpDown1.Value.ToString();
-            //crudresponsable.ShowDialog();
-
-            this.Close();
+        private void dataGridView1_CellMouseDoubleClick(object sender, DataGridViewCellMouseEventArgs e)
+        {
+            
         }
     }
 }
