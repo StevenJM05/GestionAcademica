@@ -23,7 +23,7 @@ namespace GestionAcademica.vistas.Administrador
 
         private void button1_Click(object sender, EventArgs e)
         {
-            if(textBox2.Text = "" || textBox3.Text)
+            
         }
     }
 }
