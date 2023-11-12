@@ -22,26 +22,32 @@ namespace GestionAcademica.vistas.Administrador
         public DatosContactoAlumnoActualizar(DataGridViewCellCollection datos)
         {
             InitializeComponent();
+            establecerDatos(datos);
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
-            DatosContactoAlumnoC.Id_Alumno1 = (int)numericUpDown1.Value;
-            DatosContactoAlumnoC.Correo1 = textBox2.Text;
-            DatosContactoAlumnoC.TelefonoPropio1 = textBox3.Text;
-            DatosContactoAlumnoC.TelefonoFijo1 = textBox4.Text;
-            DatosContactoAlumnoC.TelefonoEmergencia1 = textBox5.Text;
-            DatosContactoAlumnoCRUD.actualizar(DatosContactoAlumnoC);
+            if(textBox2.Text == "" || textBox3.Text == "" || textBox4.Text == "" || textBox5.Text == "") {
+                MessageBox.Show("Rellena todos los campos");
+            }
+            else {
+                int id = (int)numericUpDown1.Value;
+                DatosContactoAlumnoC.Correo1 = textBox2.Text;
+                DatosContactoAlumnoC.TelefonoPropio1 = textBox3.Text;
+                DatosContactoAlumnoC.TelefonoFijo1 = textBox4.Text;
+                DatosContactoAlumnoC.TelefonoEmergencia1 = textBox5.Text;
+                DatosContactoAlumnoCRUD.actualizar(DatosContactoAlumnoC, id);
+                onUpdate();
+            }
+            
         }
         public void establecerDatos(DataGridViewCellCollection datos)
         {
-
-            numericUpDown1.Value = (int)datos[5].Value;
-            textBox2.Text = datos[1].Value.ToString();
-            textBox3.Text = datos[2].Value.ToString();
-            textBox4.Text = datos[3].Value.ToString(); 
-            textBox5.Text = datos[4].Value.ToString();
-
+            numericUpDown1.Value = (int)datos[1].Value;
+            textBox2.Text = datos[2].Value.ToString();
+            textBox3.Text = datos[3].Value.ToString();
+            textBox4.Text = datos[4].Value.ToString();
+            textBox5.Text = datos[5].Value.ToString();
         }
     }
 }

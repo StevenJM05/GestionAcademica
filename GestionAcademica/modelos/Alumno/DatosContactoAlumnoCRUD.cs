@@ -36,7 +36,7 @@ namespace GestionAcademica.modelos.Alumno
         public object obtener()
         {
             ConexionBD conexion = new ConexionBD();
-            string sql = "SELECT D.Id_Contacto AS ID, D.Correo. AS Correo, D.Telefono_Propio, D.Telefono_Fijo, D.Telefono_Emergencia, A.Carnet FROM Datos_Contacto_Alumnos D INNER JOIN Alumno A on D.Id_Alumno=A.Id_Alumno";
+            string sql = "SELECT * FROM  Datos_Contactos_Alumnos";
             DataTable dataTable = conexion.consultas(sql);
             return dataTable;
         }

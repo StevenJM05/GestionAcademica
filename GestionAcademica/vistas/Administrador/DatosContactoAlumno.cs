@@ -47,10 +47,7 @@ namespace GestionAcademica.vistas.Administrador
 
         }
 
-        private void button1_Click_1(object sender, EventArgs e)
-        {
-
-        }
+        
 
         private void DatosContactoAlumno_Load(object sender, EventArgs e)
         {
@@ -68,12 +65,21 @@ namespace GestionAcademica.vistas.Administrador
 
         private void button2_Click(object sender, EventArgs e)
         {
-            int id = (int)dataGridView1.CurrentRow.Cells[0].Value;
-            OtrosDatosAlumno otrosDatosAlumno = new OtrosDatosAlumno();
-            otrosDatosAlumno.numericUpDown2.Value.ToString();
-            otrosDatosAlumno.ShowDialog();
+            if (numericUpDown1.Value == 0 || textBox2.Text == "" || textBox3.Text == "" || textBox4.Text == "" || textBox5.Text == "")
+            {
+                MessageBox.Show("Complete todos los Campos");
+            }
+            else
+            {
+                int id = (int)dataGridView1.CurrentRow.Cells[0].Value;
+                OtrosDatosAlumno otrosDatosAlumno = new OtrosDatosAlumno();
+                otrosDatosAlumno.numericUpDown2.Value.ToString();
+                otrosDatosAlumno.ShowDialog();
 
-            this.Close();
+                this.Close();
+            }
+
+
         }
     }
 }
