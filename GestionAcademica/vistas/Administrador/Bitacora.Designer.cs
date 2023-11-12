@@ -193,9 +193,9 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(385, 283);
+            this.button1.Location = new System.Drawing.Point(385, 274);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(286, 38);
+            this.button1.Size = new System.Drawing.Size(286, 37);
             this.button1.TabIndex = 19;
             this.button1.Text = "Agregar";
             this.button1.UseVisualStyleBackColor = true;
@@ -212,11 +212,11 @@
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(385, 328);
+            this.button2.Location = new System.Drawing.Point(385, 317);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 23);
+            this.button2.Size = new System.Drawing.Size(286, 36);
             this.button2.TabIndex = 20;
-            this.button2.Text = "button2";
+            this.button2.Text = "Terminar Matricula";
             this.button2.UseVisualStyleBackColor = true;
             // 
             // Bitacora

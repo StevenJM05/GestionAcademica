@@ -79,6 +79,18 @@
     <Compile Include="vistas\Administrador\Bitacora.Designer.cs">
       <DependentUpon>Bitacora.cs</DependentUpon>
     </Compile>
+    <Compile Include="vistas\Administrador\DatosContactoResponsable.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="vistas\Administrador\DatosContactoResponsable.Designer.cs">
+      <DependentUpon>DatosContactoResponsable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="vistas\Administrador\DatosPersonalesResponsable.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="vistas\Administrador\DatosPersonalesResponsable.Designer.cs">
+      <DependentUpon>DatosPersonalesResponsable.cs</DependentUpon>
+    </Compile>
     <Compile Include="vistas\Administrador\Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -102,6 +114,12 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="vistas\Administrador\OtrosDatosResponsable.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="vistas\Administrador\OtrosDatosResponsable.Designer.cs">
+      <DependentUpon>OtrosDatosResponsable.cs</DependentUpon>
+    </Compile>
     <Compile Include="vistas\COORDINADOR\MateriaActualizar.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -171,6 +189,12 @@
     <EmbeddedResource Include="vistas\Administrador\Bitacora.resx">
       <DependentUpon>Bitacora.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="vistas\Administrador\DatosContactoResponsable.resx">
+      <DependentUpon>DatosContactoResponsable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="vistas\Administrador\DatosPersonalesResponsable.resx">
+      <DependentUpon>DatosPersonalesResponsable.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="vistas\Administrador\Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
@@ -191,6 +215,9 @@
     </Compile>
     <EmbeddedResource Include="vistas\Administrador\MenúAlumno.resx">
       <DependentUpon>MenúAlumno.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="vistas\Administrador\OtrosDatosResponsable.resx">
+      <DependentUpon>OtrosDatosResponsable.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="vistas\COORDINADOR\CarreraActualizar.resx">
       <DependentUpon>CarreraActualizar.cs</DependentUpon>
