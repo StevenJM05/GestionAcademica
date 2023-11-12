@@ -16,7 +16,7 @@ namespace GestionAcademica.modelos.Alumno
             private string primerApellido;
             private string segundoApellido;
             private string tercerApellido;
-            private DateTime fechaNacimiento;
+            private string fechaNacimiento;
             private string residencia;
             private string direccion;
             private string nacionalidad;
@@ -67,7 +67,7 @@ namespace GestionAcademica.modelos.Alumno
                 set => tercerApellido = value;
             }
 
-            public DateTime FechaNacimiento
+            public string FechaNacimiento
             {
                 get => fechaNacimiento;
                 set => fechaNacimiento = value;

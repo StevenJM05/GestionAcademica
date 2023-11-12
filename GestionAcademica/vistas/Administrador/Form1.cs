@@ -1,4 +1,5 @@
-﻿using GestionAcademica.vistas.Administrador;
+﻿using GestionAcademica.modelos.Alumno;
+using GestionAcademica.vistas.Administrador;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -20,8 +21,8 @@ namespace GestionAcademica
 
         private void button2_Click(object sender, EventArgs e)
         {
-            //Matricula matricula = new Matricula();
-            //matricula.Show();        
+            vistas.Administrador.Alumno alumno = new vistas.Administrador.Alumno();
+            alumno.Show();
         }
 
         private void button3_Click(object sender, EventArgs e)

@@ -13,7 +13,7 @@ namespace GestionAcademica.Clases
         SqlConnection con = new SqlConnection();
         SqlCommand cmd = new SqlCommand();
         SqlDataAdapter adapter = new SqlDataAdapter();
-        string cadena = "Data Source = .\\SQLEXPRESS; initial catalog = Academy; integrated security = true;";
+        string cadena = "Data Source = .\\SQLEXPRESS; initial catalog = BDacademy; integrated security = true;";
 
         public ConexionBD()
         {
