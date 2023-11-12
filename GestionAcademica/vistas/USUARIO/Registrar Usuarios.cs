@@ -24,37 +24,38 @@ namespace GestionAcademica.vistas.USUARIO
         {
             InitializeComponent();
         }
+        private bool VerificarExistenciausuario(string nombreU)
+        {
+            
+            DataTable dt = (DataTable)usuarioCRUD.obtener();
+            foreach (DataRow row in dt.Rows)
+            {
+                string NombreUsuario = ((string)row["login"]);
+                if (NombreUsuario == nombreU)
+                {
+                    return true; 
+                }
+            }
+            return false; 
+        }
 
         private void button1_Click(object sender, EventArgs e)
         {
-
-            int tipo = 0;
+            string nombreU = textBox5.Text;
+            
             if (textBox1.Text == "" || textBox2.Text == "" || textBox3.Text == "" || textBox4.Text == "" || textBox5.Text == "" || comboBox1.Text == "")
             {
                 MessageBox.Show("Complete todos los Campos");
-            }
-
-            else {
-                
-                if (comboBox1.Text == "Administrador")
-                {
-                     tipo = 1;
-                }
-                else if(comboBox1.Text == "Coordinador")
-                {
-                    tipo = 2;
-                }
-                else
-                {
-                    tipo = 3;
-                }
-
+            }if (VerificarExistenciausuario(nombreU))
+            {
+                MessageBox.Show("El nombre de usuario ya existe");
+            }else {
                 usuario.Apellido = textBox1.Text;
                 usuario.Direccion = textBox3.Text;
                 usuario.Email = textBox2.Text;
                 usuario.Login = textBox5.Text;
                 usuario.Clave = textBox4.Text;
-                usuario.Tipo = tipo.ToString();
+                usuario.Tipo = comboBox1.Text;
 
                 usuarioCRUD.crear(usuario);
                 refrescar();

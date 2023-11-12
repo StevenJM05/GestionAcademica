@@ -36,19 +36,19 @@ namespace GestionAcademica
 
             if (usuario != null)
             {
-                if (usuario.Tipo == "1")
+                if (usuario.Tipo == "Administrador")
                 {
                     FormAdministrador formAdministrador = new FormAdministrador();
                     formAdministrador.Show();
 
                 }
-                else if (usuario.Tipo == "2")
+                else if (usuario.Tipo == "Coordinador")
                 {
                     MenuCoordinador menuCoordinador = new MenuCoordinador();
                     menuCoordinador.Show();
                 }
 
-                else if (usuario.Tipo == "3")
+                else if (usuario.Tipo == "Director")
                 {
                     Registrar_Usuarios registrar_Usuarios = new Registrar_Usuarios();
                     registrar_Usuarios.Show();

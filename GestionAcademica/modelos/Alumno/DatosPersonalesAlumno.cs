@@ -9,7 +9,7 @@ namespace GestionAcademica.modelos.Alumno
     internal class DatosPersonalesAlumno
     {
             private int idPersonal;
-            private int carnet;
+            private int IdAlumno;   
             private string primerNombre;
             private string segundoNombre;
             private string tercerNombre;
@@ -30,11 +30,6 @@ namespace GestionAcademica.modelos.Alumno
                 set => idPersonal = value;
             }
 
-            public int Carnet
-            {
-                get => carnet;
-                set => carnet = value;
-            }
 
             public string PrimerNombre
             {
@@ -113,6 +108,10 @@ namespace GestionAcademica.modelos.Alumno
                 get => estadoCivil;
                 set => estadoCivil = value;
             }
+        public int IdAlumno1 
+        { get => IdAlumno; 
+            set => IdAlumno = value; 
+        }
     }
 }
 

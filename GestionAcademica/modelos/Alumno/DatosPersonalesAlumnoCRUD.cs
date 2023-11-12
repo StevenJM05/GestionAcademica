@@ -17,7 +17,7 @@ namespace GestionAcademica.modelos.Alumno
         {
             DatosPersonalesAlumno datosPersonalesAlumno = (DatosPersonalesAlumno)modelo;
             string sql = $"UPDATE Datos_Personales_Alumno SET " +
-            $"Carnet = {datosPersonalesAlumno.Carnet}, " +
+            $"Id_Alumno = {datosPersonalesAlumno.IdAlumno1}, " +
             $"Primer_Nombre = '{datosPersonalesAlumno.PrimerNombre}', " +
             $"Segundo_Nombre = '{datosPersonalesAlumno.SegundoNombre}', " +
             $"Tercer_Nombre = '{datosPersonalesAlumno.TercerNombre}', " +
@@ -39,8 +39,8 @@ namespace GestionAcademica.modelos.Alumno
         public void crear(object modelo)
         {
             DatosPersonalesAlumno datosPersonalesAlumno = (DatosPersonalesAlumno)modelo;
-            string sql = $"INSERT INTO Datos_Personales_Alumno(Carnet, Primer_Nombre, Segundo_Nombre, Tercer_Nombre, Primer_Apellido, Segundo_Apellido, Tercer_Apellido, Fecha_Nacimiento, Residencia, Direccion, Nacionalidad, Departamento_Municipio_Nacimiento, Sexo, Estado_Civil)" +
-                $"VALUES({datosPersonalesAlumno.Carnet}," +
+            string sql = $"INSERT INTO Datos_Personales_Alumno(Id_Alumno, Primer_Nombre, Segundo_Nombre, Tercer_Nombre, Primer_Apellido, Segundo_Apellido, Tercer_Apellido, Fecha_Nacimiento, Residencia, Direccion, Nacionalidad, Departamento_Municipio_Nacimiento, Sexo, Estado_Civil)" +
+                $"VALUES({datosPersonalesAlumno.IdAlumno1}," +
                 $" {datosPersonalesAlumno.PrimerNombre}, " +
                 $"{datosPersonalesAlumno.SegundoNombre}, " +
                 $"{datosPersonalesAlumno.TercerNombre}, " +

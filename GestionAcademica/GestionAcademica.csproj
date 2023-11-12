@@ -73,6 +73,12 @@
     <Compile Include="modelos\Responsable\DatosPersonalesResponsable.cs" />
     <Compile Include="modelos\Responsable\DatosPersonalesResponsableCRUD.cs" />
     <Compile Include="modelos\Responsable\Responsable.cs" />
+    <Compile Include="vistas\Administrador\Bitacora.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="vistas\Administrador\Bitacora.Designer.cs">
+      <DependentUpon>Bitacora.cs</DependentUpon>
+    </Compile>
     <Compile Include="vistas\Administrador\Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -96,12 +102,6 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="vistas\Administrador\Matricula.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="vistas\Administrador\Matricula.Designer.cs">
-      <DependentUpon>Matricula.cs</DependentUpon>
-    </Compile>
     <Compile Include="vistas\COORDINADOR\MateriaActualizar.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -168,6 +168,9 @@
     <Compile Include="vistas\USUARIO\Registrar Usuarios.Designer.cs">
       <DependentUpon>Registrar Usuarios.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="vistas\Administrador\Bitacora.resx">
+      <DependentUpon>Bitacora.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="vistas\Administrador\Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
@@ -186,9 +189,6 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="vistas\Administrador\Matricula.resx">
-      <DependentUpon>Matricula.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="vistas\Administrador\MenúAlumno.resx">
       <DependentUpon>MenúAlumno.cs</DependentUpon>
     </EmbeddedResource>
