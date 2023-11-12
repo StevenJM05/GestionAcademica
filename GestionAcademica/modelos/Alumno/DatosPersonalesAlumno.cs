@@ -108,10 +108,10 @@ namespace GestionAcademica.modelos.Alumno
                 get => estadoCivil;
                 set => estadoCivil = value;
             }
-        public int IdAlumno1 
-        { get => IdAlumno; 
-            set => IdAlumno = value; 
-        }
+            public int IdAlumno1 
+            { get => IdAlumno; 
+                set => IdAlumno = value; 
+            }
     }
 }
 
