@@ -114,6 +114,12 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="vistas\Administrador\OtrosDatosAlumno.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="vistas\Administrador\OtrosDatosAlumno.Designer.cs">
+      <DependentUpon>OtrosDatosAlumno.cs</DependentUpon>
+    </Compile>
     <Compile Include="vistas\Administrador\OtrosDatosResponsable.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -125,6 +131,12 @@
     </Compile>
     <Compile Include="vistas\Administrador\RegistrosAlumno.Designer.cs">
       <DependentUpon>RegistrosAlumno.cs</DependentUpon>
+    </Compile>
+    <Compile Include="vistas\Administrador\Responsable.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="vistas\Administrador\Responsable.Designer.cs">
+      <DependentUpon>Responsable.cs</DependentUpon>
     </Compile>
     <Compile Include="vistas\COORDINADOR\MateriaActualizar.cs">
       <SubType>Form</SubType>
@@ -221,6 +233,15 @@
     </Compile>
     <EmbeddedResource Include="vistas\Administrador\MenúAlumno.resx">
       <DependentUpon>MenúAlumno.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="vistas\Administrador\OtrosDatosAlumno.resx">
+      <DependentUpon>OtrosDatosAlumno.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="vistas\Administrador\OtrosDatosResponsable.resx">
+      <DependentUpon>OtrosDatosResponsable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="vistas\Administrador\Responsable.resx">
+      <DependentUpon>Responsable.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="vistas\COORDINADOR\CarreraActualizar.resx">
       <DependentUpon>CarreraActualizar.cs</DependentUpon>
