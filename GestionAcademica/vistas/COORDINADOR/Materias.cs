@@ -102,7 +102,7 @@ namespace GestionAcademica.vistas.COORDINADOR
         }
 
         private void comboBoxDependiente() {
-            int id = (int)comboBox2.SelectedValue;
+            int id = (int)comboBox1.SelectedValue;
             YearAcademicoCRUD yearAcademicoCRUD = new YearAcademicoCRUD();
             DataTable data = (DataTable)yearAcademicoCRUD.comboConsulta(id);
             comboBox2.DisplayMember = "Anio_Establecido";
