@@ -47,27 +47,32 @@
             this.groupBox1.Controls.Add(this.button1);
             this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Controls.Add(this.pictureBox1);
-            this.groupBox1.Location = new System.Drawing.Point(2, -1);
+            this.groupBox1.Location = new System.Drawing.Point(1, -1);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(1028, 139);
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox1.Size = new System.Drawing.Size(685, 90);
             this.groupBox1.TabIndex = 5;
             this.groupBox1.TabStop = false;
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(31, 26);
+            this.button1.Location = new System.Drawing.Point(21, 17);
+            this.button1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(217, 38);
+            this.button1.Size = new System.Drawing.Size(145, 25);
             this.button1.TabIndex = 4;
             this.button1.Text = "Cerrar sesion";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(838, 44);
+            this.label1.Location = new System.Drawing.Point(559, 29);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(143, 20);
+            this.label1.Size = new System.Drawing.Size(96, 13);
             this.label1.TabIndex = 3;
             this.label1.Text = "Nombre de usuario";
             // 
@@ -75,25 +80,29 @@
             // 
             this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(685, 24);
+            this.pictureBox1.Location = new System.Drawing.Point(457, 16);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(112, 96);
+            this.pictureBox1.Size = new System.Drawing.Size(75, 62);
             this.pictureBox1.TabIndex = 2;
             this.pictureBox1.TabStop = false;
             // 
             // groupBox2
             // 
-            this.groupBox2.Location = new System.Drawing.Point(2, 132);
+            this.groupBox2.Location = new System.Drawing.Point(1, 86);
+            this.groupBox2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(1028, 170);
+            this.groupBox2.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox2.Size = new System.Drawing.Size(685, 110);
             this.groupBox2.TabIndex = 6;
             this.groupBox2.TabStop = false;
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(71, 332);
+            this.button2.Location = new System.Drawing.Point(47, 216);
+            this.button2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(139, 99);
+            this.button2.Size = new System.Drawing.Size(93, 64);
             this.button2.TabIndex = 7;
             this.button2.Text = "CARRERAS";
             this.button2.UseVisualStyleBackColor = true;
@@ -101,9 +110,10 @@
             // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(299, 332);
+            this.button3.Location = new System.Drawing.Point(199, 216);
+            this.button3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(139, 99);
+            this.button3.Size = new System.Drawing.Size(93, 64);
             this.button3.TabIndex = 8;
             this.button3.Text = "MATERIAS";
             this.button3.UseVisualStyleBackColor = true;
@@ -111,9 +121,10 @@
             // 
             // button4
             // 
-            this.button4.Location = new System.Drawing.Point(549, 332);
+            this.button4.Location = new System.Drawing.Point(366, 216);
+            this.button4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(139, 99);
+            this.button4.Size = new System.Drawing.Size(93, 64);
             this.button4.TabIndex = 9;
             this.button4.Text = "GRADOS";
             this.button4.UseVisualStyleBackColor = true;
@@ -121,9 +132,10 @@
             // 
             // button5
             // 
-            this.button5.Location = new System.Drawing.Point(790, 332);
+            this.button5.Location = new System.Drawing.Point(527, 216);
+            this.button5.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(139, 99);
+            this.button5.Size = new System.Drawing.Size(93, 64);
             this.button5.TabIndex = 10;
             this.button5.Text = "SECCIONES";
             this.button5.UseVisualStyleBackColor = true;
@@ -131,18 +143,20 @@
             // 
             // MenuCoordinador
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
-            this.ClientSize = new System.Drawing.Size(1031, 475);
+            this.ClientSize = new System.Drawing.Size(687, 309);
             this.Controls.Add(this.button5);
             this.Controls.Add(this.button4);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "MenuCoordinador";
             this.Text = "MenuCoordinador";
+            this.Load += new System.EventHandler(this.MenuCoordinador_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();

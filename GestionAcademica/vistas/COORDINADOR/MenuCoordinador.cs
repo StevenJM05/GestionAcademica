@@ -25,7 +25,7 @@ namespace GestionAcademica.vistas.COORDINADOR
 
         private void button3_Click(object sender, EventArgs e)
         {
-            Materias materias = new Materias(); 
+            Materias materias = new Materias();
             materias.Show();
         }
 
@@ -39,6 +39,16 @@ namespace GestionAcademica.vistas.COORDINADOR
         {
             seccion seccion = new seccion();
             seccion.Show();
+        }
+
+        private void MenuCoordinador_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }
