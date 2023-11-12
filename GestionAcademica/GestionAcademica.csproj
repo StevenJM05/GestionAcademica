@@ -79,6 +79,12 @@
     <Compile Include="vistas\Administrador\Bitacora.Designer.cs">
       <DependentUpon>Bitacora.cs</DependentUpon>
     </Compile>
+    <Compile Include="vistas\Administrador\DatosContactosAlumno.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="vistas\Administrador\DatosContactosAlumno.Designer.cs">
+      <DependentUpon>DatosContactosAlumno.cs</DependentUpon>
+    </Compile>
     <Compile Include="vistas\Administrador\Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -176,6 +182,9 @@
     </Compile>
     <EmbeddedResource Include="vistas\Administrador\Bitacora.resx">
       <DependentUpon>Bitacora.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="vistas\Administrador\DatosContactosAlumno.resx">
+      <DependentUpon>DatosContactosAlumno.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="vistas\Administrador\Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
