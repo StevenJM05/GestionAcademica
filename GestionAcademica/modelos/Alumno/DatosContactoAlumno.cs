@@ -8,18 +8,18 @@ namespace GestionAcademica.modelos.Alumno
 {
     internal class DatosContactoAlumno
     {
-        private int idContacto;
-        private int carnet;
-        private string correo;
-        private string telefonoPropio;
-        private string telefonoFijo;
-        private string telefonoEmergencia;
+        private int IdContacto;
+        private int Id_Alumno;
+        private string Correo;
+        private string TelefonoPropio;
+        private string TelefonoFijo;
+        private string TelefonoEmergencia;
 
-        public int IdContacto { get => idContacto; set => idContacto = value; }
-        public int Carnet { get => carnet; set => carnet = value; }
-        public string Correo { get => correo; set => correo = value; }
-        public string TelefonoPropio { get => telefonoPropio; set => telefonoPropio = value; }
-        public string TelefonoFijo { get => telefonoFijo; set => telefonoFijo = value; }
-        public string TelefonoEmergencia { get => telefonoEmergencia; set => telefonoEmergencia = value; }
+        public int IdContacto1 { get => IdContacto; set => IdContacto = value; }
+        public int Id_Alumno1 { get => Id_Alumno; set => Id_Alumno = value; }
+        public string Correo1 { get => Correo; set => Correo = value; }
+        public string TelefonoPropio1 { get => TelefonoPropio; set => TelefonoPropio = value; }
+        public string TelefonoFijo1 { get => TelefonoFijo; set => TelefonoFijo = value; }
+        public string TelefonoEmergencia1 { get => TelefonoEmergencia; set => TelefonoEmergencia = value; }
     }
 }

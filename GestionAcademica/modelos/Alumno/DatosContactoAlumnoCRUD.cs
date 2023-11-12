@@ -15,13 +15,7 @@ namespace GestionAcademica.modelos.Alumno
         public void actualizar(object modelo, int id)
         {
             DatosContactoAlumno datosContactoAlumno = (DatosContactoAlumno)modelo;
-            string sql = $"UPDATE Datos_Contactos_Alumnos SET " +
-            $"Id_Alumno = {datosContactoAlumno.Carnet}, " +
-            $"Correo = '{datosContactoAlumno.Correo}', " +
-            $"Telefono_Propio = '{datosContactoAlumno.TelefonoPropio}', " +
-            $"Telefono_Fijo = '{datosContactoAlumno.TelefonoFijo}', " +
-            $"Telefono_Emergencia = '{datosContactoAlumno.TelefonoEmergencia}' " +
-            $"WHERE Id_Contacto = {id};";
+            string sql = $"update Datos_Contactos_Alumnos set Id_Alumno = {datosContactoAlumno.IdContacto1}, Correo = '{datosContactoAlumno.Correo1}', Telefono_Propio = {datosContactoAlumno.TelefonoPropio1}, Telefono_Fijo = {datosContactoAlumno.TelefonoFijo1}, Telefono_Emergencia = {datosContactoAlumno.TelefonoEmergencia1} where Id_Alumno = '{id}';";
             conexionBD.ejecutarComando(sql);
 
         }
@@ -29,14 +23,13 @@ namespace GestionAcademica.modelos.Alumno
         public void crear(object modelo)
         {
             DatosContactoAlumno datosContactoAlumno = (DatosContactoAlumno)modelo;
-            string sql = $"INSERT INTO Datos_Contactos_Alumnos (Id_Alumno, Correo, Telefono_Propio, Telefono_Fijo, Telefono_Emergencia) " +
-            $"VALUES ({datosContactoAlumno.Carnet}, '{datosContactoAlumno.Correo}', '{datosContactoAlumno.TelefonoPropio}', '{datosContactoAlumno.TelefonoFijo}', '{datosContactoAlumno.TelefonoEmergencia}');";
+            string sql = $"insert into Datos_Contactos_Alumnos (Id_Alumno, Correo, Telefono_Propio, Telefono_Fijo, Telefono_Emergencia) values ('{datosContactoAlumno.Id_Alumno1}', '{datosContactoAlumno.Correo1}', '{datosContactoAlumno.TelefonoPropio1}', '{datosContactoAlumno.TelefonoFijo1}', '{datosContactoAlumno.TelefonoEmergencia1}')";
             conexionBD.ejecutarComando(sql);
         }
 
         public void eliminar(int id)
         {
-            string sql = $"Delete from Datos_Contactos_Alumnos where id_Contacto = {id}";
+            string sql = $"Delete from Datos_Contactos_Alumnos where Id_Contacto = '{id}'";
             conexionBD.ejecutarComando(sql);
         }
 
