@@ -219,6 +219,12 @@
             // 
             // label1
             // 
+            this.button1.Location = new System.Drawing.Point(385, 274);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(286, 37);
+            this.button1.TabIndex = 19;
+            this.button1.Text = "Agregar";
+            this.button1.UseVisualStyleBackColor = true;
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(14, 26);
             this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
@@ -237,6 +243,15 @@
             this.dataGridView1.RowTemplate.Height = 28;
             this.dataGridView1.Size = new System.Drawing.Size(475, 194);
             this.dataGridView1.TabIndex = 1;
+            // 
+            // button2
+            // 
+            this.button2.Location = new System.Drawing.Point(385, 317);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(286, 36);
+            this.button2.TabIndex = 20;
+            this.button2.Text = "Terminar Matricula";
+            this.button2.UseVisualStyleBackColor = true;
             // 
             // Bitacora
             // 
