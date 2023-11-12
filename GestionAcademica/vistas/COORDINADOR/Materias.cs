@@ -92,11 +92,31 @@ namespace GestionAcademica.vistas.COORDINADOR
             comboBox1.DisplayMember = "Nombre";
             comboBox1.ValueMember = "Id_Carrera";
             comboBox1.DataSource = dt;
+            
+            
+        }
+
+        private void comboBox2_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void comboBoxDependiente() {
+            int id = (int)comboBox2.SelectedValue;
             YearAcademicoCRUD yearAcademicoCRUD = new YearAcademicoCRUD();
-            DataTable data = (DataTable)yearAcademicoCRUD.obtener();
+            DataTable data = (DataTable)yearAcademicoCRUD.comboConsulta(id);
             comboBox2.DisplayMember = "Anio_Establecido";
             comboBox2.ValueMember = "Id_Anio";
             comboBox2.DataSource = data;
+        }
+
+        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if(comboBox1.SelectedValue.ToString() != null)
+            {
+                
+            }
+           
         }
     }
 }

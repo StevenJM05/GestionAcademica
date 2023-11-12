@@ -18,7 +18,7 @@ namespace GestionAcademica.modelos.Carrera
             YearAcademico yearAcademico = (YearAcademico)modelo;
             string sql = $"UPDATE Anio_Academico SET " +
             $"Anio_Establecido = '{yearAcademico.Yearacademico1}', " +
-            $"IdCarrera = {yearAcademico.IdCarrera1} " +
+            $"Id_Carrera = {yearAcademico.IdCarrera1} " +
             $"WHERE Id_Anio = {id};";
             ConexionBD.ejecutarComando(sql);
         }
@@ -50,6 +50,13 @@ namespace GestionAcademica.modelos.Carrera
         {
             string sql = "SELECT A.Id_Anio,A.Anio_Establecido,C.Id_Carrera, C.Nombre FROM Anio_Academico A " +
                 "INNER JOIN Carrera C ON C.Id_Carrera = A.Id_Carrera WHERE C.Nombre LIKE '" + buscar + "%'";
+            DataTable dataTable = ConexionBD.consultas(sql);
+            return dataTable;
+        }
+
+        public object comboConsulta(int id)
+        {
+            string sql = $"SELECT * FROM Anio_Academico WHERE Id_Carrera = {id}";
             DataTable dataTable = ConexionBD.consultas(sql);
             return dataTable;
         }

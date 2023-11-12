@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
             this.button1 = new System.Windows.Forms.Button();
             this.comboBox2 = new System.Windows.Forms.ComboBox();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
@@ -38,7 +39,6 @@
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
             this.SuspendLayout();
@@ -62,6 +62,14 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Rellene todos los campos:";
             // 
+            // numericUpDown1
+            // 
+            this.numericUpDown1.Location = new System.Drawing.Point(362, 78);
+            this.numericUpDown1.Name = "numericUpDown1";
+            this.numericUpDown1.Size = new System.Drawing.Size(120, 26);
+            this.numericUpDown1.TabIndex = 9;
+            this.numericUpDown1.Visible = false;
+            // 
             // button1
             // 
             this.button1.Location = new System.Drawing.Point(362, 261);
@@ -70,6 +78,7 @@
             this.button1.TabIndex = 8;
             this.button1.Text = "Actualizar:";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // comboBox2
             // 
@@ -87,6 +96,7 @@
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(262, 28);
             this.comboBox1.TabIndex = 6;
+            this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
             // 
             // label4
             // 
@@ -137,14 +147,6 @@
             this.label1.Size = new System.Drawing.Size(126, 20);
             this.label1.TabIndex = 0;
             this.label1.Text = "Nombre materia:";
-            // 
-            // numericUpDown1
-            // 
-            this.numericUpDown1.Location = new System.Drawing.Point(362, 78);
-            this.numericUpDown1.Name = "numericUpDown1";
-            this.numericUpDown1.Size = new System.Drawing.Size(120, 26);
-            this.numericUpDown1.TabIndex = 9;
-            this.numericUpDown1.Visible = false;
             // 
             // MateriaActualizar
             // 

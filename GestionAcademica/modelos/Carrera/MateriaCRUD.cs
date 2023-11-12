@@ -20,7 +20,7 @@ namespace GestionAcademica.modelos.Carrera
             $"Descripcion = '{materia.Descripcion1}', " +
             $"Id_Anio = {materia.IdYear1}, " +
             $"Id_Carrera = {materia.IdCarrera1} " +
-            $"WHERE Id_Materias = {id};";
+            $"WHERE Id_Materias = {id}";
             conexionBD.ejecutarComando(sql);
 
         }
@@ -30,23 +30,23 @@ namespace GestionAcademica.modelos.Carrera
             Materia materia = (Materia)modelo;
             string sql = $"INSERT INTO Materias (Nombre, Descripcion, Id_Anio, Id_Carrera) " +
              $"VALUES ('{materia.Nombre1}', '{materia.Descripcion1}'," +
-             $" {materia.IdYear1}, {materia.IdCarrera1});";
+             $" {materia.IdYear1}, {materia.IdCarrera1})";
             conexionBD.ejecutarComando(sql);
         }
 
         public void eliminar(int id)
         {
-            string sql = $"DELETE FROM Materias WHERE Id_Materias = {id};";
+            string sql = $"DELETE FROM Materias WHERE Id_Materias = {id}";
             conexionBD.ejecutarComando(sql);
         }
 
         public object obtener()
         {
-            string sql = "SELECT M.Nombre, M.Descripcion, C.Nombre, A.Anio_Establecido M.Id_Carrera, M_Id_Anio FROM Materias M INNER JOIN Anio_Academico A ON M.Id_Anio = A.Id_Anio INNER JOIN Carrera C ON M.Id_Carrera = C.Id_Carrera;";
+            string sql = "SELECT M.Nombre, M.Descripcion, C.Nombre, A.Anio_Establecido, M.Id_Carrera, M.Id_Anio FROM Materias M INNER JOIN Anio_Academico A ON M.Id_Anio = A.Id_Anio INNER JOIN Carrera C ON M.Id_Carrera = C.Id_Carrera";
             DataTable datatable = conexionBD.consultas(sql);
             return datatable;
         }
 
-
+       
     }
 }
