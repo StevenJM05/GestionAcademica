@@ -73,6 +73,12 @@
     <Compile Include="modelos\Responsable\DatosPersonalesResponsable.cs" />
     <Compile Include="modelos\Responsable\DatosPersonalesResponsableCRUD.cs" />
     <Compile Include="modelos\Responsable\Responsable.cs" />
+    <Compile Include="vistas\Administrador\ActualizarDatosPersonalesA.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="vistas\Administrador\ActualizarDatosPersonalesA.Designer.cs">
+      <DependentUpon>ActualizarDatosPersonalesA.cs</DependentUpon>
+    </Compile>
     <Compile Include="vistas\Administrador\Alumno.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -234,6 +240,9 @@
     <Compile Include="vistas\USUARIO\Registrar Usuarios.Designer.cs">
       <DependentUpon>Registrar Usuarios.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="vistas\Administrador\ActualizarDatosPersonalesA.resx">
+      <DependentUpon>ActualizarDatosPersonalesA.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="vistas\Administrador\Alumno.resx">
       <DependentUpon>Alumno.cs</DependentUpon>
     </EmbeddedResource>

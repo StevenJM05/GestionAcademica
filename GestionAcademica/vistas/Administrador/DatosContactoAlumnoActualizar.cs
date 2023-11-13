@@ -31,18 +31,23 @@ namespace GestionAcademica.vistas.Administrador
                 MessageBox.Show("Rellena todos los campos");
             }
             else {
-                int id = (int)numericUpDown1.Value;
+                int id = (int)numericUpDown2.Value;
+
+                DatosContactoAlumnoC.Id_Alumno1 = id;
                 DatosContactoAlumnoC.Correo1 = textBox2.Text;
                 DatosContactoAlumnoC.TelefonoPropio1 = textBox3.Text;
                 DatosContactoAlumnoC.TelefonoFijo1 = textBox4.Text;
                 DatosContactoAlumnoC.TelefonoEmergencia1 = textBox5.Text;
                 DatosContactoAlumnoCRUD.actualizar(DatosContactoAlumnoC, id);
                 onUpdate();
+                this.Close();
             }
             
         }
         public void establecerDatos(DataGridViewCellCollection datos)
         {
+            
+            numericUpDown2.Value = (int)datos[0].Value;
             numericUpDown1.Value = (int)datos[1].Value;
             textBox2.Text = datos[2].Value.ToString();
             textBox3.Text = datos[3].Value.ToString();

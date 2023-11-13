@@ -216,6 +216,7 @@
             this.Controls.Add(this.groupBox1);
             this.Name = "AlumnoMatriculaActualizar";
             this.Text = "AlumnoMatriculaActualizar";
+            this.Load += new System.EventHandler(this.AlumnoMatriculaActualizar_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown3)).EndInit();
