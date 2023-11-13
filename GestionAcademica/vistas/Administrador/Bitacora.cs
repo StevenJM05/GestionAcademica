@@ -16,5 +16,10 @@ namespace GestionAcademica.vistas.Administrador
         {
             InitializeComponent();
         }
+
+        private void Bitacora_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
