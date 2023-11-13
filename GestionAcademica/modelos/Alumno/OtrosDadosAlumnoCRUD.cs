@@ -14,7 +14,7 @@ namespace GestionAcademica.modelos.Alumno
         ConexionBD ConexionBD = new ConexionBD();
         public void actualizar(object modelo, int id)
         {
-            OtrosDatosAlumno otrosDatosAlumno = (OtrosDatosAlumno)modelo;
+            OtrosDatosAlumnoC otrosDatosAlumno = (OtrosDatosAlumnoC)modelo;
             string sql = $"UPDATE Otros_Datos_Alumnos SET " +
             $"Id_Alumno = {otrosDatosAlumno.Id_Alumno1}, " +
             $"Tipo_Sangre = '{otrosDatosAlumno.TipoSangre}', " +
@@ -30,7 +30,7 @@ namespace GestionAcademica.modelos.Alumno
 
         public void crear(object modelo)
         {
-            OtrosDatosAlumno otrosDatosAlumno = (OtrosDatosAlumno)modelo;
+            OtrosDatosAlumnoC otrosDatosAlumno = (OtrosDatosAlumnoC)modelo;
             string sql = $"INSERT INTO Otros_Datos_Alumnos (Id_Alumno, " +
                 $"Tipo_Sangre, Trabaja_EN_QUE, Hijos_Cuantos, Depencia_Economica_Responsable, " +
                 $"Discapacidad, Enfermedad_Cronica) " +
