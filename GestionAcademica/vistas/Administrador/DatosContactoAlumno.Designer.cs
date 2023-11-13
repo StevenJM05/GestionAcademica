@@ -83,20 +83,22 @@
             this.button2.Location = new System.Drawing.Point(645, 77);
             this.button2.Margin = new System.Windows.Forms.Padding(2);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(89, 31);
+            this.button2.Size = new System.Drawing.Size(95, 43);
             this.button2.TabIndex = 11;
             this.button2.Text = "Siguiente formulario";
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // button1
             // 
             this.button1.Location = new System.Drawing.Point(559, 77);
             this.button1.Margin = new System.Windows.Forms.Padding(2);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(71, 31);
+            this.button1.Size = new System.Drawing.Size(82, 43);
             this.button1.TabIndex = 10;
             this.button1.Text = "Agregar";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // label5
             // 

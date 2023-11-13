@@ -94,6 +94,8 @@ namespace GestionAcademica.vistas.Administrador
             }
         }
 
+
+
         private void Alumno_Load(object sender, EventArgs e)
         {
             refrescar();
@@ -109,7 +111,7 @@ namespace GestionAcademica.vistas.Administrador
             else {
                     int id = (int)dataGridView1.CurrentRow.Cells[0].Value;
                     DatosPersonalesAlumno personalesAlumno = new DatosPersonalesAlumno();
-                    personalesAlumno.numericUpDown1.Value = Convert.ToDecimal(id);
+                    id = Convert.ToInt32(id);
                     personalesAlumno.ShowDialog();
                     this.Close();
                   }       

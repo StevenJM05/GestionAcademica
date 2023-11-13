@@ -93,7 +93,7 @@
             this.button2.Location = new System.Drawing.Point(575, 77);
             this.button2.Margin = new System.Windows.Forms.Padding(2);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(138, 29);
+            this.button2.Size = new System.Drawing.Size(138, 34);
             this.button2.TabIndex = 15;
             this.button2.Text = "Siguiente formulario:";
             this.button2.UseVisualStyleBackColor = true;

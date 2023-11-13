@@ -29,7 +29,7 @@ namespace GestionAcademica.vistas.Administrador
 
         private void button1_Click(object sender, EventArgs e)
         {
-            if (textBox2.Text == "" || textBox3.Text == "" || textBox6.Text == "" || textBox7.Text == "" || textBox8.Text == "" || textBox9.Text == "" || textBox10.Text == "" || comboBox1.Text == "" || comboBox2.Text == "")
+            if (numericUpDown1.Value == 0 || textBox2.Text == "" || textBox3.Text == "" || textBox6.Text == "" || textBox7.Text == "" || textBox8.Text == "" || textBox9.Text == "" || textBox10.Text == "" || comboBox1.Text == "" || comboBox2.Text == "")
             {
                 MessageBox.Show("Completar Todos los Campos");
             }
@@ -68,14 +68,15 @@ namespace GestionAcademica.vistas.Administrador
 
         private void button2_Click(object sender, EventArgs e)
         {
-            if (textBox2.Text == "" || textBox3.Text == "" || textBox6.Text == "" || textBox7.Text == "" || textBox8.Text == "" || textBox9.Text == "" || textBox10.Text == "" || comboBox1.Text == "" || comboBox2.Text == "")
+            if (numericUpDown1.Value == 0 || textBox2.Text == "" || textBox3.Text == "" || textBox6.Text == "" || textBox7.Text == "" || textBox8.Text == "" || textBox9.Text == "" || textBox10.Text == "" || comboBox1.Text == "" || comboBox2.Text == "")
             {
                 MessageBox.Show("Complete los Campos");
             }
             else
             {
-                int id = (int)dataGridView1.CurrentRow.Cells[0].Value;
+                int id = (int)dataGridView1.CurrentRow.Cells[1].Value;
                 DatosContactoAlumno datosContactoAlumno = new DatosContactoAlumno();
+                datosContactoAlumno.numericUpDown1.Value = Convert.ToDecimal(id);
                 datosContactoAlumno.numericUpDown1.Value.ToString();
                 datosContactoAlumno.ShowDialog();
 
