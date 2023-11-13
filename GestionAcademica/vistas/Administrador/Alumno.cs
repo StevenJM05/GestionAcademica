@@ -118,11 +118,16 @@ namespace GestionAcademica.vistas.Administrador
         }
         private void dataGridView1_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
         {
+          
+
+        }
+
+        private void dataGridView1_CellDoubleClick_1(object sender, DataGridViewCellEventArgs e)
+        {
             DataGridViewCellCollection datos = dataGridView1.CurrentRow.Cells;
             AlumnoMatriculaActualizar alumno = new AlumnoMatriculaActualizar(datos);
             alumno.OnUpdate = refrescar;
             alumno.ShowDialog();
-
         }
 
     }

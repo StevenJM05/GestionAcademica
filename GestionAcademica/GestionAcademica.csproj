@@ -318,6 +318,9 @@
     <EmbeddedResource Include="vistas\COORDINADOR\MenuCoordinador.resx">
       <DependentUpon>MenuCoordinador.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="vistas\COORDINADOR\seccion.resx">
+      <DependentUpon>seccion.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="vistas\USUARIO\ActualizarUsuario.resx">
       <DependentUpon>ActualizarUsuario.cs</DependentUpon>
     </EmbeddedResource>
