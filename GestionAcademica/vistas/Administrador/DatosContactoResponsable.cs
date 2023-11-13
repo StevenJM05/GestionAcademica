@@ -43,6 +43,7 @@ namespace GestionAcademica.vistas.Administrador
             }
             else
             {
+
                 DatosContactoResponsableC.IdAlumno = Convert.ToInt32(numericUpDown1);
                 DatosContactoResponsableC.TelefonoPropio = textBox1.Text;
                 DatosContactoResponsableC.TelefonoFijo = textBox2.Text;

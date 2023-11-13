@@ -267,6 +267,9 @@
     <EmbeddedResource Include="vistas\Administrador\CONSULTA\AlumnoConsulta.resx">
       <DependentUpon>AlumnoConsulta.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="vistas\Administrador\DatosContactoAlumno.resx">
+      <DependentUpon>DatosContactoAlumno.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="vistas\Administrador\DatosContactoAlumnoActualizar.resx">
       <DependentUpon>DatosContactoAlumnoActualizar.cs</DependentUpon>
     </EmbeddedResource>

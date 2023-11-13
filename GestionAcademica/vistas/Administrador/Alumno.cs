@@ -16,7 +16,7 @@ namespace GestionAcademica.vistas.Administrador
 {
     public partial class Alumno : Form
     {
-        modelos.Alumno.AlumnoC alumno = new modelos.Alumno.AlumnoC();
+        AlumnoC alumno = new AlumnoC();
         AlumnoCRUD alumnoCRUD = new AlumnoCRUD();
         Action onUpdate = null;
 
@@ -105,15 +105,16 @@ namespace GestionAcademica.vistas.Administrador
             {
                 MessageBox.Show("Complete todos los Campos antes de pasar al siguiente formulario");
             }
+            
             else {
-                int id = (int)dataGridView1.CurrentRow.Cells[0].Value;
-                DatosPersonalesAlumno personalesAlumno = new DatosPersonalesAlumno();
-                personalesAlumno.numericUpDown1.Value = Convert.ToDecimal(id);
-                personalesAlumno.ShowDialog();
-                this.Close();
-            }
+                    int id = (int)dataGridView1.CurrentRow.Cells[0].Value;
+                    DatosPersonalesAlumno personalesAlumno = new DatosPersonalesAlumno();
+                    personalesAlumno.numericUpDown1.Value = Convert.ToDecimal(id);
+                    personalesAlumno.ShowDialog();
+                    this.Close();
+                  }       
 
-           
+
 
         }
         private void dataGridView1_CellDoubleClick(object sender, DataGridViewCellEventArgs e)

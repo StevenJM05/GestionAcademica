@@ -62,9 +62,9 @@
             this.groupBox1.Controls.Add(this.textBox2);
             this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Location = new System.Drawing.Point(9, 8);
-            this.groupBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(2);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(2);
             this.groupBox1.Size = new System.Drawing.Size(769, 138);
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
@@ -81,24 +81,22 @@
             // button2
             // 
             this.button2.Location = new System.Drawing.Point(645, 77);
-            this.button2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.button2.Margin = new System.Windows.Forms.Padding(2);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(89, 31);
             this.button2.TabIndex = 11;
             this.button2.Text = "Siguiente formulario";
             this.button2.UseVisualStyleBackColor = true;
-            
             // 
             // button1
             // 
             this.button1.Location = new System.Drawing.Point(559, 77);
-            this.button1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.button1.Margin = new System.Windows.Forms.Padding(2);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(71, 31);
             this.button1.TabIndex = 10;
             this.button1.Text = "Agregar";
             this.button1.UseVisualStyleBackColor = true;
-          
             // 
             // label5
             // 
@@ -143,7 +141,7 @@
             // textBox5
             // 
             this.textBox5.Location = new System.Drawing.Point(544, 43);
-            this.textBox5.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textBox5.Margin = new System.Windows.Forms.Padding(2);
             this.textBox5.Name = "textBox5";
             this.textBox5.Size = new System.Drawing.Size(222, 20);
             this.textBox5.TabIndex = 5;
@@ -151,7 +149,7 @@
             // textBox4
             // 
             this.textBox4.Location = new System.Drawing.Point(295, 91);
-            this.textBox4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textBox4.Margin = new System.Windows.Forms.Padding(2);
             this.textBox4.Name = "textBox4";
             this.textBox4.Size = new System.Drawing.Size(222, 20);
             this.textBox4.TabIndex = 4;
@@ -159,7 +157,7 @@
             // textBox3
             // 
             this.textBox3.Location = new System.Drawing.Point(295, 43);
-            this.textBox3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textBox3.Margin = new System.Windows.Forms.Padding(2);
             this.textBox3.Name = "textBox3";
             this.textBox3.Size = new System.Drawing.Size(222, 20);
             this.textBox3.TabIndex = 3;
@@ -167,7 +165,7 @@
             // textBox2
             // 
             this.textBox2.Location = new System.Drawing.Point(13, 91);
-            this.textBox2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textBox2.Margin = new System.Windows.Forms.Padding(2);
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(222, 20);
             this.textBox2.TabIndex = 2;
@@ -186,7 +184,7 @@
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Location = new System.Drawing.Point(9, 163);
-            this.dataGridView1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.dataGridView1.Margin = new System.Windows.Forms.Padding(2);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 62;
             this.dataGridView1.RowTemplate.Height = 28;
@@ -200,10 +198,10 @@
             this.ClientSize = new System.Drawing.Size(799, 292);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.groupBox1);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "DatosContactoAlumno";
             this.Text = "DatosContactoAlumno";
-            
+            this.Load += new System.EventHandler(this.DatosContactoAlumno_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();

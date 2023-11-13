@@ -40,20 +40,20 @@ namespace GestionAcademica.modelos.Alumno
         {
             DatosPersonalesAlumnoC datosPersonalesAlumno = (DatosPersonalesAlumnoC)modelo;
             string sql = $"INSERT INTO Datos_Personales_Alumno(Id_Alumno, Primer_Nombre, Segundo_Nombre, Tercer_Nombre, Primer_Apellido, Segundo_Apellido, Tercer_Apellido, Fecha_Nacimiento, Residencia, Direccion, Nacionalidad, Departamento_Municipio_Nacimiento, Sexo, Estado_Civil)" +
-                $"VALUES({datosPersonalesAlumno.IdAlumno1}," +
-                $" {datosPersonalesAlumno.PrimerNombre}, " +
-                $"{datosPersonalesAlumno.SegundoNombre}, " +
-                $"{datosPersonalesAlumno.TercerNombre}, " +
-                $"{datosPersonalesAlumno.PrimerApellido}, " +
-                $"{datosPersonalesAlumno.SegundoApellido}, " +
-                $"{datosPersonalesAlumno.TercerApellido}, " +
-                $"{datosPersonalesAlumno.FechaNacimiento}, " +
-                $"{datosPersonalesAlumno.Residencia}, " +
-                $"{datosPersonalesAlumno.Direccion}, " +
-                $"{datosPersonalesAlumno.Nacionalidad}, " +
-                $"{datosPersonalesAlumno.DepartamentoMunicipioNacimiento}, " +
-                $"{datosPersonalesAlumno.Sexo}, " +
-                $"{datosPersonalesAlumno.EstadoCivil});";
+                $"VALUES('{datosPersonalesAlumno.IdAlumno1}'," +
+                $" '{datosPersonalesAlumno.PrimerNombre}', " +
+                $"'{datosPersonalesAlumno.SegundoNombre}', " +
+                $"'{datosPersonalesAlumno.TercerNombre}', " +
+                $"' {datosPersonalesAlumno.PrimerApellido} ', " +
+                $"' {datosPersonalesAlumno.SegundoApellido} ', " +
+                $"' {datosPersonalesAlumno.TercerApellido} ', " +
+                $"'  {datosPersonalesAlumno.FechaNacimiento}  ', " +
+                $"'{datosPersonalesAlumno.Residencia}', " +
+                $"'  {datosPersonalesAlumno.Direccion}  ', " +
+                $"'  {datosPersonalesAlumno.Nacionalidad}  ', " +
+                $"'  {datosPersonalesAlumno.DepartamentoMunicipioNacimiento}  ', " +
+                $"'  {datosPersonalesAlumno.Sexo}  ', " +
+                $"'{datosPersonalesAlumno.EstadoCivil}');";
             conexionBD.ejecutarComando(sql);
         }
 

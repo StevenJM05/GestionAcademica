@@ -357,6 +357,7 @@
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "DatosPersonalesResponsable";
             this.Text = "DatosPersonalesResponsable";
+            this.Load += new System.EventHandler(this.DatosPersonalesResponsable_Load_1);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();

@@ -90,5 +90,10 @@ namespace GestionAcademica.vistas.Administrador
                 this.Close();
             }
         }
+
+        private void DatosPersonalesResponsable_Load_1(object sender, EventArgs e)
+        {
+
+        }
     }
 }

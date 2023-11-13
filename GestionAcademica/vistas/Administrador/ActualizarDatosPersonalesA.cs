@@ -61,7 +61,7 @@ namespace GestionAcademica.vistas.Administrador
             DatosPersonalesAlumnoC.PrimerApellido = textBox7.Text;
             DatosPersonalesAlumnoC.SegundoApellido = textBox6.Text;
             DatosPersonalesAlumnoC.TercerNombre = textBox5.Text;
-            DatosPersonalesAlumnoC.FechaNacimiento = dateTimePicker1.Text;
+            DatosPersonalesAlumnoC.FechaNacimiento = dateTimePicker1.Value.ToString();
             DatosPersonalesAlumnoC.Residencia = textBox8.Text;
             DatosPersonalesAlumnoC.Direccion = textBox9.Text;
             DatosPersonalesAlumnoC.Nacionalidad = textBox10.Text;
