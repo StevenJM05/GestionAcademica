@@ -45,8 +45,8 @@ namespace GestionAcademica.vistas.Administrador
 
         private void button1_Click(object sender, EventArgs e)
         {
-            string dui = textBox1.Text;
-            if (textBox1.Text == "" || textBox2.Text == "" || textBox3.Text == "")
+            string dui = numericUpDown1.Value.ToString();
+            if (textBox1.Text == "" || maskedTextBox1.Text == "")
             {
                 MessageBox.Show("Complete todos los Campos");
             }
@@ -57,8 +57,8 @@ namespace GestionAcademica.vistas.Administrador
             else
             {
 
-                responsable.Dui = textBox1.Text;
-                responsable.Parentezco = textBox2.Text;
+                responsable.Dui = maskedTextBox1.Text;
+                responsable.Parentezco = textBox1.Text;
                 crudresponsable.crear(responsable);
              
                 refrescar();
@@ -78,7 +78,7 @@ namespace GestionAcademica.vistas.Administrador
         private void button2_Click(object sender, EventArgs e)
         {
 
-            if (textBox1.Text == "" || textBox2.Text == "" || textBox3.Text == "" )
+            if (maskedTextBox1.Text == "" || textBox1.Text == "")
             {
                 MessageBox.Show("Complete todos los Campos antes de pasar al siguiente formulario");
             }
@@ -95,6 +95,16 @@ namespace GestionAcademica.vistas.Administrador
         private void dataGridView1_CellMouseDoubleClick(object sender, DataGridViewCellMouseEventArgs e)
         {
             
+        }
+
+        private void groupBox1_Enter(object sender, EventArgs e)
+        {
+
+        }
+
+        private void groupBox1_Enter_1(object sender, EventArgs e)
+        {
+
         }
     }
 }

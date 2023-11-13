@@ -101,5 +101,6 @@ namespace GestionAcademica.vistas.Administrador
             alumno.ShowDialog();
 
         }
+
     }
 }
