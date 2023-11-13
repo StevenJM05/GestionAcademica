@@ -72,5 +72,10 @@ namespace GestionAcademica.vistas.Administrador
             textBox3.Text = datos[6].Value.ToString();
             textBox4.Text = datos[7].Value.ToString();
         }
+
+        private void AlumnoMatriculaActualizar_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

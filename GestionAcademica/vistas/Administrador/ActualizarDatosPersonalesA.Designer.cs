@@ -1,6 +1,6 @@
 ﻿namespace GestionAcademica.vistas.Administrador
 {
-    partial class DatosPersonalesAlumno
+    partial class ActualizarDatosPersonalesA
     {
         /// <summary>
         /// Required designer variable.
@@ -34,7 +34,6 @@
             this.label14 = new System.Windows.Forms.Label();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.label13 = new System.Windows.Forms.Label();
-            this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.textBox11 = new System.Windows.Forms.TextBox();
             this.label12 = new System.Windows.Forms.Label();
@@ -59,10 +58,10 @@
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.numericUpDown2 = new System.Windows.Forms.NumericUpDown();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown2)).BeginInit();
             this.SuspendLayout();
             // 
             // groupBox1
@@ -72,7 +71,6 @@
             this.groupBox1.Controls.Add(this.label14);
             this.groupBox1.Controls.Add(this.comboBox1);
             this.groupBox1.Controls.Add(this.label13);
-            this.groupBox1.Controls.Add(this.button2);
             this.groupBox1.Controls.Add(this.button1);
             this.groupBox1.Controls.Add(this.textBox11);
             this.groupBox1.Controls.Add(this.label12);
@@ -97,13 +95,12 @@
             this.groupBox1.Controls.Add(this.textBox2);
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Controls.Add(this.label1);
-            this.groupBox1.Location = new System.Drawing.Point(12, 12);
+            this.groupBox1.Location = new System.Drawing.Point(29, 30);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(1654, 274);
-            this.groupBox1.TabIndex = 1;
+            this.groupBox1.TabIndex = 2;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Rellene todos los campos:";
-            this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
             // 
             // numericUpDown1
             // 
@@ -147,23 +144,13 @@
             this.label13.TabIndex = 28;
             this.label13.Text = "Sexo:";
             // 
-            // button2
-            // 
-            this.button2.Location = new System.Drawing.Point(914, 202);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(198, 52);
-            this.button2.TabIndex = 27;
-            this.button2.Text = "Siguiente formulario:";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
-            // 
             // button1
             // 
             this.button1.Location = new System.Drawing.Point(669, 202);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(198, 52);
             this.button1.TabIndex = 26;
-            this.button1.Text = "Agregar";
+            this.button1.Text = "ACTUALIZAR";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
@@ -352,30 +339,28 @@
             this.label1.TabIndex = 2;
             this.label1.Text = "Alumno:";
             // 
-            // dataGridView1
+            // numericUpDown2
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(15, 294);
-            this.dataGridView1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowHeadersWidth = 62;
-            this.dataGridView1.Size = new System.Drawing.Size(1652, 191);
-            this.dataGridView1.TabIndex = 2;
-            
+            this.numericUpDown2.Location = new System.Drawing.Point(539, 12);
+            this.numericUpDown2.Name = "numericUpDown2";
+            this.numericUpDown2.Size = new System.Drawing.Size(120, 26);
+            this.numericUpDown2.TabIndex = 3;
+            this.numericUpDown2.Visible = false;
             // 
-            // DatosPersonalesAlumno
+            // ActualizarDatosPersonalesA
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1702, 503);
-            this.Controls.Add(this.dataGridView1);
+            this.ClientSize = new System.Drawing.Size(1738, 354);
+            this.Controls.Add(this.numericUpDown2);
             this.Controls.Add(this.groupBox1);
-            this.Name = "DatosPersonalesAlumno";
-            this.Text = "DatosPersonalesAlumno";
+            this.Name = "ActualizarDatosPersonalesA";
+            this.Text = "ActualizarDatosPersonalesA";
+            this.Load += new System.EventHandler(this.ActualizarDatosPersonalesA_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown2)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -383,11 +368,11 @@
         #endregion
 
         private System.Windows.Forms.GroupBox groupBox1;
+        public System.Windows.Forms.NumericUpDown numericUpDown1;
         private System.Windows.Forms.ComboBox comboBox2;
         private System.Windows.Forms.Label label14;
         private System.Windows.Forms.ComboBox comboBox1;
         private System.Windows.Forms.Label label13;
-        private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.TextBox textBox11;
         private System.Windows.Forms.Label label12;
@@ -412,7 +397,6 @@
         private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.DataGridView dataGridView1;
-        public System.Windows.Forms.NumericUpDown numericUpDown1;
+        private System.Windows.Forms.NumericUpDown numericUpDown2;
     }
 }

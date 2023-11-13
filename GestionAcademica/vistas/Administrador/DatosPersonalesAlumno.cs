@@ -14,7 +14,8 @@ namespace GestionAcademica.vistas.Administrador
     public partial class DatosPersonalesAlumno : Form
     {
         DatosPersonalesAlumnoC personalesAlumno = new DatosPersonalesAlumnoC();
-        DatosPersonalesAlumnoCRUD alumnoCRUD = new DatosPersonalesAlumnoCRUD(); 
+        DatosPersonalesAlumnoCRUD alumnoCRUD = new DatosPersonalesAlumnoCRUD();
+        
 
         public DatosPersonalesAlumno()
         {
@@ -43,7 +44,9 @@ namespace GestionAcademica.vistas.Administrador
                 personalesAlumno.DepartamentoMunicipioNacimiento = textBox11.Text;
                 personalesAlumno.Sexo = comboBox1.Text;
                 personalesAlumno.EstadoCivil = comboBox2.Text;
-                alumnoCRUD.crear(personalesAlumno); 
+                alumnoCRUD.crear(personalesAlumno);
+                refrescar();
+                button1.Visible = false;
             }
         }
 
@@ -60,6 +63,26 @@ namespace GestionAcademica.vistas.Administrador
                 datosContactoAlumno.ShowDialog();
                 this.Close();
             }
+        }
+
+        private void groupBox1_Enter(object sender, EventArgs e)
+        {
+
+        }
+
+        private void dataGridView1_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
+        {
+            DataGridViewCellCollection datos = dataGridView1.CurrentRow.Cells;
+            ActualizarDatosPersonalesA alumno = new ActualizarDatosPersonalesA(datos);
+            alumno.OnUpdate = refrescar;
+            alumno.ShowDialog();
+
+        }
+
+        private void refrescar()
+        {
+            dataGridView1.DataSource = alumnoCRUD.obtener();
+            dataGridView1.Refresh();
         }
     }
 }
