@@ -15,10 +15,9 @@ namespace GestionAcademica.modelos.Responsable
 
         public void actualizar(object modelo, int id)
         {
-            DatosContactoResponsable datosContactoResponsable = (DatosContactoResponsable)modelo;
+            DatosContactoResponsableC datosContactoResponsable = (DatosContactoResponsableC)modelo;
             string sql = $"UPDATE Datos_Contactos_Alumnos SET " +
             $"Id_Alumno = {datosContactoResponsable.IdAlumno}, " +
-            $"Correo = '{datosContactoResponsable.Correo}', " +
             $"Telefono_Propio = '{datosContactoResponsable.TelefonoPropio}', " +
             $"Telefono_Fijo = '{datosContactoResponsable.TelefonoFijo}', " +
             $"Telefono_Emergencia = '{datosContactoResponsable.TelefonoEmergencia}' " +
@@ -30,10 +29,10 @@ namespace GestionAcademica.modelos.Responsable
 
         public void crear(object modelo)
         {
-            DatosContactoResponsable datosContactoResponsable = (DatosContactoResponsable)modelo;
+            DatosContactoResponsableC datosContactoResponsable = (DatosContactoResponsableC)modelo;
             string sql = $"INSERT INTO Datos_Contactos_Alumnos (Id_Alumno, Correo," +
             $" Telefono_Propio, Telefono_Fijo, Telefono_Emergencia) " +
-            $"VALUES ({datosContactoResponsable.IdAlumno}, '{datosContactoResponsable.Correo}', " +
+            $"VALUES ({datosContactoResponsable.IdAlumno}," +
             $"'{datosContactoResponsable.TelefonoPropio}', '{datosContactoResponsable.TelefonoFijo}'," +
             $" '{datosContactoResponsable.TelefonoEmergencia}');";
 

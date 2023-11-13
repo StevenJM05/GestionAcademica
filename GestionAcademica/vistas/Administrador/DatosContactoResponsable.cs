@@ -17,7 +17,7 @@ namespace GestionAcademica.vistas.Administrador
 
         
         DatosContactoResponsableCRUD datosContactoResponsableCRUD = new DatosContactoResponsableCRUD();
-        modelos.Responsable.DatosContactoResponsable contactoResponsable = new modelos.Responsable.DatosContactoResponsable();
+        DatosContactoResponsableC DatosContactoResponsableC = new DatosContactoResponsableC();
         
         public DatosContactoResponsable()
         {
@@ -43,12 +43,12 @@ namespace GestionAcademica.vistas.Administrador
             }
             else
             {
-                contactoResponsable.IdAlumno = Convert.ToInt32(numericUpDown1);
-                contactoResponsable.TelefonoPropio = textBox1.Text;
-                contactoResponsable.TelefonoFijo = textBox2.Text;
-                contactoResponsable.TelefonoEmergencia = textBox3.Text;
-                contactoResponsable.TelefonoOtro = textBox4.Text;
-                datosContactoResponsableCRUD.crear(contactoResponsable);
+                DatosContactoResponsableC.IdAlumno = Convert.ToInt32(numericUpDown1);
+                DatosContactoResponsableC.TelefonoPropio = textBox1.Text;
+                DatosContactoResponsableC.TelefonoFijo = textBox2.Text;
+                DatosContactoResponsableC.TelefonoEmergencia = textBox3.Text;
+                DatosContactoResponsableC.TelefonoOtro = textBox4.Text;
+                datosContactoResponsableCRUD.crear(DatosContactoResponsableC);
                 refrescar();
                 button1.Visible = false;
             }
@@ -70,6 +70,11 @@ namespace GestionAcademica.vistas.Administrador
 
                 this.Close();
             }
+        }
+
+        private void groupBox1_Enter(object sender, EventArgs e)
+        {
+
         }
     }
 }

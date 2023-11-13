@@ -87,7 +87,7 @@
             this.button2.TabIndex = 11;
             this.button2.Text = "Siguiente formulario";
             this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
+            
             // 
             // button1
             // 
@@ -98,7 +98,7 @@
             this.button1.TabIndex = 10;
             this.button1.Text = "Agregar";
             this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click_1);
+          
             // 
             // label5
             // 
@@ -203,7 +203,7 @@
             this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "DatosContactoAlumno";
             this.Text = "DatosContactoAlumno";
-            this.Load += new System.EventHandler(this.DatosContactoAlumno_Load);
+            
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();

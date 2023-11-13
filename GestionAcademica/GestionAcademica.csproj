@@ -55,7 +55,6 @@
     <Compile Include="modelos\Alumno\DatosPersonalesAlumnoCRUD.cs" />
     <Compile Include="modelos\Alumno\OtrosDadosAlumnoCRUD.cs" />
     <Compile Include="modelos\Alumno\OtrosDatosAlumnoC.cs" />
-    <Compile Include="modelos\Bitacora\Bitacora.cs" />
     <Compile Include="modelos\Bitacora\BitacoraAlumno.cs" />
     <Compile Include="modelos\Bitacora\CRUDBitacora.cs" />
     <Compile Include="modelos\Carrera\Carrera.cs" />
@@ -67,7 +66,7 @@
     <Compile Include="modelos\Carrera\YearAcademico.cs" />
     <Compile Include="modelos\Carrera\YearAcademicoCRUD.cs" />
     <Compile Include="modelos\Responsable\CRUDResponsable.cs" />
-    <Compile Include="modelos\Responsable\DatosContactoResponsable.cs" />
+    <Compile Include="modelos\Responsable\DatosContactoResponsableC.cs" />
     <Compile Include="modelos\Responsable\DatosContactoResponsableCRUD.cs" />
     <Compile Include="modelos\Responsable\DatosOtrosResponsable.cs" />
     <Compile Include="modelos\Responsable\DatosOtrosResponsableCRUD.cs" />
@@ -259,17 +258,11 @@
     <EmbeddedResource Include="vistas\Administrador\Bitacora.resx">
       <DependentUpon>Bitacora.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="vistas\Administrador\DatosContactoAlumno.resx">
-      <DependentUpon>DatosContactoAlumno.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="vistas\Administrador\DatosContactoAlumnoActualizar.resx">
       <DependentUpon>DatosContactoAlumnoActualizar.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="vistas\Administrador\DatosContactoResponsable.resx">
       <DependentUpon>DatosContactoResponsable.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="vistas\Administrador\DatosPersonalesAlumno.resx">
-      <DependentUpon>DatosPersonalesAlumno.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="vistas\Administrador\DatosPersonalesResponsable.resx">
       <DependentUpon>DatosPersonalesResponsable.cs</DependentUpon>
