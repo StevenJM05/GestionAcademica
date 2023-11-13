@@ -38,7 +38,7 @@ namespace GestionAcademica.modelos.Responsable
 
         public object obtener()
         {
-            string sql = "SELECT R.Id_ Responsable, R.Parentezco, A.Nombre, A.Id_Alumno FROM Responsable R INNER JOIN Alumno A ON R.Id_Alumno = A.Id_Alumno";
+            string sql = "SELECT R.Id_Responsable, R.Parentezco, A.Nombre, A.Id_Alumno FROM Responsable R INNER JOIN Alumno A ON R.Id_Alumno = A.Id_Alumno";
             DataTable data = ConexionBD.consultas(sql);
             return data;
         }
