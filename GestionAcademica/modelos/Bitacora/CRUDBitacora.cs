@@ -14,8 +14,8 @@ namespace GestionAcademica.modelos.Bitacora
         ConexionBD conexionBD = new ConexionBD();
         public void actualizar(object modelo, int id)
         {
-            BitacoraC bitacora = (BitacoraC)modelo;
-            string sql = $"UPDATE Bitacora SET Numero_Registro = {bitacora.Numero_Registro1}," +
+            BitacoraAlumno bitacora = (BitacoraAlumno)modelo;
+            string sql = $"UPDATE Bitacora SET " +
                 $" Id_Alumno = {bitacora.Id_Alumno1}, Id_Carrera = {bitacora.Id_Carrera1}," +
                 $" Año_Electivo = {bitacora.Año_Electivo1}, Institucion = {bitacora.Institucion1}," +
                 $" Nivel = {bitacora.Nivel1}," +
@@ -29,9 +29,9 @@ namespace GestionAcademica.modelos.Bitacora
 
         public void crear(object modelo)
         {
-            BitacoraC bitacora = (BitacoraC)modelo;
-            string sql = $"INSERT INTO Bitacora (Numero_Registro, Id_Alumno, Id_Carrera, Año_Electivo, Institucion, Nivel, Id_Anio, Id_Secion) VALUES " +
-                $"({bitacora.Numero_Registro1}, {bitacora.Id_Alumno1}, {bitacora.Id_Carrera1}, {bitacora.Año_Electivo1}, '{bitacora.Institucion1}'," +
+            BitacoraAlumno bitacora = (BitacoraAlumno)modelo;
+            string sql = $"INSERT INTO Bitacora (Id_Alumno, Id_Carrera, Año_Electivo, Institucion, Nivel, Id_Anio, Id_Secion) VALUES " +
+                $"({bitacora.Id_Alumno1}, {bitacora.Id_Carrera1}, {bitacora.Año_Electivo1}, '{bitacora.Institucion1}'," +
                 $" {bitacora.Nivel1}, {bitacora.IdYear1}, {bitacora.IdSeccion1})";
             conexionBD.ejecutarComando(sql);
 

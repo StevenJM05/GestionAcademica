@@ -1,4 +1,5 @@
-﻿using GestionAcademica.modelos.Carrera;
+﻿using GestionAcademica.modelos.Bitacora;
+using GestionAcademica.modelos.Carrera;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -14,7 +15,8 @@ namespace GestionAcademica.vistas.Administrador
     public partial class Bitacora : Form
     {
         carreraCRUD carreraCRUD = new carreraCRUD();
-        BitacoraC 
+        BitacoraAlumno bitacora = new BitacoraAlumno();
+        CRUDBitacora CRUDBitacora = new CRUDBitacora();
         
         public Bitacora()
         {
@@ -63,7 +65,15 @@ namespace GestionAcademica.vistas.Administrador
             }
             else
             {
-                Bitacora
+                bitacora.Id_Carrera1 = (int)comboBox1.SelectedValue;
+                bitacora.IdYear1 = (int)comboBox2.SelectedValue;
+                bitacora.IdSeccion1 = (int)comboBox3.SelectedValue;
+                bitacora.Año_Electivo1 = (int)numericUpDown1.Value;
+                bitacora.Institucion1 = textBox2.Text;
+                bitacora.Nivel1 = textBox3.Text;
+                CRUDBitacora.crear(bitacora);
+                MessageBox.Show("La matricula se ha realizado con exito");
+                this.Close();
             }
         }
 
