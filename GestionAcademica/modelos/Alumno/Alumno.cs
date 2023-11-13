@@ -8,22 +8,22 @@ namespace GestionAcademica.modelos.Alumno
 {
     internal class Alumno
     {
-        private int Id_Alumno;
-        private string Carnet;
-        private string NoPartida;
-        private string Folio;
-        private string Dui;
-        private string Nit;
-        private string TipoBachiller;
-        private string Duracion;
+        private int idAlumno;
+        private string carnet;
+        private string numeroPartida;
+        private string folioPartida;
+        private string duiCarnetPropio;
+        private string nie;
+        private string tipoBachillerato;
+        private string anioEstudio;
 
-        public int Id_Alumno1 { get => Id_Alumno; set => Id_Alumno = value; }
-        public string Carnet1 { get => Carnet; set => Carnet = value; }
-        public string NoPartida1 { get => NoPartida; set => NoPartida = value; }
-        public string Folio1 { get => Folio; set => Folio = value; }
-        public string Dui1 { get => Dui; set => Dui = value; }
-        public string Nit1 { get => Nit; set => Nit = value; }
-        public string TipoBachiller1 { get => TipoBachiller; set => TipoBachiller = value; }
-        public string Duracion1 { get => Duracion; set => Duracion = value; }
+        public int IdAlumno { get => idAlumno; set => idAlumno = value; }
+        public string Carnet { get => carnet; set => carnet = value; }
+        public string NumeroPartida { get => numeroPartida; set => numeroPartida = value; }
+        public string FolioPartida { get => folioPartida; set => folioPartida = value; }
+        public string DuiCarnetPropio { get => duiCarnetPropio; set => duiCarnetPropio = value; }
+        public string Nie { get => nie; set => nie = value; }
+        public string TipoBachillerato { get => tipoBachillerato; set => tipoBachillerato = value; }
+        public string AnioEstudio { get => anioEstudio; set => anioEstudio = value; }
     }
 }

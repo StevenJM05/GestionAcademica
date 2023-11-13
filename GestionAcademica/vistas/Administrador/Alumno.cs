@@ -32,28 +32,23 @@ namespace GestionAcademica.vistas.Administrador
 
         private void button1_Click(object sender, EventArgs e)
         {
-            if (numericUpDown1.Value == 0 || numericUpDown2.Value == 0 || numericUpDown3.Value == 0 || textBox1.Text == "" || textBox2.Text == "" || textBox3.Text == "")
+            if (numericUpDown1.Value == 0 || numericUpDown2.Value == 0 || numericUpDown3.Value == 0 || textBox2.Text == "" || textBox3.Text == "")
             {
                 MessageBox.Show("Complete todos los Campos");
             }
             else
             {
-                alumno.Carnet1 = numericUpDown1.Value.ToString();
-                alumno.NoPartida1 = numericUpDown2.Value.ToString();
-                alumno.Folio1 = numericUpDown3.Value.ToString();
-                alumno.Dui1 = textBox1.Text;
-                alumno.TipoBachiller1 = textBox2.Text;
-                alumno.Duracion1 = textBox3.Text;
-
-
+                alumno.Carnet = numericUpDown1.Value.ToString();
+                alumno.NumeroPartida = numericUpDown2.Value.ToString();
+                alumno.FolioPartida = numericUpDown3.Value.ToString();
+                alumno.DuiCarnetPropio = textBox1.Text;
+                alumno.Nie = textBox2.Text;
+                alumno.TipoBachillerato = textBox3.Text;
+                alumno.AnioEstudio = textBox4.Text;
                 alumnoCRUD.crear(alumno);
                 refrescar();
+                button1.Visible = false;
             }
-         
-
-
-
-
         }
 
         private void Alumno_Load(object sender, EventArgs e)
