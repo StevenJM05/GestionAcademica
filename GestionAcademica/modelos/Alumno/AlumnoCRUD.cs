@@ -15,14 +15,14 @@ namespace GestionAcademica.modelos.Alumno
         public void actualizar(object modelo, int id)
         {
             Alumno alumno = (Alumno)modelo;
-            string sql = $"update Alumno set Carnet = '{alumno.Carnet1}', Numero_Partida = '{alumno.NoPartida1}', Folio_Partida = '{alumno.Folio1}', DUI_Carnet_Propio = '{alumno.Dui1}', NIE = '{alumno.Nit1}', Tipo_Bachillerato = '{alumno.TipoBachiller1}', Anio_estudio = '{alumno.Duracion1}' where Carnet = '{id}';";
+            string sql = $"update Alumno set Carnet = '{alumno.Carnet}', Numero_Partida = '{alumno.NumeroPartida}', Folio_Partida = '{alumno.FolioPartida}', DUI_Carnet_Propio = '{alumno.DuiCarnetPropio}', NIE = '{alumno.Nie}', Tipo_Bachillerato = '{alumno.TipoBachillerato}', Anio_estudio = '{alumno.AnioEstudio}' where Carnet = '{id}';";
             conexionBD.ejecutarComando(sql);
         }
 
         public void crear(object modelo)
         {
             Alumno alumno = (Alumno)modelo;
-            string sql= $"INSERT INTO Alumno(Carnet, Numero_Partida,Folio_Partida, DUI_Carnet_Propio, NIE, Tipo_Bachillerato, Anio_estudio) values ({alumno.Carnet1}, {alumno.NoPartida1}, {alumno.Folio1}, '{alumno.Dui1}', '{alumno.Nit1}', '{alumno.TipoBachiller1}', '{alumno.Duracion1}')";
+            string sql= $"INSERT INTO Alumno(Carnet, Numero_Partida,Folio_Partida, DUI_Carnet_Propio, NIE, Tipo_Bachillerato, Anio_estudio) values ({alumno.Carnet}, {alumno.NumeroPartida}, {alumno.FolioPartida}, '{alumno.DuiCarnetPropio}', '{alumno.Nie}', '{alumno.TipoBachillerato}', '{alumno.AnioEstudio}')";
             conexionBD.ejecutarComando(sql);
            
         }
