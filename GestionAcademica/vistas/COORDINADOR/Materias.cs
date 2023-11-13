@@ -115,5 +115,10 @@ namespace GestionAcademica.vistas.COORDINADOR
             comboBoxDependiente();
            
         }
+
+        private void textBox3_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
