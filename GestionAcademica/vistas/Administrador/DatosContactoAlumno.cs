@@ -14,7 +14,7 @@ namespace GestionAcademica.vistas.Administrador
     public partial class DatosContactoAlumno : Form
     {
         modelos.Alumno.DatosContactoAlumnoC datoscontactoalumno = new DatosContactoAlumnoC();
-        DatosContactoAlumnoCRUD DatosContactoAlumnoCRUD = new DatosContactoAlumnoCRUD();
+        DatosContactoAlumnoCRUD datosContactoAlumnoCRUD = new DatosContactoAlumnoCRUD();
         public DatosContactoAlumno()
         {
             InitializeComponent();
@@ -22,7 +22,7 @@ namespace GestionAcademica.vistas.Administrador
 
         private void refrescar()
         {
-            dataGridView1.DataSource = DatosContactoAlumnoCRUD.obtener();
+            dataGridView1.DataSource = datosContactoAlumnoCRUD.obtener();
             dataGridView1.Refresh();
         }
 
@@ -40,7 +40,7 @@ namespace GestionAcademica.vistas.Administrador
                 datoscontactoalumno.TelefonoFijo1= textBox4.Text;
                 datoscontactoalumno.TelefonoEmergencia1 = textBox5.Text;
                 datoscontactoalumno.TelefonoPropio1 = textBox3.Text;
-                DatosContactoAlumnoCRUD.crear(datoscontactoalumno);
+                datosContactoAlumnoCRUD.crear(datoscontactoalumno);
                 refrescar();
                 button1.Visible = false;
             }
@@ -71,10 +71,10 @@ namespace GestionAcademica.vistas.Administrador
             }
             else
             {
-                int id = (int)dataGridView1.CurrentRow.Cells[0].Value;
-                OtrosDatosAlumno otrosDatosAlumno = new OtrosDatosAlumno();
-                otrosDatosAlumno.numericUpDown2.Value.ToString();
-                otrosDatosAlumno.ShowDialog();
+                int id = (int)dataGridView1.CurrentRow.Cells[1].Value;
+                Responsable reponsable = new Responsable();
+                reponsable.numericUpDown1.Value.ToString();
+                reponsable.ShowDialog();
 
                 this.Close();
             }
