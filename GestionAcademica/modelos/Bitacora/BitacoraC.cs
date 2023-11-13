@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace GestionAcademica.modelos.Bitacora
 {
-    internal class Bitacora
+    internal class BitacoraC
     {
         private int Numero_Registro;
         private int Id_Alumno;
