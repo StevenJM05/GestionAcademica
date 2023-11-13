@@ -14,14 +14,14 @@ namespace GestionAcademica.modelos.Alumno
         ConexionBD conexionBD = new ConexionBD();
         public void actualizar(object modelo, int id)
         {
-            Alumno alumno = (Alumno)modelo;
+            AlumnoC alumno = (AlumnoC)modelo;
             string sql = $"update Alumno set Carnet = '{alumno.Carnet}', Numero_Partida = '{alumno.NumeroPartida}', Folio_Partida = '{alumno.FolioPartida}', DUI_Carnet_Propio = '{alumno.DuiCarnetPropio}', NIE = '{alumno.Nie}', Tipo_Bachillerato = '{alumno.TipoBachillerato}', Anio_estudio = '{alumno.AnioEstudio}' where Carnet = '{id}';";
             conexionBD.ejecutarComando(sql);
         }
 
         public void crear(object modelo)
         {
-            Alumno alumno = (Alumno)modelo;
+            AlumnoC alumno = (AlumnoC)modelo;
             string sql= $"INSERT INTO Alumno(Carnet, Numero_Partida,Folio_Partida, DUI_Carnet_Propio, NIE, Tipo_Bachillerato, Anio_estudio) values ({alumno.Carnet}, {alumno.NumeroPartida}, {alumno.FolioPartida}, '{alumno.DuiCarnetPropio}', '{alumno.Nie}', '{alumno.TipoBachillerato}', '{alumno.AnioEstudio}')";
             conexionBD.ejecutarComando(sql);
            

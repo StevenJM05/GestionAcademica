@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace GestionAcademica.modelos.Alumno
 {
-    internal class DatosPersonalesAlumno
+    internal class DatosPersonalesAlumnoC
     {
             private int idPersonal;
             private int IdAlumno;   

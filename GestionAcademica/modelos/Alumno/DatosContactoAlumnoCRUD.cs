@@ -14,7 +14,7 @@ namespace GestionAcademica.modelos.Alumno
         ConexionBD conexionBD = new ConexionBD();
         public void actualizar(object modelo, int id)
         {
-            DatosContactoAlumno datosContactoAlumno = (DatosContactoAlumno)modelo;
+            DatosContactoAlumnoC datosContactoAlumno = (DatosContactoAlumnoC)modelo;
             string sql = $"update Datos_Contactos_Alumnos set Id_Alumno = {datosContactoAlumno.IdContacto1}, Correo = '{datosContactoAlumno.Correo1}', Telefono_Propio = {datosContactoAlumno.TelefonoPropio1}, Telefono_Fijo = {datosContactoAlumno.TelefonoFijo1}, Telefono_Emergencia = {datosContactoAlumno.TelefonoEmergencia1} where Id_Alumno = '{id}';";
             conexionBD.ejecutarComando(sql);
 
@@ -22,7 +22,7 @@ namespace GestionAcademica.modelos.Alumno
 
         public void crear(object modelo)
         {
-            DatosContactoAlumno datosContactoAlumno = (DatosContactoAlumno)modelo;
+            DatosContactoAlumnoC datosContactoAlumno = (DatosContactoAlumnoC)modelo;
             string sql = $"insert into Datos_Contactos_Alumnos (Id_Alumno, Correo, Telefono_Propio, Telefono_Fijo, Telefono_Emergencia) values ('{datosContactoAlumno.Id_Alumno1}', '{datosContactoAlumno.Correo1}', '{datosContactoAlumno.TelefonoPropio1}', '{datosContactoAlumno.TelefonoFijo1}', '{datosContactoAlumno.TelefonoEmergencia1}')";
             conexionBD.ejecutarComando(sql);
         }
@@ -36,7 +36,7 @@ namespace GestionAcademica.modelos.Alumno
         public object obtener()
         {
             ConexionBD conexion = new ConexionBD();
-            string sql = "SELECT * FROM Datos_Contacto_Alumnos";
+            string sql = "SELECT D.Id_Contacto AS ID, D.Correo. AS Correo, D.Telefono_Propio, D.Telefono_Fijo, D.Telefono_Emergencia, A.Carnet FROM Datos_Contacto_Alumnos D INNER JOIN Alumno A on D.Id_Alumno=A.Id_Alumno";
             DataTable dataTable = conexion.consultas(sql);
             return dataTable;
         }

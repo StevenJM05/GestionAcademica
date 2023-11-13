@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace GestionAcademica.modelos.Alumno
 {
-    internal class Alumno
+    internal class AlumnoC
     {
         private int idAlumno;
         private string carnet;
