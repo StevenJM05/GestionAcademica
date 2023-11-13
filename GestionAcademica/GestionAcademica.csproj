@@ -103,6 +103,48 @@
     <Compile Include="vistas\Administrador\CONSULTA\AlumnoConsulta.Designer.cs">
       <DependentUpon>AlumnoConsulta.cs</DependentUpon>
     </Compile>
+    <Compile Include="vistas\Administrador\CONSULTA\AlumnoConsultaContacto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="vistas\Administrador\CONSULTA\AlumnoConsultaContacto.Designer.cs">
+      <DependentUpon>AlumnoConsultaContacto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="vistas\Administrador\CONSULTA\AlumnoConsultaOtros.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="vistas\Administrador\CONSULTA\AlumnoConsultaOtros.Designer.cs">
+      <DependentUpon>AlumnoConsultaOtros.cs</DependentUpon>
+    </Compile>
+    <Compile Include="vistas\Administrador\CONSULTA\AlumnoConsultaPersonal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="vistas\Administrador\CONSULTA\AlumnoConsultaPersonal.Designer.cs">
+      <DependentUpon>AlumnoConsultaPersonal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="vistas\Administrador\CONSULTA\OtrosConsultaResponsable.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="vistas\Administrador\CONSULTA\OtrosConsultaResponsable.Designer.cs">
+      <DependentUpon>OtrosConsultaResponsable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="vistas\Administrador\CONSULTA\ResponsableConsulta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="vistas\Administrador\CONSULTA\ResponsableConsulta.Designer.cs">
+      <DependentUpon>ResponsableConsulta.cs</DependentUpon>
+    </Compile>
+    <Compile Include="vistas\Administrador\CONSULTA\ResponsableConsultaContacto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="vistas\Administrador\CONSULTA\ResponsableConsultaContacto.Designer.cs">
+      <DependentUpon>ResponsableConsultaContacto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="vistas\Administrador\CONSULTA\ResponsableConsultaPersonales.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="vistas\Administrador\CONSULTA\ResponsableConsultaPersonales.Designer.cs">
+      <DependentUpon>ResponsableConsultaPersonales.cs</DependentUpon>
+    </Compile>
     <Compile Include="vistas\Administrador\DatosContactoAlumno.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -156,6 +198,12 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="vistas\Administrador\MenuResponsable.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="vistas\Administrador\MenuResponsable.Designer.cs">
+      <DependentUpon>MenuResponsable.cs</DependentUpon>
+    </Compile>
     <Compile Include="vistas\Administrador\OtrosDatosAlumno.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -267,6 +315,27 @@
     <EmbeddedResource Include="vistas\Administrador\CONSULTA\AlumnoConsulta.resx">
       <DependentUpon>AlumnoConsulta.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="vistas\Administrador\CONSULTA\AlumnoConsultaContacto.resx">
+      <DependentUpon>AlumnoConsultaContacto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="vistas\Administrador\CONSULTA\AlumnoConsultaOtros.resx">
+      <DependentUpon>AlumnoConsultaOtros.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="vistas\Administrador\CONSULTA\AlumnoConsultaPersonal.resx">
+      <DependentUpon>AlumnoConsultaPersonal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="vistas\Administrador\CONSULTA\OtrosConsultaResponsable.resx">
+      <DependentUpon>OtrosConsultaResponsable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="vistas\Administrador\CONSULTA\ResponsableConsulta.resx">
+      <DependentUpon>ResponsableConsulta.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="vistas\Administrador\CONSULTA\ResponsableConsultaContacto.resx">
+      <DependentUpon>ResponsableConsultaContacto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="vistas\Administrador\CONSULTA\ResponsableConsultaPersonales.resx">
+      <DependentUpon>ResponsableConsultaPersonales.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="vistas\Administrador\DatosContactoAlumnoActualizar.resx">
       <DependentUpon>DatosContactoAlumnoActualizar.cs</DependentUpon>
     </EmbeddedResource>
@@ -297,6 +366,9 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="vistas\Administrador\MenuResponsable.resx">
+      <DependentUpon>MenuResponsable.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="vistas\Administrador\MenúAlumno.resx">
       <DependentUpon>MenúAlumno.cs</DependentUpon>
     </EmbeddedResource>

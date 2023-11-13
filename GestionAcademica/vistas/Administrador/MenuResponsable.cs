@@ -11,47 +11,35 @@ using System.Windows.Forms;
 
 namespace GestionAcademica.vistas.Administrador
 {
-    public partial class MenúAlumno : Form
+    public partial class MenuResponsable : Form
     {
-        public MenúAlumno()
+        public MenuResponsable()
         {
             InitializeComponent();
         }
 
         private void button3_Click(object sender, EventArgs e)
         {
-            AlumnoConsulta alumno = new AlumnoConsulta();
-            alumno.Show();
-          
-
-        }
-
-        private void groupBox2_Enter(object sender, EventArgs e)
-        {
-
+            ResponsableConsulta responsable = new ResponsableConsulta();
+            responsable.Show();
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
-            AlumnoConsultaPersonal alumno = new AlumnoConsultaPersonal();
-            alumno.Show();
+            ResponsableConsultaPersonales responsable = new ResponsableConsultaPersonales();
+            responsable.Show();
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
-            AlumnoConsultaContacto alumno = new AlumnoConsultaContacto();
-            alumno.Show();
+            ResponsableConsultaContacto responsable = new ResponsableConsultaContacto();
+            responsable.Show();
         }
 
         private void button4_Click(object sender, EventArgs e)
         {
-            AlumnoConsultaOtros alumnoConsultaOtros = new AlumnoConsultaOtros();
-            alumnoConsultaOtros.Show();
-        }
-
-        private void groupBox1_Enter(object sender, EventArgs e)
-        {
-
+            OtrosConsultaResponsable responsable = new OtrosConsultaResponsable();
+            responsable.Show();
         }
     }
 }
