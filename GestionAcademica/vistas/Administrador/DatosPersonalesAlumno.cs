@@ -38,15 +38,28 @@ namespace GestionAcademica.vistas.Administrador
                 personalesAlumno.TercerApellido = textBox5.Text;
                 personalesAlumno.FechaNacimiento = dateTimePicker1.Text;
                 personalesAlumno.Residencia = textBox8.Text;
+                personalesAlumno.Direccion = textBox9.Text;
+                personalesAlumno.Nacionalidad = textBox10.Text;
+                personalesAlumno.DepartamentoMunicipioNacimiento = textBox11.Text;
+                personalesAlumno.Sexo = comboBox1.Text;
+                personalesAlumno.EstadoCivil = comboBox2.Text;
+                alumnoCRUD.crear(personalesAlumno); 
             }
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
-            DatosContactoAlumno datosContactoAlumno = new DatosContactoAlumno();
-            datosContactoAlumno.ShowDialog();
-            this.Close();
-
+            if (textBox2.Text == "" || textBox3.Text == "" || textBox7.Text == "" || textBox6.Text == "" || dateTimePicker1.Text == "" || textBox8.Text == "" || textBox9.Text == "" || textBox10.Text == "" || textBox11.Text == "" || comboBox1.Text == "" || comboBox2.Text == "")
+            {
+                MessageBox.Show("Porfavor completa los campos obligatorios");
+            }
+            else{
+                int id = (int)dataGridView1.CurrentRow.Cells[1].Value;
+                DatosContactoAlumno datosContactoAlumno = new DatosContactoAlumno();
+                datosContactoAlumno.numericUpDown1.Value = id;
+                datosContactoAlumno.ShowDialog();
+                this.Close();
+            }
         }
     }
 }
