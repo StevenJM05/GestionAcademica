@@ -29,9 +29,37 @@
         private void InitializeComponent()
         {
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
+            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.label5 = new System.Windows.Forms.Label();
+            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.label6 = new System.Windows.Forms.Label();
+            this.textBox6 = new System.Windows.Forms.TextBox();
+            this.label7 = new System.Windows.Forms.Label();
             this.numericUpDown2 = new System.Windows.Forms.NumericUpDown();
             this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
+            this.textBox6 = new System.Windows.Forms.TextBox();
+            this.label7 = new System.Windows.Forms.Label();
+            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.label6 = new System.Windows.Forms.Label();
+            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.label5 = new System.Windows.Forms.Label();
+            this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
+            this.label4 = new System.Windows.Forms.Label();
+            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
             this.textBox6 = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
             this.textBox5 = new System.Windows.Forms.TextBox();
@@ -106,13 +134,26 @@
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // textBox6
+            this.button1.Location = new System.Drawing.Point(311, 128);
+            this.button1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(72, 27);
+            this.button1.TabIndex = 21;
+            this.button1.Text = "Registrar:";
+            this.button1.UseVisualStyleBackColor = true;
             // 
             this.textBox6.Location = new System.Drawing.Point(861, 152);
             this.textBox6.Name = "textBox6";
             this.textBox6.Size = new System.Drawing.Size(294, 26);
             this.textBox6.TabIndex = 20;
+            // textBox6
             // 
             // label7
+            this.textBox6.Location = new System.Drawing.Point(574, 99);
+            this.textBox6.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textBox6.Name = "textBox6";
+            this.textBox6.Size = new System.Drawing.Size(197, 20);
+            this.textBox6.TabIndex = 20;
             // 
             this.label7.AutoSize = true;
             this.label7.Location = new System.Drawing.Point(856, 128);
@@ -120,15 +161,29 @@
             this.label7.Size = new System.Drawing.Size(156, 20);
             this.label7.TabIndex = 19;
             this.label7.Text = "Enfermedad cronica:";
+            // label7
             // 
             // textBox5
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(571, 83);
+            this.label7.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(105, 13);
+            this.label7.TabIndex = 19;
+            this.label7.Text = "Enfermedad cronica:";
             // 
             this.textBox5.Location = new System.Drawing.Point(519, 152);
             this.textBox5.Name = "textBox5";
             this.textBox5.Size = new System.Drawing.Size(294, 26);
             this.textBox5.TabIndex = 18;
+            // textBox5
             // 
             // label6
+            this.textBox5.Location = new System.Drawing.Point(346, 99);
+            this.textBox5.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textBox5.Name = "textBox5";
+            this.textBox5.Size = new System.Drawing.Size(197, 20);
+            this.textBox5.TabIndex = 18;
             // 
             this.label6.AutoSize = true;
             this.label6.Location = new System.Drawing.Point(514, 128);
@@ -136,6 +191,7 @@
             this.label6.Size = new System.Drawing.Size(109, 20);
             this.label6.TabIndex = 17;
             this.label6.Text = "Discapacidad:";
+            // label6
             // 
             // textBox4
             // 
@@ -176,6 +232,7 @@
             this.textBox3.Size = new System.Drawing.Size(294, 26);
             this.textBox3.TabIndex = 12;
             // 
+            // label2
             // label3
             // 
             this.label3.AutoSize = true;
@@ -192,8 +249,14 @@
             this.textBox2.Size = new System.Drawing.Size(294, 26);
             this.textBox2.TabIndex = 10;
             // 
+            // textBox1
             // label2
             // 
+            this.textBox1.Location = new System.Drawing.Point(14, 46);
+            this.textBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(197, 20);
+            this.textBox1.TabIndex = 8;
             this.label2.AutoSize = true;
             this.label2.Location = new System.Drawing.Point(372, 46);
             this.label2.Name = "label2";
