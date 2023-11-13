@@ -14,7 +14,7 @@ namespace GestionAcademica.modelos.Bitacora
         ConexionBD conexionBD = new ConexionBD();
         public void actualizar(object modelo, int id)
         {
-            Bitacora bitacora = (Bitacora)modelo;
+            BitacoraC bitacora = (BitacoraC)modelo;
             string sql = $"UPDATE Bitacora SET Numero_Registro = {bitacora.Numero_Registro1}," +
                 $" Id_Alumno = {bitacora.Id_Alumno1}, Id_Carrera = {bitacora.Id_Carrera1}," +
                 $" Año_Electivo = {bitacora.Año_Electivo1}, Institucion = {bitacora.Institucion1}," +
@@ -29,7 +29,7 @@ namespace GestionAcademica.modelos.Bitacora
 
         public void crear(object modelo)
         {
-            Bitacora bitacora = (Bitacora)modelo;
+            BitacoraC bitacora = (BitacoraC)modelo;
             string sql = $"INSERT INTO Bitacora (Numero_Registro, Id_Alumno, Id_Carrera, Año_Electivo, Institucion, Nivel, Id_Anio, Id_Secion) VALUES " +
                 $"({bitacora.Numero_Registro1}, {bitacora.Id_Alumno1}, {bitacora.Id_Carrera1}, {bitacora.Año_Electivo1}, '{bitacora.Institucion1}'," +
                 $" {bitacora.Nivel1}, {bitacora.IdYear1}, {bitacora.IdSeccion1})";
@@ -51,5 +51,7 @@ namespace GestionAcademica.modelos.Bitacora
             return dataTable;
 
         }
+
+       
     }
 }

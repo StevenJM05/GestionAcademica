@@ -46,5 +46,13 @@ namespace GestionAcademica.modelos.Carrera
             DataTable datatable = conexion.consultas(sql);
             return datatable;
         }
+        public object comboConsulta(int id)
+        {
+            string sql = $"SELECT * FROM Seciones WHERE Id_Secion = {id}";
+            DataTable dataTable = conexion.consultas(sql);
+            return dataTable;
+        }
+
+
     }
 }

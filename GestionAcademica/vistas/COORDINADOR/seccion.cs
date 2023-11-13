@@ -55,7 +55,7 @@ namespace GestionAcademica.vistas.COORDINADOR
 
         private void button1_Click(object sender, EventArgs e)
         {
-            if (textBox1.Text == "" )
+            if (textBox1.Text == "")
             {
                 MessageBox.Show("Complete los campos");
             }
@@ -91,14 +91,16 @@ namespace GestionAcademica.vistas.COORDINADOR
 
         }
 
-        private void dataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
+        
+
+        private void dataGridView1_CellClick_1(object sender, DataGridViewCellEventArgs e)
         {
             if (e.RowIndex >= 0 && e.ColumnIndex >= 0)
             {
                 if (dataGridView1.Columns[e.ColumnIndex] is DataGridViewButtonColumn)
                 {
-                    int id = Convert.ToInt32(this.dataGridView1.Rows[e.RowIndex].Cells[0].Value);
-                    DialogResult boton = MessageBox.Show("Desea eliminar la materia:" + dataGridView1.Rows[e.RowIndex].Cells[5].Value.ToString(), "Confirme la eliminacion", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+                    int id = Convert.ToInt32(this.dataGridView1.Rows[e.RowIndex].Cells[1].Value);
+                    DialogResult boton = MessageBox.Show("Desea eliminar la seccion:" + dataGridView1.Rows[e.RowIndex].Cells[6].Value.ToString(), "Confirme la eliminacion", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
                     if (boton == DialogResult.Yes)
                     {
                         SeccionCRUD.eliminar(id);
@@ -108,11 +110,7 @@ namespace GestionAcademica.vistas.COORDINADOR
                     {
                         MessageBox.Show("La seccion no se ha eliminado ");
                     }
-
-
                 }
-
-
             }
         }
     }
