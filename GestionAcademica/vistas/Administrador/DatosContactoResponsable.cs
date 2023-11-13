@@ -26,5 +26,10 @@ namespace GestionAcademica.vistas.Administrador
         {
 
         }
+
+        private void maskedTextBox1_MaskInputRejected(object sender, MaskInputRejectedEventArgs e)
+        {
+
+        }
     }
 }

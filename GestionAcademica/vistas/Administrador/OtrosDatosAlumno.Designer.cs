@@ -70,7 +70,7 @@
             this.groupBox1.Controls.Add(this.textBox2);
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Controls.Add(this.label1);
-            this.groupBox1.Location = new System.Drawing.Point(26, 11);
+            this.groupBox1.Location = new System.Drawing.Point(26, 16);
             this.groupBox1.Margin = new System.Windows.Forms.Padding(2);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Padding = new System.Windows.Forms.Padding(2);
@@ -93,7 +93,7 @@
             this.button2.Location = new System.Drawing.Point(491, 131);
             this.button2.Margin = new System.Windows.Forms.Padding(2);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(96, 40);
+            this.button2.Size = new System.Drawing.Size(72, 40);
             this.button2.TabIndex = 22;
             this.button2.Text = "Siguiente formulario";
             this.button2.UseVisualStyleBackColor = true;
@@ -115,7 +115,7 @@
             this.textBox6.Location = new System.Drawing.Point(593, 100);
             this.textBox6.Margin = new System.Windows.Forms.Padding(1);
             this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(151, 20);
+            this.textBox6.Size = new System.Drawing.Size(133, 20);
             this.textBox6.TabIndex = 20;
             // 
             // label7
@@ -133,7 +133,7 @@
             this.textBox5.Location = new System.Drawing.Point(346, 97);
             this.textBox5.Margin = new System.Windows.Forms.Padding(1);
             this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(198, 20);
+            this.textBox5.Size = new System.Drawing.Size(133, 20);
             this.textBox5.TabIndex = 18;
             // 
             // label6
@@ -231,25 +231,24 @@
             // dataGridView1
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(26, 190);
+            this.dataGridView1.Location = new System.Drawing.Point(26, 194);
             this.dataGridView1.Margin = new System.Windows.Forms.Padding(2);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 62;
             this.dataGridView1.RowTemplate.Height = 28;
-            this.dataGridView1.Size = new System.Drawing.Size(804, 144);
+            this.dataGridView1.Size = new System.Drawing.Size(804, 77);
             this.dataGridView1.TabIndex = 1;
             // 
             // OtrosDatosAlumno
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(854, 354);
+            this.ClientSize = new System.Drawing.Size(854, 292);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.groupBox1);
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "OtrosDatosAlumno";
             this.Text = "OtrosDatosAlumno";
-            this.Load += new System.EventHandler(this.OtrosDatosAlumno_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown2)).EndInit();
