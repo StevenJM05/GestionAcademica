@@ -8,18 +8,13 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace GestionAcademica.vistas.Administrador
+namespace GestionAcademica.vistas.Administrador.CONSULTA
 {
-    public partial class MenúAlumno : Form
+    public partial class AlumnoConsulta : Form
     {
-        public MenúAlumno()
+        public AlumnoConsulta()
         {
             InitializeComponent();
-        }
-
-        private void button3_Click(object sender, EventArgs e)
-        {
-
         }
     }
 }
